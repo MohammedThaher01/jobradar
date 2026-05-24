@@ -4,5 +4,6 @@ __pycache__/
 */__pycache__/
 data/
 *.pem
-/profiles
+
+profiles/*.yaml
 !profiles/template.yaml
