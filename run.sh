@@ -18,6 +18,13 @@ sleep 10  # wait for network
 cd /home/ubuntu/jobradar
 source venv/bin/activate
 
+# Pull latest code before running
+echo "Pulling latest code: $(date)" >> "$LOG_FILE"
+git pull >> "$LOG_FILE" 2>&1
+if [ $? -ne 0 ]; then
+    echo "WARNING: git pull failed, continuing with existing code" >> "$LOG_FILE"
+fi
+
 # timeout 1500 = kill Python after 25 minutes if it hangs
 timeout 1500 python main.py >> "$LOG_FILE" 2>&1
 EXIT_CODE=$?
