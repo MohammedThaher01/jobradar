@@ -107,7 +107,7 @@ def run():
 
     if source_enabled("serper"):
         logger.info("--- Fetching via Serper discovery ---")
-        raw_jobs.extend(fetch_serper_jobs())
+        raw_jobs.extend(fetch_serper_jobs(profile))
 
     if source_enabled("hackernews"):
         logger.info("--- Fetching HackerNews ---")
