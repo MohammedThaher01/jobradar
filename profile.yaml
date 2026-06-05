@@ -213,3 +213,67 @@ scoring_weights:
   exact_role_match: +2
   mentions_equity_esop: +0.5
   unknown_company: -0.5             # slight penalty for no-info companies
+
+# ─────────────────────────────────────────────────────────────────
+# RANKER WEIGHTS — heuristic pre-scorer (pipeline/ranker.py)
+#
+# These control the fast heuristic ranker that runs BEFORE Groq AI
+# scoring. Skills, domains, and project keywords are detected
+# AUTOMATICALLY from candidate.skills / industries / projects above —
+# no hardcoded preferences here. Only numeric weights live here.
+#
+# All values have in-code defaults; any key can be omitted safely.
+# Negative values are valid (penalty signals).
+# ─────────────────────────────────────────────────────────────────
+ranker_weights:
+
+  # ── Positive signal bonuses ──────────────────────────────────────
+  # "Primary skill" = candidate.skills.strong[0:3] (top 3 strong skills)
+  # "Secondary skill" = remaining strong + learning skills
+  primary_skill_title:    5    # Primary skill keyword found in job title
+  primary_skill_desc:     3    # Primary skill found only in description
+  secondary_skill_title:  3    # Secondary skill keyword found in title
+  secondary_skill_desc:   1    # Secondary skill found in description only
+  backend_title:          2    # Backend / REST API / microservice in title
+  backend_desc:           1    # Backend keyword in description only
+  fresher_title:          2    # Intern / fresher / junior / entry-level in title
+  high_priority_domain:   3    # High-priority industry domain (from industries.high_priority)
+  med_priority_domain:    1    # Medium-priority industry domain (from industries.medium_priority)
+  project_signal_per_hit: 2    # Bonus per matching project relevance keyword
+  project_signal_max:     4    # Cap on total project-signal bonus
+  desc_quality:           1    # Bonus when description ≥ desc_quality_min_chars
+  desc_quality_min_chars: 200  # Chars threshold to earn the desc_quality bonus
+  has_date:               1    # Job has any posted_at value (data quality signal)
+
+  # ── Recency bonuses ──────────────────────────────────────────────
+  # Day boundaries are fixed at 7 / 14 / 30 in the regex fast-path.
+  # Only the bonus values are configurable here.
+  recency_7d:             4    # Posted within 7 days
+  recency_14d:            2    # Posted within 14 days
+  recency_30d:            1    # Posted within 30 days
+
+  # ── Penalty signals (Approach 1) ─────────────────────────────────
+  # Negative values push weak jobs further down the queue.
+  penalty_no_skill_match:   -3  # No candidate skill keyword anywhere in job text
+  penalty_generic_title:    -2  # Title has no recognisable tech/role signal
+  penalty_bodyshop_company: -1  # Company looks like a staffing / outsourcing firm
+  penalty_ats_stub_desc:    -2  # ATS job with description shorter than threshold
+  ats_stub_desc_threshold:  300 # Min chars for ATS description to avoid stub penalty
+
+  # ── Synergy bonuses (Approach 1) ─────────────────────────────────
+  # High-precision combos the AI consistently scores ≥9.
+  synergy_skill_domain:   3    # Primary skill AND a high-priority domain both present
+  synergy_skill_project:  2    # Primary skill AND a project relevance signal both present
+
+  # ── Source-aware adjustments (Approach 2) ────────────────────────
+  # Applied AFTER all other scoring to reflect data quality per source.
+  source_internshala_stipend_bonus:  2      # Internshala job + stipend ≥ min below
+  source_internshala_stipend_min:    10000  # INR/month threshold for stipend bonus
+  source_freshers_blog_batch_bonus:  1      # freshers_blogs job + matching batch tag
+  source_freshers_blog_batches:             # Graduation years that match the candidate
+    - 2025
+    - 2026
+    - 2027
+  source_naukri_stub_penalty:       -1     # Naukri job with stub description (lazy-fetch pending)
+  source_naukri_stub_threshold:      150   # Chars below which Naukri desc is treated as a stub
+  source_serper_penalty:            -1     # Serper dork result (variable title/desc quality)

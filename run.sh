@@ -25,15 +25,22 @@ if [ $? -ne 0 ]; then
     echo "WARNING: git pull failed, continuing with existing code" >> "$LOG_FILE"
 fi
 
+# update packages
+echo "updating packages with pip" >> "$LOG_FILE"
+pip install -r requirements.txt >> "$LOG_FILE" 2>&1
+if [ $? -ne 0 ]; then
+    echo "WARNING: pip install failed, continuing with existing code" >> "$LOG_FILE"
+fi
+
 # kill Python after 60 minutes if it hangs
 timeout 3600 python main.py >> "$LOG_FILE" 2>&1
 EXIT_CODE=$?
 
 if [ $EXIT_CODE -eq 124 ]; then
-    echo "PIPELINE TIMED OUT after 25 minutes: $(date)" >> "$LOG_FILE"
+    echo "PIPELINE TIMED OUT after 60 minutes: $(date)" >> "$LOG_FILE"
     curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
         -d chat_id="${TELEGRAM_CHAT_ID}" \
-        -d text="⏰ JobRadar timed out after 25 min — instance shutting down. Check logs." \
+        -d text="⏰ JobRadar timed out after 60 min — instance shutting down. Check logs." \
         > /dev/null 2>&1
 elif [ $EXIT_CODE -ne 0 ]; then
     echo "Pipeline FAILED with exit code $EXIT_CODE: $(date)" >> "$LOG_FILE"

@@ -393,7 +393,14 @@ def score_all(
     # ── Step 1: Heuristic relevance ranking ───────────────────────────────
     # Sorts jobs so the most promising ones are scored first.
     # This ensures the token budget is spent on best-fit jobs.
-    jobs = rank_eligible_jobs(jobs)
+    # weights: numeric values from profile.yaml ranker_weights block.
+    # profile: full dict so ranker can build skill/domain/project patterns
+    #          dynamically from candidate.skills / industries / projects.
+    jobs = rank_eligible_jobs(
+        jobs,
+        weights=profile.get("ranker_weights"),
+        profile=profile,
+    )
 
     # ── Step 2: Hard fallback cap (absolute worst-case guard) ─────────────
     # Primary guard is the token budget below. This is a last-resort ceiling

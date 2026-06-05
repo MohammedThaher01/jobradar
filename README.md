@@ -2,7 +2,7 @@
 
 An automated, AI-powered job discovery pipeline that aggregates **12 sources**, eliminates noise with zero-cost heuristics, deduplicates across runs, ranks candidates by relevance, scores with AI, and delivers priority alerts to **Telegram** — running twice daily.
 
-Built for freshers, interns, and early-career developers targeting backend, software engineering, and Go/TypeScript roles in India — but fully configurable for any role, stack, or location.
+Built for freshers, interns, and early-career developers — but **fully configurable for any role, stack, domain, or location via `profile.yaml` alone**. A cybersecurity candidate, a data engineer, a mobile developer — no code changes needed.
 
 ---
 
@@ -146,19 +146,26 @@ Drops **~90–95%** of listings before AI — each check is pure Python, zero ne
 
 Before any AI call, every eligible job gets a fast Python relevance score. This determines the order in which jobs enter the AI scorer — so the token budget is spent on the strongest matches first.
 
-| Signal | Points |
-|---|---|
-| Golang/Go in title | +5 |
-| TypeScript / Node.js in title | +3 |
-| Fintech / crypto / payments keywords | +3 |
-| Backend / microservice in title | +2 |
-| Intern / fresher / junior in title | +2 |
-| Project relevance (gRPC, orderbook, proxy, etc.) | +2 each, max +4 |
-| Posted within 7 days | +4 |
-| Posted within 14 days | +2 |
-| No date available | **+0** (not penalised) |
+**Fully profile-driven — zero hardcoded preferences.** All detection patterns (skills, domains, project signals, synergy combos) are compiled dynamically from `profile.yaml` at runtime. A cybersecurity candidate who updates their skills and industries gets correct ranking immediately, with no code changes.
 
-> **Key design**: jobs with no `posted_at` date are **not penalised** — they compete on stack/role signals. This avoids silently dropping good jobs that don't expose a date (common with Naukri and some ATS endpoints).
+**Three scoring layers:**
+
+| Layer | What it does |
+|---|---|
+| **Layer 1 — Positive bonuses** | Primary skill in title (+5), secondary skill (+3/+1), backend/API (+2/+1), fresher role (+2), high-priority domain (+3), medium domain (+1), project signals (+2 each, max +4), recency (+4/+2/+1), desc quality (+1) |
+| **Layer 2 — Penalties + synergies** | No skill match (−3), generic title (−2), bodyshop company (−1), ATS stub desc (−2); synergy bonuses for primary-skill+domain (+3) and primary-skill+project (+2) |
+| **Layer 3 — Source offsets** | Internshala with stipend ≥ ₹10k (+2), freshers_blogs batch tag match (+1), Naukri stub desc (−1), Serper dork result (−1) |
+
+**How patterns are built from profile.yaml:**
+- `candidate.skills.strong[0:3]` → **primary skill** regex (highest bonus)
+- `candidate.skills.strong[3:]` + `learning` → **secondary skill** regex
+- `candidate.industries.high_priority` → high-domain regex (+3)
+- `candidate.industries.medium_priority` → medium-domain regex (+1)
+- `candidate.projects[*].relevance_signal` → per-project signal regex (+2 each)
+
+**All numeric weights are configurable in `profile.yaml → ranker_weights:`** — bonus values, penalty values, thresholds, source offsets — without touching code.
+
+> **Key design**: jobs with no `posted_at` date are **not penalised** — they compete on skill/role signals. This avoids silently dropping good jobs that don't expose a date (common with Naukri and some ATS endpoints).
 
 ---
 
@@ -389,7 +396,8 @@ Register-ScheduledTask -TaskName "JobRadar" -Action $action -Trigger $trigger -R
   curl -s "https://api.smartrecruiters.com/v1/companies/SLUG/postings" | python -m json.tool | head -5
   ```
 - **Tuning pre-filter**: Adjust `hard_reject.experience_keywords` and `hard_reject.role_blacklist` in `profile.yaml` if too many irrelevant jobs slip through.
-- **Tuning the ranker**: Edit `pipeline/ranker.py` signals to weight different stacks or domains higher. Adding a signal costs nothing — it's pure Python with no network calls.
+- **Tuning the ranker**: Edit numeric weights in `profile.yaml → ranker_weights:` — all bonus/penalty/threshold values are configurable without touching code. Skill, domain, and project detection patterns are rebuilt automatically from your profile each run.
+- **Switching to a different domain** (e.g. cybersecurity, data engineering): Update `candidate.skills`, `candidate.industries`, and `candidate.projects.relevance_signal` in `profile.yaml`. The ranker, prefilter, and AI scorer all adapt — no code changes needed.
 - **Naukri config**: Add more keywords or locations under `profile.yaml → naukri:` to increase coverage. Each page = up to 20 listings; each keyword × location combo = 2 pages by default.
 - **Serper budget**: `MAX_SERPER_CALLS` (default 25) and `TIER_1_BUDGET` (default 10) in `sources/serper.py`. Tier 1 budget ensures the unique sources always run regardless of total cap.
 - **Per-user profiles**: Run `python main.py my_profile.yaml` to use a different profile file. Each profile gets its own DB and log file under `data/`.
