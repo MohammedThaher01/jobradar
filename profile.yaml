@@ -2,50 +2,53 @@
 # Keep this accurate. The AI uses this to score every job.
 
 # ─────────────────────────────────────────────────────────────────
-# SOURCE TOGGLES — set to false to skip a source completely
+# SOURCE TOGGLES
 # ─────────────────────────────────────────────────────────────────
 sources:
-  ats:            true   # Greenhouse US/EU / Lever / Ashby / Workable API polling
-  cutshort:       false  # Cutshort.io (public API unreliable — disabled)
-  instahyre:      false   # Instahyre API + scraping fallback
-  wellfound:      false  # DISABLED — blocks requests / shows verification wall
-  serper:         true   # Google search dork discovery via Serper.dev
-  hackernews:     false   # HN "Who is Hiring?" monthly thread
-  reddit:         false  # DISABLED — only returns people-looking-for-work posts
-  internshala:    true   # Internshala internships & fresher jobs (India #1)
-  yc:             true   # YC portfolio company job board
-  freshers_blogs: true   # Indian fresher blogs (RSS) + Cuvette.tech — high volume off-campus/internship listings
-  naukri:         true   # Naukri.com — India's largest job board (API-based, fresher-filtered)
-  hirist:         false  # Hirist.tech — India niche tech job board (JS-rendered, disable until tested) TODO: Test hirist and fix issues
-  jobicy:         true   # Jobicy.com — free remote jobs API, good for catching remote-first companies open to India
-  remoteok:       true   # RemoteOK — JSON API, dev/engineering jobs from global startups open to India timezone
+  ats:            true
+  cutshort:       false
+  instahyre:      false
+  wellfound:      false
+  serper:         true
+  hackernews:     false
+  reddit:         false
+  internshala:    true
+  yc:             true
+  freshers_blogs: true
+  naukri:         true
+  hirist:         false
+  jobicy:         true
+  remoteok:       true
 
 
 candidate:
-  name: "Rohit Kumar Roy"
-  email: "[EMAIL_ADDRESS]"
+  name: "Mohammed Thaher S"
+  email: "thahercareer@gmail.com"
 
-  # What you're looking for
   roles:
     primary:
+      - "AI Engineer Intern"
+      - "ML Engineer Intern"
+      - "AI/ML Intern"
+      - "GenAI Intern"
+      - "Computer Vision Intern"
+      - "LLM Engineer Intern"
       - "Backend Engineering Intern"
       - "Software Engineering Intern"
-      - "Backend Developer Fresher"
-      - "Junior Backend Developer"
-      - "TypeScript Backend Intern"
-      - "Go Developer Intern"
-      - "Golang Developer Fresher"
+      - "AI Research Intern"
+      - "Deep Learning Intern"
     secondary:
+      - "Python Developer Intern"
+      - "Data Science Intern"
       - "Full Stack Intern"
-      - "Full Stack Developer Fresher"
-      - "Software Developer Fresher"
-      - "API Developer Intern"
+      - "NLP Intern"
       - "SDE Intern"
+      - "Software Developer Fresher"
+      - "AI Product Intern"
 
-  # Experience level — CRITICAL
   experience:
-    years: 0                        # Fresher — graduating May 2027
-    max_required: 1                 # HARD REJECT if job requires more than this
+    years: 0
+    max_required: 1
     acceptable_labels:
       - "fresher"
       - "0-1 years"
@@ -55,96 +58,132 @@ candidate:
       - "0 years"
       - "trainee"
 
-  # Tech stack (in order of strength)
   skills:
     strong:
-      - "Go"
-      - "Golang"
-      - "TypeScript"
+      - "Python"
+      - "LangChain"
+      - "LangGraph"
+      - "RAG"
+      - "YOLOv8"
+      - "OpenCV"
+      - "FastAPI"
+      - "Django"
+      - "PyTorch"
+      - "TensorFlow"
+      - "EfficientNet"
+      - "FAISS"
+      - "Pinecone"
+      - "OpenAI API"
+      - "Groq API"
+      - "Hugging Face"
+      - "Gradio"
+      - "Streamlit"
       - "REST APIs"
-      - "gRPC"
-      - "Protobuf"
       - "PostgreSQL"
-      - "Redis"
       - "Docker"
       - "Git"
-      - "Linux"
-      - "Microservices"
+      - "Scikit-learn"
+      - "XGBoost"
+      - "CatBoost"
+      - "LightGBM"
+      - "SHAP"
+      - "Optuna"
     learning:
-      - "Kubernetes"
       - "AWS"
-      # - "Node.js"
+      - "Kubernetes"
+      - "LangSmith"
+      - "Vertex AI"
 
-  # Resume projects — used for context-based scoring
   projects:
-    - name: "Zaraba — Crypto Exchange"
-      description: "Built a full crypto exchange in Go with real-time order matching engine, in-memory orderbook, gRPC-based microservice architecture, wallet management, and trade execution using fixed-point arithmetic"
-      relevance_signal: "Fintech, crypto, trading, payments, Go, gRPC, high-performance systems, real-time"
-    - name: "CipherBin — Ephemeral Code Sharing"
-      description: "Full-stack Go web app with Templ engine (server-side rendering), PostgreSQL backend with Clean Architecture, session-based authentication, prepared statements"
-      relevance_signal: "Go, PostgreSQL, web development, security, clean architecture"
-    - name: "Sentinel-Proxy — Real-time Traffic Monitor"
-      description: "Reverse proxy built in Go with gRPC streaming that monitors outgoing traffic, tracks behavior with Redis, and flags suspicious data exfiltration patterns using adaptive thresholds"
-      relevance_signal: "Go, gRPC, Redis, security, infrastructure, streaming, proxy"
+    - name: "Multimodal Visual Q&A System"
+      description: "Two-stage pipeline: YOLOv8 runs frame-level object detection extracting spatial metadata (bounding boxes, labels, confidence scores); context injected into GPT-4o Vision via LangChain for natural-language scene reasoning. Served via async FastAPI backend with modular routers, deployed as Gradio app on Hugging Face Spaces."
+      relevance_signal: "YOLOv8, GPT-4o Vision, LangChain, FastAPI, Gradio, computer vision, multimodal, object detection, LLM, Hugging Face"
 
-  # Education
+    - name: "Document RAG Chatbot + Autonomous AI Agent"
+      description: "Full RAG pipeline: PDF ingestion, recursive chunking, FAISS vector store, cited answer generation via Llama3 on Groq. Extended into a LangGraph autonomous agent with tool nodes (web search, file reader) and conditional edge routing for multi-step reasoning."
+      relevance_signal: "LangChain, LangGraph, FAISS, RAG, Groq, Llama3, autonomous agent, tool-calling, Streamlit, Hugging Face"
+
+    - name: "Smart Visual Counter"
+      description: "Fine-tuned YOLOv8 on custom Roboflow dataset using Apple M4 MPS (no cloud GPU). OpenCV centroid tracking with virtual boundary line for entry/exit counting across video frames. Deployed as Gradio app on Hugging Face Spaces."
+      relevance_signal: "YOLOv8, OpenCV, object detection, computer vision, Gradio, Roboflow, video analysis, tracking"
+
+    - name: "AgriTech Crop Disease Detector — National Hackathon Winner"
+      description: "Fine-tuned EfficientNetB4 for 38-class crop disease detection. Applied data augmentation and class-weighted loss for real-world image imbalance. Achieved 95% classification accuracy. Shipped live Streamlit demo under competition deadline."
+      relevance_signal: "EfficientNet, PyTorch, TensorFlow, image classification, computer vision, deep learning, agriculture, Streamlit, hackathon winner"
+
+    - name: "Zelestra x AWS ML Hackathon — Finalist"
+      description: "Stacking ensemble for solar panel efficiency prediction: CatBoost, LightGBM, TabNet base learners with 5-fold OOF predictions; XGBoost meta-regressor. Optuna HPO over 50 trials per model. 94.14% evaluation score. SHAP waterfall and beeswarm plots for feature interpretation."
+      relevance_signal: "CatBoost, LightGBM, XGBoost, TabNet, Optuna, SHAP, ensemble ML, regression, data science, AWS, HackerEarth"
+
+    - name: "PodcastPro"
+      description: "LangGraph state machine + Pinecone vector memory automating 70% of podcast script generation. Django REST backend, React front-end."
+      relevance_signal: "LangGraph, Pinecone, Django, React, agentic AI, vector memory, LLM automation"
+
+    - name: "Micro Event Analytics Dashboard"
+      description: "Production-deployed analytics backend: client-side events captured via REST APIs, aggregated server-side in Django, surfaced in a live JavaScript dashboard. Deployed on Render with persistent storage."
+      relevance_signal: "Django, REST API, JavaScript, analytics, PostgreSQL, Render, production deployment"
+
   education:
-    degree: "B.Tech Computer Science (IoT)"
-    institution: "Techno Main Salt Lake, Kolkata"
-    graduation: "May 2027"
+    degree: "B.E. Computer Science and Engineering"
+    institution: "Sathyabama Institute of Science and Technology, Chennai"
+    graduation: "Aug 2026"
 
-  # Location preferences
   location:
-    base: "Kolkata, India"
+    base: "Chennai, India"
     acceptable:
       - "Remote"
       - "Work from home"
-      - "Anywhere in India"           # open to relocate
-      - "gurugram"
+      - "Anywhere in India"
       - "Bangalore"
-      - "Mumbai"
       - "Hyderabad"
+      - "Mumbai"
       - "Delhi NCR"
+      - "Pune"
       - "Chennai"
-      - "Kolkata"
+      - "Gurugram"
+      - "Noida"
     hard_reject:
       - "US only"
       - "UK only"
       - "Europe only"
       - "On-site outside India"
 
-  # Industry preferences (affects bonus scoring)
   industries:
     high_priority:                   # +2 score bonus
-      - "Fintech"
-      - "Crypto"
-      - "Blockchain"
-      - "Payments"
-      - "Trading"
-      - "Banking technology"
-      - "Financial services"
+      - "Artificial Intelligence"
+      - "Generative AI"
+      - "Computer Vision"
+      - "LLM"
+      - "AI SaaS"
+      - "AI research"
+      - "Machine Learning"
+      - "Deep Learning"
+      - "NLP"
+      - "Robotics"
+      - "AgriTech"
+      - "HealthTech AI"
     medium_priority:                 # +1 score bonus
       - "SaaS"
       - "Developer tools"
-      - "Infrastructure"
+      - "Fintech"
+      - "EdTech"
       - "API-first companies"
-      - "E-commerce backend"
-      - "Cybersecurity"
-      - "DevTools"
+      - "Infrastructure"
+      - "E-commerce"
 
-  # Compensation
   salary:
-    min_stipend_inr: 10000           # per month for internships
-    min_ctc_lpa: 4.0                 # for full-time fresher roles
+    min_stipend_inr: 10000
+    min_ctc_lpa: 4.0
 
-# Hard reject rules — checked BEFORE AI, saves tokens
+# ─────────────────────────────────────────────────────────────────
+# HARD REJECT RULES
+# ─────────────────────────────────────────────────────────────────
 hard_reject:
-  max_job_age_days: 45              # Tightened: reject jobs older than 45 days
-  ats_per_company_cap: 25           # Max ATS jobs per company per run (prevents LinkedIn/Spotify dominance)
-  max_ai_jobs_per_run: 200          # Hard fallback ceiling (primary guard is token budget in scorer.py)
+  max_job_age_days: 45
+  ats_per_company_cap: 25
+  max_ai_jobs_per_run: 200
 
   experience_keywords:
-    # If ANY of these appear in the job description → immediate reject
     - "2+ years"
     - "2 years experience"
     - "3+ years"
@@ -169,112 +208,103 @@ hard_reject:
     # - "Infosys"
 
   role_blacklist:
-    # Unrelated roles that might appear in searches
-    - "Data Scientist"
-    - "Machine Learning Engineer"
-    - "ML Engineer"
-    - "DevOps Engineer"               # unless it also has backend component
+    - "DevOps Engineer"
     - "QA Engineer"
     - "Test Engineer"
     - "Business Analyst"
     - "Product Manager"
     - "UI Designer"
     - "UX Designer"
-    - "Frontend Developer"            # unless full-stack
+    - "Go Developer"
+    - "Golang Developer"
+    - "Java Developer"
+    - "Android Developer"
+    - "iOS Developer"
+    - "Ruby Developer"
+    - "PHP Developer"
+    - ".NET Developer"
+    - "Embedded Engineer"
+    - "Network Engineer"
 
 # ─────────────────────────────────────────────────────────────────
-# HIRIST.TECH — source-specific config
+# HIRIST.TECH
 # ─────────────────────────────────────────────────────────────────
 hirist:
-  # Keyword slugs to search (maps to /k/{keyword}-jobs)
   keywords:
-    - "golang"
-    - "backend-developer"
     - "python"
-    # - "node-js"
-    - "typescript"
-  # Experience range passed as URL params (?minexp / ?maxexp)
-  # For a fresher, 0-2 is the right sweet spot; broadened to 0-3 to catch
-  # 'junior' roles that occasionally list 1-3 yrs.
+    - "machine-learning"
+    - "deep-learning"
+    - "computer-vision"
+    - "generative-ai"
+    - "langchain"
+    - "nlp"
+    - "backend-developer"
+    - "django"
+    - "fastapi"
   min_exp: 0
   max_exp: 3
-  # Pages to paginate per keyword (each page ~ 10-20 cards)
   pages: 2
-  # Set true to fetch full JDs from /j/ detail pages (slower, higher quality)
   fetch_details: true
 
-# Scoring weights (used in AI prompt)
+# ─────────────────────────────────────────────────────────────────
+# SCORING WEIGHTS (used in AI prompt)
+# ─────────────────────────────────────────────────────────────────
 scoring_weights:
-  golang_mentioned: +2
-  typescript_mentioned: +1
+  python_mentioned: +2
+  langchain_langgraph_mentioned: +2
+  computer_vision_yolo_mentioned: +2
+  genai_llm_mentioned: +2
+  rag_mentioned: +2
+  fastapi_django_mentioned: +1
   backend_focused: +1
-  fintech_crypto_company: +2
+  ai_ml_company: +2
   remote_or_india: +1
-  project_stack_match: +2           # if crypto exchange / sentinel-proxy is relevant
+  project_stack_match: +2
   exact_role_match: +2
+  hackathon_winner_context: +1
   mentions_equity_esop: +0.5
-  unknown_company: -0.5             # slight penalty for no-info companies
+  unknown_company: -0.5
 
 # ─────────────────────────────────────────────────────────────────
-# RANKER WEIGHTS — heuristic pre-scorer (pipeline/ranker.py)
-#
-# These control the fast heuristic ranker that runs BEFORE Groq AI
-# scoring. Skills, domains, and project keywords are detected
-# AUTOMATICALLY from candidate.skills / industries / projects above —
-# no hardcoded preferences here. Only numeric weights live here.
-#
-# All values have in-code defaults; any key can be omitted safely.
-# Negative values are valid (penalty signals).
+# RANKER WEIGHTS
 # ─────────────────────────────────────────────────────────────────
 ranker_weights:
 
-  # ── Positive signal bonuses ──────────────────────────────────────
-  # "Primary skill" = candidate.skills.strong[0:3] (top 3 strong skills)
-  # "Secondary skill" = remaining strong + learning skills
-  primary_skill_title:    5    # Primary skill keyword found in job title
-  primary_skill_desc:     3    # Primary skill found only in description
-  secondary_skill_title:  3    # Secondary skill keyword found in title
-  secondary_skill_desc:   1    # Secondary skill found in description only
-  backend_title:          2    # Backend / REST API / microservice in title
-  backend_desc:           1    # Backend keyword in description only
-  fresher_title:          2    # Intern / fresher / junior / entry-level in title
-  high_priority_domain:   3    # High-priority industry domain (from industries.high_priority)
-  med_priority_domain:    1    # Medium-priority industry domain (from industries.medium_priority)
-  project_signal_per_hit: 2    # Bonus per matching project relevance keyword
-  project_signal_max:     4    # Cap on total project-signal bonus
-  desc_quality:           1    # Bonus when description ≥ desc_quality_min_chars
-  desc_quality_min_chars: 200  # Chars threshold to earn the desc_quality bonus
-  has_date:               1    # Job has any posted_at value (data quality signal)
+  primary_skill_title:    5
+  primary_skill_desc:     3
+  secondary_skill_title:  3
+  secondary_skill_desc:   1
+  backend_title:          2
+  backend_desc:           1
+  fresher_title:          2
+  high_priority_domain:   3
+  med_priority_domain:    1
+  project_signal_per_hit: 2
+  project_signal_max:     6    # raised from 4 — you have 7 projects with rich signals
+  desc_quality:           1
+  desc_quality_min_chars: 200
+  has_date:               1
 
-  # ── Recency bonuses ──────────────────────────────────────────────
-  # Day boundaries are fixed at 7 / 14 / 30 in the regex fast-path.
-  # Only the bonus values are configurable here.
-  recency_7d:             4    # Posted within 7 days
-  recency_14d:            2    # Posted within 14 days
-  recency_30d:            1    # Posted within 30 days
+  recency_7d:             4
+  recency_14d:            2
+  recency_30d:            1
 
-  # ── Penalty signals (Approach 1) ─────────────────────────────────
-  # Negative values push weak jobs further down the queue.
-  penalty_no_skill_match:   -3  # No candidate skill keyword anywhere in job text
-  penalty_generic_title:    -2  # Title has no recognisable tech/role signal
-  penalty_bodyshop_company: -1  # Company looks like a staffing / outsourcing firm
-  penalty_ats_stub_desc:    -2  # ATS job with description shorter than threshold
-  ats_stub_desc_threshold:  300 # Min chars for ATS description to avoid stub penalty
+  penalty_no_skill_match:   -3
+  penalty_generic_title:    -2
+  penalty_bodyshop_company: -1
+  penalty_ats_stub_desc:    -2
+  ats_stub_desc_threshold:  300
 
-  # ── Synergy bonuses (Approach 1) ─────────────────────────────────
-  # High-precision combos the AI consistently scores ≥9.
-  synergy_skill_domain:   3    # Primary skill AND a high-priority domain both present
-  synergy_skill_project:  2    # Primary skill AND a project relevance signal both present
+  synergy_skill_domain:   3
+  synergy_skill_project:  2
 
-  # ── Source-aware adjustments (Approach 2) ────────────────────────
-  # Applied AFTER all other scoring to reflect data quality per source.
-  source_internshala_stipend_bonus:  2      # Internshala job + stipend ≥ min below
-  source_internshala_stipend_min:    10000  # INR/month threshold for stipend bonus
-  source_freshers_blog_batch_bonus:  1      # freshers_blogs job + matching batch tag
-  source_freshers_blog_batches:             # Graduation years that match the candidate
+  source_internshala_stipend_bonus:  2
+  source_internshala_stipend_min:    10000
+  source_freshers_blog_batch_bonus:  1
+  source_freshers_blog_batches:
     - 2025
     - 2026
     - 2027
-  source_naukri_stub_penalty:       -1     # Naukri job with stub description (lazy-fetch pending)
-  source_naukri_stub_threshold:      150   # Chars below which Naukri desc is treated as a stub
-  source_serper_penalty:            -1     # Serper dork result (variable title/desc quality)
+  source_naukri_stub_penalty:       -1
+  source_naukri_stub_threshold:      150
+  source_serper_penalty:            -1
