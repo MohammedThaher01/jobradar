@@ -115,6 +115,31 @@ def notify_urgent_jobs(urgent_jobs: list[dict], chat_id: str = ""):
     _send_email(subject, html)
 
 
+def notify_digest_jobs(digest_jobs: list[dict], chat_id: str = ""):
+    """Send a digest email with top 15 medium-priority jobs (score 5-7)."""
+    if not digest_jobs:
+        return
+
+    top_jobs = sorted(digest_jobs, key=lambda j: j.get("score", 0), reverse=True)[:15]
+
+    now = datetime.now(IST)
+    date_str = now.strftime("%-d %b %Y")
+    time_str = now.strftime("%H:%M")
+
+    jobs_html = "".join(_format_job_html(job) for job in top_jobs)
+
+    html = f"""
+    <div style="font-family:sans-serif; max-width:700px; margin:auto;">
+        <h1 style="color:#f57c00;">💡 JobRadar Digest — Top {len(top_jobs)} to Review</h1>
+        <p style="color:#555;">{date_str} · {time_str} IST</p>
+        {jobs_html}
+    </div>
+    """
+
+    subject = f"💡 JobRadar Digest: {len(top_jobs)} jobs to review — {date_str}"
+    _send_email(subject, html)
+
+
 def send_session_divider(
     total_raw: int,
     passed:    int,

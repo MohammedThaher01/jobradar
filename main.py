@@ -6,14 +6,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ─────────────────────────────────────────────────────────────────
-# CLI ARGS — parsed before imports so logging can be per-user
-#
-# Usage:
-#   python main.py                    # defaults to profile.yaml
-#   python main.py profile.yaml
-#   python main.py profile.yaml --dry-run
-# ─────────────────────────────────────────────────────────────────
 _profile_path = "profile.yaml"
 _dry_run = False
 for _arg in sys.argv[1:]:
@@ -22,23 +14,17 @@ for _arg in sys.argv[1:]:
     elif not _arg.startswith("--"):
         _profile_path = _arg
 
-# Derive a short username from the profile filename for per-user log naming
-# e.g. "profile.yaml" → "profile"
 _username = os.path.splitext(os.path.basename(_profile_path))[0]
 
-# Ensure data/ exists before FileHandler tries to open the log file
 os.makedirs("data", exist_ok=True)
 
-# Force UTF-8 on Windows console to prevent cp1252 UnicodeEncodeError
 stream_handler = logging.StreamHandler(stream=open(
     sys.stdout.fileno(), 'w', encoding='utf-8', closefd=False
 ))
 
-# Per-user rotating log: data/<username>.log
-# max 1 MB per file, keep last 3 files — prevents unbounded growth on AWS
 file_handler = RotatingFileHandler(
     f"data/{_username}.log",
-    maxBytes   = 1 * 1024 * 1024,   # 1 MB
+    maxBytes   = 1 * 1024 * 1024,
     backupCount= 3,
     encoding   = "utf-8",
 )
@@ -68,11 +54,10 @@ from sources.remoteok import fetch_remoteok
 from pipeline.dedup import deduplicate
 from pipeline.prefilter import prefilter, load_profile
 from pipeline.scorer import score_all
-from notify.telegram_bot import notify_urgent_jobs, send_session_divider
+from notify.telegram_bot import notify_urgent_jobs, notify_digest_jobs, send_session_divider
 
 
 def _print_dry_run_summary(profile: dict, db_path: str, chat_id: str, profile_path: str):
-    """Print a config summary and exit — no API calls made."""
     candidate = profile.get("candidate", {})
     sources   = profile.get("sources", {})
     enabled   = [s for s, v in sources.items() if isinstance(v, bool) and v]
@@ -104,7 +89,6 @@ def run(profile_path: str, dry_run: bool = False):
     logger.info(f"JobRadar pipeline starting — profile: {profile_path}")
     logger.info("=" * 50)
 
-    # ── Setup: load profile, extract per-user routing info ───────────────────
     profile = load_profile(profile_path)
     db_path = profile.get("db_path", f"data/{_username}.db")
     chat_id = str(
@@ -119,7 +103,6 @@ def run(profile_path: str, dry_run: bool = False):
             "Telegram notifications will fail"
         )
 
-    # ── Dry-run: validate config and exit without hitting any APIs ────────────
     if dry_run:
         logger.info("Dry run requested — skipping all API calls")
         _print_dry_run_summary(profile, db_path, chat_id, profile_path)
@@ -127,16 +110,12 @@ def run(profile_path: str, dry_run: bool = False):
 
     companies = load_companies()
 
-    # ── SOURCE LAYER ──────────────────────────────────────────────────────────
-    # Control which sources run via profile.yaml `sources:` block.
     sources_cfg = profile.get("sources", {})
 
     def source_enabled(name: str) -> bool:
-        """Returns True unless the source is explicitly set to false.
-        Non-boolean config keys (like serper_max_calls) are ignored."""
         val = sources_cfg.get(name, True)
         if not isinstance(val, bool):
-            return True     # not a toggle — treat as enabled
+            return True
         if not val:
             logger.info(f"--- Skipping {name} (disabled in profile) ---")
         return val
@@ -202,11 +181,8 @@ def run(profile_path: str, dry_run: bool = False):
     total_raw = len(raw_jobs)
     logger.info(f"Total raw jobs from all sources: {total_raw}")
 
-    # ── DEDUPLICATION ─────────────────────────────────────────────────────────
     new_jobs = deduplicate(raw_jobs, db_path)
 
-    # ── PRE-FILTER ────────────────────────────────────────────────────────────
-    # Drops ~90% of remaining jobs with zero AI cost
     eligible_jobs = prefilter(new_jobs, profile)
 
     if not eligible_jobs:
@@ -214,20 +190,17 @@ def run(profile_path: str, dry_run: bool = False):
         send_session_divider(total_raw=total_raw, passed=0, scored=0, urgent=0, chat_id=chat_id)
         return
 
-    # ── AI SCORING ────────────────────────────────────────────────────────────
-    # score_all() handles:
-    #   1. Heuristic relevance ranking (best-fit jobs scored first)
-    #   2. Token budget guard (stops before hitting Groq's 30K TPM)
-    #   3. Hard fallback cap (max_ai_jobs_per_run in profile.yaml)
     urgent_jobs, digest_jobs, low_jobs = score_all(eligible_jobs, profile, db_path)
 
     # ── NOTIFICATIONS ─────────────────────────────────────────────────────────
     if urgent_jobs:
-        logger.info(f"Sending {len(urgent_jobs)} urgent Telegram alerts")
+        logger.info(f"Sending {len(urgent_jobs)} urgent email alerts")
         notify_urgent_jobs(urgent_jobs, chat_id)
 
-    # Session-end divider — always the last message, carries stats for the run.
-    # Sent even when urgent=0 so there's always a visible session boundary.
+    if digest_jobs:
+        logger.info(f"Sending digest email with top jobs from {len(digest_jobs)} medium-priority")
+        notify_digest_jobs(digest_jobs, chat_id)
+
     scored_count = len(urgent_jobs) + len(digest_jobs) + len(low_jobs)
     send_session_divider(
         total_raw = total_raw,
