@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -22,8 +24,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Playwright browsers (needed by scrapling)
+      - name: Install Playwright browsers
         run: playwright install --with-deps chromium
+
+      - name: Ensure data directory exists
+        run: |
+          mkdir -p data
+          touch data/.gitkeep
 
       - name: Run JobRadar
         env:
@@ -33,3 +40,11 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECEIVER: ${{ secrets.EMAIL_RECEIVER }}
         run: python main.py profile.yaml
+
+      - name: Persist database back to repo
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: update job database [skip ci]"
+          git push
