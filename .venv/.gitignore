@@ -1,0 +1,31 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+*
+
+# Unignore tracked project files
+!.gitignore
+!.gitattributes
+!*.py
+!*.yaml
+!*.yml
+!*.md
+!*.sh
+!*.txt
+!*.jpg
+!*.png
+!requirements.txt
+!LICENSE
+!CONTRIBUTING.md
+
+# Unignore directories
+!.github/
+!.github/workflows/
+!docs/
+!notify/
+!pipeline/
+!sources/
+!storage/
+
+# Allow data directory for DB persistence
+!data/
+data/*
+!data/.gitkeep
