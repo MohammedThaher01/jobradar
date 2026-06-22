@@ -49,25 +49,32 @@ _FEW_SHOT_EXAMPLES = """
 ## CALIBRATION EXAMPLES (use these to anchor your scoring scale)
 
 ### Example A — Score 9 (near-perfect match)
-Job: "Backend Intern – Go/Golang" at Koinbase (crypto exchange), Bangalore/Remote
-Description excerpt: "We're building a high-throughput order matching engine in Go.
-  You'll work on our gRPC microservices, PostgreSQL schemas, and Redis caching layer.
-  0–1 years experience. Stipend: ₹25,000/month. Apply before July 2026."
+Job: "AI/ML Intern" at Sarvam AI, Bangalore/Remote
+Description excerpt: "We are building India's sovereign LLM. Looking for a fresher
+  to work on RAG pipelines, LangChain agents, and fine-tuning open-source models.
+  0-1 years experience. Stipend: Rs.20,000/month."
 → Correct score: 9
-→ Reasoning: Golang + gRPC + PostgreSQL + Redis = exact stack match. Crypto/fintech
-  domain matches Zaraba project signal. Remote/Bangalore is acceptable. Fresher role.
-  Stipend above minimum. Only reason it isn't 10: no mention of equity/ESOPs and
-  company is less well-known.
+→ Reasoning: RAG + LangChain + LLM fine-tuning = exact stack match. Indian AI company
+  is high-priority domain. Remote/Bangalore acceptable. Fresher role with good stipend.
 → apply_urgency: "high"
 
-### Example B — Score 3 (tech role, poor fit)
-Job: "Junior DevOps Engineer" at TechCorp, Pune (on-site)
-Description excerpt: "2+ years with AWS, Terraform, Jenkins CI/CD pipelines required.
-  Must have experience managing production Kubernetes clusters."
+### Example B — Score 3 (looks relevant, actually not)
+Job: "Python and Kubernetes Software Engineer - Data, Workflows, AI/ML" at Canonical
+Description excerpt: "3+ years of Python experience required. Must have production
+  Kubernetes cluster management experience. Enterprise Linux packaging knowledge needed."
 → Correct score: 3
-→ Reasoning: DevOps is on the role blacklist. Requires 2+ years experience (hard
-  reject signal). On-site Pune is borderline acceptable but the experience requirement
-  alone makes this unfit. Terraform/Jenkins are not in the candidate's stack.
+→ Reasoning: Despite Python and AI/ML in title, this requires 3+ years experience
+  which is a hard reject. Kubernetes cluster management is not the candidate's stack.
+  Enterprise Linux packaging is irrelevant. Not a fresher or intern role.
+→ apply_urgency: "low"
+
+### Example C — Score 2 (experience mismatch)
+Job: "Applied AI Engineer" at HackerRank, Hybrid Bengaluru
+Description excerpt: "1-4 years of software engineering experience required.
+  Must have shipped ML models to production."
+→ Correct score: 2
+→ Reasoning: Requires 1-4 years experience — hard reject for a fresher. 'Applied AI
+  Engineer' sounds relevant but the experience bar makes it unfit.
 → apply_urgency: "low"
 """
 
@@ -121,40 +128,49 @@ Job Description:
 ## SCORING RULES
 
 Score 1-10 (use the calibration examples in the system prompt as anchors):
-- 10 = Perfect match (AI/ML/GenAI/CV intern or fresher + India/Remote + strong stack match)
-- 8-9 = Very strong (AI/ML/GenAI/CV/Backend intern, Python + relevant frameworks, relevant company)
-- 6-7 = Good (backend adjacent or AI adjacent, potentially relevant, worth applying)
-- 4-5 = Weak (tangentially related)
-- 1-3 = Not relevant
+- 10 = Perfect match (AI/ML/GenAI/CV intern or fresher + India/Remote + strong stack match + stipend mentioned)
+- 8-9 = Very strong (AI/ML/GenAI/CV intern or fresher role, Python + relevant frameworks, India/Remote, stipend mentioned or implied)
+- 6-7 = Good (backend or AI adjacent, potentially relevant, worth applying, fresher-friendly)
+- 4-5 = Weak (tangentially related, experience mismatch, or missing key signals)
+- 1-3 = Not relevant, experience too high, wrong role, or outside India with no remote option
 
-Mandatory rules — apply in this exact order, override scoring bonuses:
-1. EXPIRY CHECK (highest priority): If the description contains ANY of these signals—
-   application closed / hiring closed / recruitment closed / position filled /
-   no longer accepting / deadline has passed / last date was [past date]—
-   set score=1, apply_urgency="expired", expired=true. Do NOT apply any bonuses.
-2. Requires >1 year experience: score 1-2 (pre-filter miss, still log it)
-3. Location is outside India AND in-office only: score=1
-4. Post is older than 2 months (check posted dates in description): score 1-3
-5. No stipend mentioned or explicitly unpaid: -2 penalty
-6. Python mentioned in a relevant context: +2 to base score
-7. LangChain / LangGraph / RAG / LLM mentioned: +2 to base score
-8. YOLOv8 / OpenCV / Computer Vision mentioned: +2 to base score
-9. FastAPI / Django backend role: +1 to base score
-10. AI/ML/GenAI company: +2 to base score
-11. Any of candidate's projects are directly relevant: +2 to base score
-12. Internshala source with matching stipend (>=10000 INR/month): slight bonus
+MANDATORY HARD RULES — apply these first, they override all bonuses:
+1. EXPIRY CHECK: If description contains application closed / hiring closed / position filled /
+   no longer accepting / deadline has passed → score=1, apply_urgency="expired", expired=true
+2. Requires >1 year experience explicitly → score MAX 3, apply_urgency="low"
+3. Requires 1+ years experience → score MAX 4, apply_urgency="low"
+4. Role is DevOps, QA, Test, Android, iOS, .NET, Golang, Java Developer → score=1
+5. Location is outside India AND strictly on-site only → score=1
+6. Post older than 2 months → score MAX 3
 
-TOKEN SAVING RULES — IMPORTANT:
-- If score < 6: set reason="", highlights=[], red_flags=[] — write nothing for these fields.
-- If score >= 6: fill in reason, highlights, and red_flags normally.
+SCORING BONUSES (only apply if hard rules don't cap the score):
++ Python in a relevant AI/ML/backend context: +2
++ LangChain / LangGraph / RAG / LLM / GenAI mentioned: +2
++ YOLOv8 / OpenCV / Computer Vision / Object Detection: +2
++ FastAPI / Django backend role: +1
++ AI/ML/GenAI company or product: +2
++ Candidate's projects directly relevant: +2
++ Explicitly fresher / 0-1 years / intern role: +1
++ Stipend >= Rs.10,000/month mentioned: +1
++ Remote or India location confirmed: +1
 
-Return ONLY a valid JSON object, no markdown fences:
+PENALTIES:
+- No stipend mentioned AND not a well-known company: -1
+- Explicitly unpaid / no stipend / volunteer: -3
+- Requires frontend-only skills (React, Angular) with no backend/AI: -2
+- Vague job description under 200 chars: -1
+
+TOKEN SAVING RULES:
+- If score < 6: set reason="", highlights=[], red_flags=[]
+- If score >= 6: fill reason, highlights, red_flags normally
+
+Return ONLY valid JSON, no markdown fences:
 {{
   "score": <integer 1-10>,
-  "expired": <true if application is closed/deadline passed, false otherwise>,
+  "expired": <true/false>,
   "reason": "<2-3 sentences IF score>=6, else empty string>",
-  "highlights": ["<reason 1>", "<reason 2>", "<reason 3> — IF score>=6, else []"],
-  "red_flags": ["<issue if any> — IF score>=6, else []"],
+  "highlights": ["<reason 1>", "<reason 2>", "<reason 3>"],
+  "red_flags": ["<issue if any>"],
   "python_match": <true/false>,
   "ai_match": <true/false>,
   "apply_urgency": "<high/medium/low/expired>",
@@ -219,8 +235,10 @@ def score_job(job: dict, profile: dict) -> dict:
                 {
                     "role": "system",
                     "content": (
-                        "You are a precise job relevance scorer. "
-                        "Always respond with valid JSON only, no markdown.\n"
+                        "You are a precise job relevance scorer for an AI/ML fresher candidate. "
+                        "Always respond with valid JSON only, no markdown. "
+                        "Be strict about experience requirements — if a job requires more than 1 year "
+                        "of experience, it must score 3 or below regardless of tech stack match.\n"
                         + _FEW_SHOT_EXAMPLES
                     ),
                 },
@@ -307,13 +325,11 @@ def score_all(
     )
 
     for job in jobs:
-        # ── Skip jobs already notified in a previous run ──────────────────
         if is_already_notified(job, db_path):
             skipped_notified += 1
             logger.debug(f"Already notified, skipping: {job.get('title','?')} @ {job.get('company','?')}")
             continue
 
-        # ── Token budget check ─────────────────────────────────────────────
         job_tokens = _estimate_prompt_tokens(job)
         if tokens_used + job_tokens > TOKEN_BUDGET_PER_RUN:
             budget_skipped += 1
@@ -329,11 +345,10 @@ def score_all(
             expired_count += 1
             continue
 
-        # Bucket first, then persist with correct notified flag
         if scored_job["score"] >= 8:
             urgent.append(scored_job)
             notified_flag = 1
-        elif scored_job["score"] >= 6:
+        elif scored_job["score"] >= 7:
             digest.append(scored_job)
             notified_flag = 2
         else:
