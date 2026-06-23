@@ -45,6 +45,6 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add data/
+          git add -f data/
           git diff --staged --quiet || git commit -m "chore: update job database [skip ci]"
           git push
