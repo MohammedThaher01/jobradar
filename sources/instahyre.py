@@ -17,18 +17,25 @@ logger = logging.getLogger(__name__)
 # }
 # API_PARAMS = {
 #     "format":     "json",
-#     "skills":     "golang,go,backend",
+#     "skills":     "python,machine-learning,deep-learning,computer-vision,nlp,langchain,django,fastapi",
 #     "experience": "0,1",
-#     "locations":  "work-from-home,bangalore,mumbai,hyderabad",
+#     "locations":  "work-from-home,bangalore,mumbai,hyderabad,chennai",
 #     "limit":      50,
 #     "offset":     0,
 # }
 
 # Search URLs for the Scrapling scraper — one per skill/filter combo
 _SCRAPE_URLS = [
-    "https://www.instahyre.com/jobs/?skills=golang&exp=0-1",
-    "https://www.instahyre.com/jobs/?skills=backend&exp=0-1",
-    "https://www.instahyre.com/jobs/?skills=typescript&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=python&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=machine-learning&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=deep-learning&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=artificial-intelligence&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=computer-vision&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=nlp&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=langchain&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=django&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=fastapi&exp=0-1",
+    "https://www.instahyre.com/jobs/?skills=pytorch&exp=0-1",
 ]
 
 

@@ -6,8 +6,8 @@
 # ─────────────────────────────────────────────────────────────────
 sources:
   ats:            true
-  cutshort:       false
-  instahyre:      false
+  cutshort:       true
+  instahyre:      true
   wellfound:      false
   serper:         true
   hackernews:     false
@@ -16,7 +16,7 @@ sources:
   yc:             true
   freshers_blogs: true
   naukri:         true
-  hirist:         false
+  hirist:         true
   jobicy:         true
   remoteok:       true
 
@@ -45,6 +45,8 @@ candidate:
       - "SDE Intern"
       - "Software Developer Fresher"
       - "AI Product Intern"
+      - "MLOps Intern"
+      - "Prompt Engineer Intern"
 
   experience:
     years: 0
@@ -64,13 +66,21 @@ candidate:
       - "LangChain"
       - "LangGraph"
       - "RAG"
+      - "LLMs"
+      - "NLP"
+      - "Fine-tuning"
+      - "Prompt Engineering"
+      - "Vector Databases"
+      - "Multimodal AI"
       - "YOLOv8"
       - "OpenCV"
+      - "Object Detection"
+      - "EfficientNet"
       - "FastAPI"
       - "Django"
+      - "Flask"
       - "PyTorch"
       - "TensorFlow"
-      - "EfficientNet"
       - "FAISS"
       - "Pinecone"
       - "OpenAI API"
@@ -80,16 +90,21 @@ candidate:
       - "Streamlit"
       - "REST APIs"
       - "PostgreSQL"
+      - "MongoDB"
+      - "Redis"
       - "Docker"
       - "Git"
+      - "AWS"
       - "Scikit-learn"
       - "XGBoost"
       - "CatBoost"
       - "LightGBM"
       - "SHAP"
       - "Optuna"
+      - "MLOps"
     learning:
-      - "AWS"
+      - "GCP"
+      - "CI/CD"
       - "Kubernetes"
       - "LangSmith"
       - "Vertex AI"
@@ -149,7 +164,7 @@ candidate:
       - "On-site outside India"
 
   industries:
-    high_priority:                   # +2 score bonus
+    high_priority:
       - "Artificial Intelligence"
       - "Generative AI"
       - "Computer Vision"
@@ -162,7 +177,8 @@ candidate:
       - "Robotics"
       - "AgriTech"
       - "HealthTech AI"
-    medium_priority:                 # +1 score bonus
+      - "MLOps"
+    medium_priority:
       - "SaaS"
       - "Developer tools"
       - "Fintech"
@@ -203,6 +219,14 @@ hard_reject:
     - "principal engineer"
     - "staff engineer"
 
+  keyword_blacklist:
+    - "unpaid"
+    - "no stipend"
+    - "without stipend"
+    - "volunteer"
+    - "academic credit only"
+    - "certificate only"
+
   company_blacklist:
     # - "TCS"
     # - "Infosys"
@@ -231,6 +255,7 @@ hard_reject:
 # ─────────────────────────────────────────────────────────────────
 hirist:
   keywords:
+    # GenAI, LLMs & Agents
     - "python"
     - "machine-learning"
     - "deep-learning"
@@ -238,9 +263,48 @@ hirist:
     - "generative-ai"
     - "langchain"
     - "nlp"
+    - "llm"
+    - "rag"
+    - "langgraph"
+    - "hugging-face"
+    - "prompt-engineering"
+    - "vector-database"
+    - "pinecone"
+    - "openai"
+    - "fine-tuning"
+    - "multimodal"
+    # Backend
     - "backend-developer"
     - "django"
     - "fastapi"
+    - "flask"
+    - "rest-api"
+    - "postgresql"
+    - "mongodb"
+    - "sql"
+    - "redis"
+    - "aws"
+    - "gcp"
+    # Vision & Frameworks
+    - "yolo"
+    - "opencv"
+    - "object-detection"
+    - "pytorch"
+    - "tensorflow"
+    # Classical ML
+    - "data-science"
+    - "xgboost"
+    - "scikit-learn"
+    - "lightgbm"
+    - "catboost"
+    - "mlops"
+    # Deployment & Tools
+    - "docker"
+    - "git"
+    - "ci-cd"
+    - "gradio"
+    - "streamlit"
+    - "model-deployment"
   min_exp: 0
   max_exp: 3
   pages: 2
@@ -261,7 +325,6 @@ scoring_weights:
   remote_or_india: +1
   project_stack_match: +2
   exact_role_match: +2
-  hackathon_winner_context: +1
   mentions_equity_esop: +0.5
   unknown_company: -0.5
 
@@ -280,7 +343,7 @@ ranker_weights:
   high_priority_domain:   3
   med_priority_domain:    1
   project_signal_per_hit: 2
-  project_signal_max:     6    # raised from 4 — you have 7 projects with rich signals
+  project_signal_max:     6
   desc_quality:           1
   desc_quality_min_chars: 200
   has_date:               1

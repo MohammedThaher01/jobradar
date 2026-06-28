@@ -5,13 +5,16 @@ logger = logging.getLogger(__name__)
 
 # Search queries tuned for backend intern/fresher in India
 CUTSHORT_QUERIES = [
-    "golang backend intern",
-    "backend developer intern",
-    "software engineer intern golang",
-    "backend engineer fresher",
-    "go developer fresher india",
-    "backend intern fintech",
-    "full stack intern golang",
+    "AI intern india",
+    "machine learning intern india",
+    "generative AI intern",
+    "LLM engineer intern india",
+    "computer vision intern india",
+    "python backend intern india",
+    "deep learning intern india",
+    "NLP intern india",
+    "RAG langchain intern",
+    "AI ML fresher india",
 ]
 
 BASE_URL = "https://cutshort.io/jobs"
