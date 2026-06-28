@@ -1,12 +1,15 @@
 import logging
-from scrapling.fetchers import DynamicFetcher  # JS-heavy, needs full browser
+from scrapling.fetchers import StealthyFetcher
 
 logger = logging.getLogger(__name__)
 
 SEARCH_URLS = [
-    "https://wellfound.com/jobs?q=golang+backend+intern&l=India&remote=true",
-    "https://wellfound.com/jobs?q=backend+engineer+intern&l=India&remote=true",
-    "https://wellfound.com/jobs?q=go+developer+fresher&remote=true",
+    "https://wellfound.com/jobs?q=machine+learning+intern&l=India&remote=true",
+    "https://wellfound.com/jobs?q=AI+intern&l=India&remote=true",
+    "https://wellfound.com/jobs?q=python+backend+intern&l=India&remote=true",
+    "https://wellfound.com/jobs?q=generative+AI+intern&remote=true",
+    "https://wellfound.com/jobs?q=computer+vision+intern&l=India&remote=true",
+    "https://wellfound.com/jobs?q=LLM+engineer+intern&remote=true",
 ]
 
 
@@ -20,7 +23,7 @@ def fetch_wellfound() -> list[dict]:
 
     for url in SEARCH_URLS:
         try:
-            page = DynamicFetcher.fetch(url, headless=True, network_idle=True)
+            page = StealthyFetcher.fetch(url, headless=True, network_idle=True)
             
             # Wellfound job cards
             cards = page.css("[data-test='StartupResult'], .job-listing, [class*='JobResult']")
