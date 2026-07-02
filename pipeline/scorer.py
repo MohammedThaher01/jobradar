@@ -348,7 +348,7 @@ def score_all(
         if scored_job["score"] >= 8:
             urgent.append(scored_job)
             notified_flag = 1
-        elif scored_job["score"] >= 7:
+        elif scored_job["score"] >= 6:
             digest.append(scored_job)
             notified_flag = 2
         else:
