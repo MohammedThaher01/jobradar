@@ -4304,3 +4304,581 @@
 2026-07-11 06:26:00,166 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 98 to review — 11 Jul 2026
 2026-07-11 06:26:00,167 [INFO] jobradar: Pipeline complete.
 2026-07-11 06:26:00,167 [INFO] jobradar: Summary: 8360 raw -> 7577 new -> 701 eligible -> 0 urgent
+2026-07-11 10:42:43,276 [INFO] jobradar: ==================================================
+2026-07-11 10:42:43,276 [INFO] jobradar: JobRadar pipeline starting — profile: profile.yaml
+2026-07-11 10:42:43,276 [INFO] jobradar: ==================================================
+2026-07-11 10:42:43,291 [WARNING] jobradar: telegram_chat_id is not set in profile or TELEGRAM_CHAT_ID env var — Telegram notifications will fail
+2026-07-11 10:42:43,296 [INFO] jobradar: --- Fetching ATS endpoints (Greenhouse US/EU, Lever, Ashby, Workable) ---
+2026-07-11 10:42:43,548 [INFO] sources.ats: Greenhouse US razorpaysoftwareprivatelimited: 25 jobs
+2026-07-11 10:42:43,694 [INFO] sources.ats: Greenhouse US phonepe: 53 jobs
+2026-07-11 10:42:43,799 [INFO] sources.ats: Greenhouse US twitch: 65 jobs
+2026-07-11 10:42:44,076 [INFO] sources.ats: Greenhouse US airbnb: 210 jobs
+2026-07-11 10:42:44,306 [INFO] sources.ats: Greenhouse US postman: 121 jobs
+2026-07-11 10:42:44,451 [INFO] sources.ats: Greenhouse US faire: 75 jobs
+2026-07-11 10:42:44,695 [INFO] sources.ats: Greenhouse US duolingo: 66 jobs
+2026-07-11 10:42:44,885 [INFO] sources.ats: Greenhouse US scaleai: 184 jobs
+2026-07-11 10:42:45,121 [INFO] sources.ats: Greenhouse US appian: 175 jobs
+2026-07-11 10:42:45,187 [INFO] sources.ats: Greenhouse US blenheimchalcot: 1 jobs
+2026-07-11 10:42:45,280 [INFO] sources.ats: Greenhouse US nasuni: 37 jobs
+2026-07-11 10:42:45,436 [INFO] sources.ats: Greenhouse US crunchyroll: 80 jobs
+2026-07-11 10:42:45,527 [INFO] sources.ats: Greenhouse US slice: 69 jobs
+2026-07-11 10:42:45,619 [INFO] sources.ats: Greenhouse US highradius: 66 jobs
+2026-07-11 10:42:45,714 [INFO] sources.ats: Greenhouse US pine: 1 jobs
+2026-07-11 10:42:45,801 [INFO] sources.ats: Greenhouse US karbon: 29 jobs
+2026-07-11 10:42:45,883 [WARNING] sources.ats: Greenhouse US fetch failed for loop: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/loop/jobs?content=true
+2026-07-11 10:42:45,884 [INFO] sources.ats: Greenhouse US loop: 0 jobs
+2026-07-11 10:42:45,980 [INFO] sources.ats: Greenhouse US glance: 38 jobs
+2026-07-11 10:42:46,138 [INFO] sources.ats: Greenhouse US inmobi: 67 jobs
+2026-07-11 10:42:46,221 [INFO] sources.ats: Greenhouse US druva: 26 jobs
+2026-07-11 10:42:46,448 [INFO] sources.ats: Greenhouse US zenoti: 47 jobs
+2026-07-11 10:42:46,541 [INFO] sources.ats: Greenhouse US route: 4 jobs
+2026-07-11 10:42:46,637 [INFO] sources.ats: Greenhouse US hackerrank: 36 jobs
+2026-07-11 10:42:46,974 [INFO] sources.ats: Greenhouse US zscaler: 340 jobs
+2026-07-11 10:42:47,246 [INFO] sources.ats: Greenhouse US cloudflare: 249 jobs
+2026-07-11 10:42:47,545 [INFO] sources.ats: Greenhouse US stripe: 510 jobs
+2026-07-11 10:42:47,715 [INFO] sources.ats: Greenhouse US twilio: 157 jobs
+2026-07-11 10:42:48,050 [INFO] sources.ats: Greenhouse US mongodb: 388 jobs
+2026-07-11 10:42:48,267 [INFO] sources.ats: Greenhouse US elastic: 183 jobs
+2026-07-11 10:42:48,806 [INFO] sources.ats: Greenhouse US databricks: 786 jobs
+2026-07-11 10:42:48,997 [INFO] sources.ats: Greenhouse US grafanalabs: 106 jobs
+2026-07-11 10:42:49,319 [INFO] sources.ats: Greenhouse US datadog: 423 jobs
+2026-07-11 10:42:49,419 [INFO] sources.ats: Greenhouse US newrelic: 59 jobs
+2026-07-11 10:42:49,499 [INFO] sources.ats: Greenhouse US sumologic: 24 jobs
+2026-07-11 10:42:49,571 [INFO] sources.ats: Greenhouse US pagerduty: 15 jobs
+2026-07-11 10:42:49,674 [INFO] sources.ats: Greenhouse US cribl: 53 jobs
+2026-07-11 10:42:49,768 [INFO] sources.ats: Greenhouse US jfrog: 52 jobs
+2026-07-11 10:42:49,835 [INFO] sources.ats: Greenhouse US orcasecurity: 5 jobs
+2026-07-11 10:42:50,035 [INFO] sources.ats: Greenhouse US gitlab: 151 jobs
+2026-07-11 10:42:50,149 [INFO] sources.ats: Greenhouse US circleci: 10 jobs
+2026-07-11 10:42:50,217 [INFO] sources.ats: Greenhouse US buildkite: 10 jobs
+2026-07-11 10:42:50,305 [INFO] sources.ats: Greenhouse US airtable: 37 jobs
+2026-07-11 10:42:50,492 [INFO] sources.ats: Greenhouse US figma: 171 jobs
+2026-07-11 10:42:50,557 [INFO] sources.ats: Greenhouse US coursera: 12 jobs
+2026-07-11 10:42:50,623 [INFO] sources.ats: Greenhouse US udemy: 5 jobs
+2026-07-11 10:42:50,893 [INFO] sources.ats: Greenhouse US canonical: 300 jobs
+2026-07-11 10:42:51,248 [INFO] sources.ats: Greenhouse US remotecom: 281 jobs
+2026-07-11 10:42:51,394 [INFO] sources.ats: Greenhouse US turing: 26 jobs
+2026-07-11 10:42:51,463 [INFO] sources.ats: Greenhouse US upwork: 11 jobs
+2026-07-11 10:42:51,535 [INFO] sources.ats: Greenhouse US planetscale: 12 jobs
+2026-07-11 10:42:51,602 [INFO] sources.ats: Greenhouse US newton: 1 jobs
+2026-07-11 10:42:51,758 [INFO] sources.ats: Greenhouse US stage: 156 jobs
+2026-07-11 10:42:52,050 [INFO] sources.ats: Greenhouse EU groww: 15 jobs
+2026-07-11 10:42:53,068 [INFO] sources.ats: Lever meesho: 44 jobs
+2026-07-11 10:42:53,901 [INFO] sources.ats: Lever hevodata: 41 jobs
+2026-07-11 10:42:54,804 [INFO] sources.ats: Lever stable-money1: 19 jobs
+2026-07-11 10:42:55,286 [INFO] sources.ats: Lever linkedin: 20 jobs
+2026-07-11 10:42:56,679 [INFO] sources.ats: Lever paytm: 228 jobs
+2026-07-11 10:42:57,772 [INFO] sources.ats: Lever spotify: 110 jobs
+2026-07-11 10:42:59,112 [INFO] sources.ats: Lever binance: 273 jobs
+2026-07-11 10:43:00,450 [INFO] sources.ats: Lever nium: 34 jobs
+2026-07-11 10:43:00,994 [INFO] sources.ats: Lever 100ms: 10 jobs
+2026-07-11 10:43:01,928 [INFO] sources.ats: Lever GoToGroup: 44 jobs
+2026-07-11 10:43:12,104 [INFO] sources.ats: Lever cred: 5 jobs
+2026-07-11 10:43:13,377 [INFO] sources.ats: Lever fi: 7 jobs
+2026-07-11 10:43:14,482 [INFO] sources.ats: Lever capital: 49 jobs
+2026-07-11 10:43:15,249 [INFO] sources.ats: Lever porter: 19 jobs
+2026-07-11 10:43:15,996 [INFO] sources.ats: Lever mindtickle: 21 jobs
+2026-07-11 10:43:17,063 [INFO] sources.ats: Lever belong: 44 jobs
+2026-07-11 10:43:17,579 [INFO] sources.ats: Lever whereby: 1 jobs
+2026-07-11 10:43:18,475 [INFO] sources.ats: Lever toptal: 18 jobs
+2026-07-11 10:43:18,549 [INFO] sources.ats: Ashby navi: 8 jobs
+2026-07-11 10:43:18,612 [INFO] sources.ats: Ashby ditto: 25 jobs
+2026-07-11 10:43:18,666 [INFO] sources.ats: Ashby bounce: 16 jobs
+2026-07-11 10:43:18,714 [INFO] sources.ats: Ashby clarisights: 2 jobs
+2026-07-11 10:43:18,781 [INFO] sources.ats: Ashby confluent: 34 jobs
+2026-07-11 10:43:18,834 [INFO] sources.ats: Ashby linear: 24 jobs
+2026-07-11 10:43:18,963 [INFO] sources.ats: Ashby notion: 141 jobs
+2026-07-11 10:43:19,024 [INFO] sources.ats: Ashby zapier: 18 jobs
+2026-07-11 10:43:19,076 [INFO] sources.ats: Ashby buffer: 1 jobs
+2026-07-11 10:43:19,124 [INFO] sources.ats: Ashby deel: 0 jobs
+2026-07-11 10:43:19,176 [INFO] sources.ats: Ashby oyster: 12 jobs
+2026-07-11 10:43:19,232 [INFO] sources.ats: Ashby andela: 15 jobs
+2026-07-11 10:43:19,306 [INFO] sources.ats: Ashby supabase: 51 jobs
+2026-07-11 10:43:19,362 [INFO] sources.ats: Ashby railway: 9 jobs
+2026-07-11 10:43:19,423 [INFO] sources.ats: Ashby render: 25 jobs
+2026-07-11 10:43:19,483 [INFO] sources.ats: Ashby infisical: 9 jobs
+2026-07-11 10:43:19,535 [INFO] sources.ats: Ashby triggerdev: 3 jobs
+2026-07-11 10:43:19,592 [INFO] sources.ats: Ashby mintlify: 15 jobs
+2026-07-11 10:43:19,642 [INFO] sources.ats: Ashby resend: 8 jobs
+2026-07-11 10:43:19,692 [INFO] sources.ats: Ashby stytch: 5 jobs
+2026-07-11 10:43:19,749 [INFO] sources.ats: Ashby workos: 23 jobs
+2026-07-11 10:43:19,806 [INFO] sources.ats: Ashby scaler: 0 jobs
+2026-07-11 10:43:19,920 [INFO] sources.ats: Workable juspay: 0 jobs
+2026-07-11 10:43:20,684 [INFO] sources.ats: Workable gridlines: 10 jobs
+2026-07-11 10:43:21,447 [INFO] sources.ats: Workable apna: 10 jobs
+2026-07-11 10:43:22,436 [INFO] sources.ats: SmartRecruiters Upstox: 1 jobs
+2026-07-11 10:43:23,320 [INFO] sources.ats: SmartRecruiters Lendingkart: 1 jobs
+2026-07-11 10:43:24,236 [INFO] sources.ats: SmartRecruiters Turtlemint: 1 jobs
+2026-07-11 10:43:29,226 [INFO] sources.ats: SmartRecruiters Lokal: 10 jobs
+2026-07-11 10:43:30,105 [INFO] sources.ats: SmartRecruiters Cars24: 1 jobs
+2026-07-11 10:43:35,068 [INFO] sources.ats: SmartRecruiters ixigo: 10 jobs
+2026-07-11 10:44:20,831 [INFO] sources.ats: SmartRecruiters Freshworks: 100 jobs
+2026-07-11 10:44:21,722 [INFO] sources.ats: SmartRecruiters Whatfix: 1 jobs
+2026-07-11 10:44:26,012 [INFO] sources.ats: SmartRecruiters MercerMettl: 8 jobs
+2026-07-11 10:44:28,888 [INFO] sources.ats: SmartRecruiters InterviewMocha: 5 jobs
+2026-07-11 10:44:34,055 [INFO] sources.ats: SmartRecruiters Skillate: 10 jobs
+2026-07-11 10:45:20,332 [INFO] sources.ats: SmartRecruiters ServiceNow: 100 jobs
+2026-07-11 10:46:31,654 [INFO] sources.ats: SmartRecruiters Canva: 100 jobs
+2026-07-11 10:46:33,473 [INFO] sources.ats: SmartRecruiters Unacademy: 3 jobs
+2026-07-11 10:46:42,030 [INFO] sources.ats: SmartRecruiters Dailymotion: 17 jobs
+2026-07-11 10:46:42,863 [INFO] sources.ats: Rippling axio: 2 jobs
+2026-07-11 10:46:43,416 [INFO] sources.ats: Rippling multiplier: 1 jobs
+2026-07-11 10:46:44,797 [INFO] sources.ats: Rippling dub: 4 jobs
+2026-07-11 10:46:45,284 [INFO] sources.ats: BambooHR urban: 18 jobs
+2026-07-11 10:46:45,711 [INFO] sources.ats: BambooHR shadowfax: 9 jobs
+2026-07-11 10:46:46,141 [INFO] sources.ats: BambooHR google: 4 jobs
+2026-07-11 10:46:46,461 [WARNING] sources.ats: BambooHR fetch failed for meta: Expecting value: line 1 column 1 (char 0)
+2026-07-11 10:46:46,463 [INFO] sources.ats: BambooHR meta: 0 jobs
+2026-07-11 10:46:46,947 [INFO] sources.ats: BambooHR flyio: 11 jobs
+2026-07-11 10:46:47,150 [WARNING] sources.ats: Recruitee fetch failed for unstop: 404 Client Error: Not Found for url: https://unstop.recruitee.com/api/offers/
+2026-07-11 10:46:47,151 [INFO] sources.ats: Recruitee unstop: 0 jobs
+2026-07-11 10:46:47,392 [INFO] sources.ats: Recruitee salesforce: 1 jobs
+2026-07-11 10:46:47,627 [WARNING] sources.ats: Recruitee fetch failed for ibm: 404 Client Error: Not Found for url: https://ibm.recruitee.com/api/offers/
+2026-07-11 10:46:47,629 [INFO] sources.ats: Recruitee ibm: 0 jobs
+2026-07-11 10:46:48,365 [INFO] sources.ats: Personio open: 2 jobs
+2026-07-11 10:46:49,212 [INFO] sources.ats: Personio josh: 3 jobs
+2026-07-11 10:46:49,899 [INFO] sources.ats: Personio amazon: 3 jobs
+2026-07-11 10:46:50,732 [INFO] sources.ats: Personio basecamp: 4 jobs
+2026-07-11 10:46:50,733 [INFO] sources.ats: ATS total: 7904 raw jobs
+2026-07-11 10:46:50,733 [INFO] jobradar: --- Fetching Cutshort ---
+2026-07-11 10:47:22,039 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:47:53,336 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=machine+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:48:24,655 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=generative+AI+intern&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:48:55,920 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=LLM+engineer+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:49:27,216 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=computer+vision+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:49:58,536 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=python+backend+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:50:29,819 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=deep+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:51:01,121 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=NLP+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:51:32,437 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=RAG+langchain+intern&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:52:03,674 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+ML+fresher+india&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:52:03,799 [INFO] sources.cutshort: Cutshort: 0 jobs found
+2026-07-11 10:52:03,799 [INFO] jobradar: --- Fetching Instahyre ---
+2026-07-11 10:52:06,687 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=python&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:06,725 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:09,419 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=machine-learning&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:09,459 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:12,244 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=deep-learning&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:12,283 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:14,982 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=artificial-intelligence&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:15,021 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:17,966 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=computer-vision&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:18,005 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:20,692 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=nlp&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:20,735 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:23,389 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=langchain&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:23,429 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:26,062 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=django&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:26,101 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:28,989 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=fastapi&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:29,028 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:31,859 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=pytorch&exp=0-1> (referer: https://www.google.com/)
+2026-07-11 10:52:31,899 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-11 10:52:31,997 [INFO] sources.instahyre: Instahyre: 0 jobs found via Scrapling
+2026-07-11 10:52:31,998 [INFO] jobradar: --- Skipping wellfound (disabled in profile) ---
+2026-07-11 10:52:31,998 [INFO] jobradar: --- Fetching Internshala ---
+2026-07-11 10:52:34,105 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/backend-development-internship/> (referer: https://www.google.com/)
+2026-07-11 10:52:36,470 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-07-11 10:52:38,775 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-07-11 10:52:40,812 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/web-development-internship/> (referer: https://www.google.com/)
+2026-07-11 10:52:42,530 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-golang/> (referer: https://www.google.com/)
+2026-07-11 10:52:44,599 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-go-developer/> (referer: https://www.google.com/)
+2026-07-11 10:52:46,607 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-nodejs/> (referer: https://www.google.com/)
+2026-07-11 10:52:48,460 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-typescript/> (referer: https://www.google.com/)
+2026-07-11 10:52:50,994 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/> (referer: https://www.google.com/)
+2026-07-11 10:52:52,786 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/software-developer-jobs/> (referer: https://www.google.com/)
+2026-07-11 10:52:52,798 [INFO] sources.internshala: Internshala: 0 jobs found
+2026-07-11 10:52:52,798 [INFO] jobradar: --- Fetching Indian Fresher Blogs (RSS + Cuvette) ---
+2026-07-11 10:52:53,624 [INFO] sources.freshers_blogs: [freshers-job] 10 entries from https://freshers-job.com/feed/
+2026-07-11 10:52:53,655 [INFO] sources.freshers_blogs: [fresheropenings] 12 entries from https://fresheropenings.com/feed/
+2026-07-11 10:52:53,832 [INFO] sources.freshers_blogs: [freshersarea] 10 entries from https://freshersarea.in/feed/
+2026-07-11 10:52:53,922 [INFO] sources.freshers_blogs: [offcampusjobs4u] 10 entries from https://offcampusjobs4u.com/category/offcampus-jobs/feed/
+2026-07-11 10:52:54,430 [INFO] sources.freshers_blogs: [freshershunt] 1 entries from https://freshershunt.in/feed/
+2026-07-11 10:52:54,812 [INFO] sources.freshers_blogs: [freshersdunia] 20 entries from https://freshersdunia.in/feed/
+2026-07-11 10:52:56,662 [INFO] sources.freshers_blogs: [tnpofficer] 10 entries from https://tnpofficer.com/category/off-campus/feed/
+2026-07-11 10:52:56,722 [INFO] sources.freshers_blogs: [freshersnow] 20 entries from https://freshersnow.com/feed/
+2026-07-11 10:52:56,723 [INFO] sources.freshers_blogs: freshers_blogs: 93 total listings from 8 RSS feeds
+2026-07-11 10:52:56,723 [INFO] jobradar: --- Fetching YC Jobs ---
+2026-07-11 10:52:59,079 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&type=fulltime,intern&remote=true> (referer: https://www.google.com/)
+2026-07-11 10:52:59,084 [INFO] sources.yc: YC listing 'q=backend&type=fulltime,intern&remote=tr': 4 candidates
+2026-07-11 10:53:01,409 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=typescript+backend&type=fulltime,intern> (referer: https://www.google.com/)
+2026-07-11 10:53:01,415 [INFO] sources.yc: YC listing 'q=typescript+backend&type=fulltime,inter': 0 candidates
+2026-07-11 10:53:03,662 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=golang&type=fulltime,intern> (referer: https://www.google.com/)
+2026-07-11 10:53:03,667 [INFO] sources.yc: YC listing 'q=golang&type=fulltime,intern': 0 candidates
+2026-07-11 10:53:05,888 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&location=india> (referer: https://www.google.com/)
+2026-07-11 10:53:05,893 [INFO] sources.yc: YC listing 'q=backend&location=india': 0 candidates
+2026-07-11 10:53:05,893 [INFO] sources.yc: YC Phase 1 complete: 4 candidate job pages to fetch
+2026-07-11 10:53:07,651 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/aviator/jobs/2fmcI6d-software-engineer-fullstack> (referer: https://www.google.com/)
+2026-07-11 10:53:09,444 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/glimpse-2/jobs/5hmOmrr-software-engineer> (referer: https://www.google.com/)
+2026-07-11 10:53:11,221 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/runway/jobs/0s9VB2H-full-stack-engineer> (referer: https://www.google.com/)
+2026-07-11 10:53:13,366 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/gogograndparent/jobs/2vbzAw8-backend-engineer> (referer: https://www.google.com/)
+2026-07-11 10:53:13,371 [INFO] sources.yc: YC Jobs: 3 jobs parsed from 4 fetched pages
+2026-07-11 10:53:13,372 [INFO] jobradar: --- Fetching via Serper discovery ---
+2026-07-11 10:53:13,372 [INFO] sources.serper: Serper pool: 26 tier-1 | 47 tier-2 | 31 tier-3. Running: 10 (unique) + 15 (priority) + 0 (filler) = 25 queries
+2026-07-11 10:53:15,889 [INFO] scrapling: Fetched (200) <GET https://web3.career/backend+intern-jobs?page=2> (referer: https://www.google.com/)
+2026-07-11 10:53:17,281 [INFO] scrapling: Fetched (200) <GET https://github.com/speedyapply/2027-SWE-College-Jobs> (referer: https://www.google.com/)
+2026-07-11 10:53:19,012 [INFO] scrapling: Fetched (200) <GET https://www.thejobcompany.co.in/frontend/job_details?job_id=4697> (referer: https://www.google.com/)
+2026-07-11 10:53:20,157 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/2878516-backend-intern> (referer: https://www.google.com/)
+2026-07-11 10:53:22,198 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/role/r/golang-developer> (referer: https://www.google.com/)
+2026-07-11 10:53:23,348 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Golang-Developer-Intern-RNG-DEV-nysf7abu> (referer: https://www.google.com/)
+2026-07-11 10:53:24,859 [INFO] scrapling: Fetched (200) <GET https://www.placementindia.com/job-search/golang-developer-fresher-jobs.htm> (referer: https://www.google.com/)
+2026-07-11 10:53:26,003 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/role/l/go-developer/india> (referer: https://www.google.com/)
+2026-07-11 10:53:27,916 [INFO] scrapling: Fetched (403) <GET https://www.glassdoor.com.hk/Job/india-software-intern-jobs-SRCH_IL.0,5_IN115_KO6,21.htm> (referer: https://www.google.com/)
+2026-07-11 10:53:30,166 [INFO] scrapling: Fetched (200) <GET https://gethiredfaster.in/rapido-hiring-software-intern-frontend-jobs-remote-india-2026/> (referer: https://www.google.com/)
+2026-07-11 10:53:30,313 [WARNING] sources.serper: Serper query failed '"typeform.com" "backend" "intern" OR "fresher" india -site:l': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-07-11 10:53:32,496 [INFO] scrapling: Fetched (404) <GET https://bebee.com/in/jobs/nodejs-backend-intern-graun-limited-noida-uttar-pradesh--theirstack-681079331> (referer: https://www.google.com/)
+2026-07-11 10:53:33,550 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Node-Js-Backend-Intern-Noida-Parksmart-tGu4HHwx> (referer: https://www.google.com/)
+2026-07-11 10:53:35,733 [INFO] scrapling: Fetched (200) <GET https://navrojan.com/job-details/node-js-backend-intern-code-inbound-8f29-924376> (referer: https://www.google.com/)
+2026-07-11 10:53:38,917 [INFO] scrapling: Fetched (200) <GET https://t.me/s/gocareers?before=10820> (referer: https://www.google.com/)
+2026-07-11 10:53:40,447 [INFO] scrapling: Fetched (200) <GET https://telegram.me/s/gocareers?before=10818> (referer: https://www.google.com/)
+2026-07-11 10:53:42,641 [INFO] scrapling: Fetched (200) <GET https://t.me/s/gocareers?before=10592> (referer: https://www.google.com/)
+2026-07-11 10:53:42,738 [WARNING] sources.serper: Serper query failed '"airtable.com" "apply" "backend" "intern" OR "fresher" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-07-11 10:53:42,860 [WARNING] sources.serper: Serper query failed '"forms.gle" "apply" "software engineer" "intern" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-07-11 10:53:46,958 [INFO] scrapling: Fetched (200) <GET https://itbots.in/jobs/intern-2025092309584268d221fa29e93> (referer: https://www.google.com/)
+2026-07-11 10:53:48,304 [INFO] scrapling: Fetched (200) <GET https://talk.openmrs.org/t/hiring-reactjs-developer-intern-openmrs-based-emr-remote/49517> (referer: https://www.google.com/)
+2026-07-11 10:53:50,401 [INFO] scrapling: Fetched (200) <GET https://abekus.ai/public-job-search/react-js-developer-intern> (referer: https://www.google.com/)
+2026-07-11 10:53:52,484 [INFO] scrapling: Fetched (200) <GET https://web3.career/golang+intern+remote-jobs> (referer: https://www.google.com/)
+2026-07-11 10:53:53,610 [INFO] scrapling: Fetched (200) <GET https://stripe.com/jobs/listing/software-engineer-intern/8031833> (referer: https://www.google.com/)
+2026-07-11 10:53:54,923 [INFO] scrapling: Fetched (200) <GET https://job-boards.greenhouse.io/nirmata/jobs/5040355008> (referer: https://www.google.com/)
+2026-07-11 10:53:56,228 [INFO] scrapling: Fetched (200) <GET https://www.virtualvocations.com/q-remote-software-engineer-intern-jobs.html> (referer: https://www.google.com/)
+2026-07-11 10:53:57,951 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/role/l/golang-developer/karnataka> (referer: https://www.google.com/)
+2026-07-11 10:53:59,484 [INFO] scrapling: Fetched (200) <GET https://www.golangprojects.com/golang-go-job-gjn-Intern-Software-Developer-Bangalore-Zino.html> (referer: https://www.google.com/)
+2026-07-11 10:54:01,229 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/colonist/b9285b46-6972-4443-b34f-8d74631a0dbd> (referer: https://www.google.com/)
+2026-07-11 10:54:02,403 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/uplane/e430a9f5-e324-4204-913e-d4d7bf1afb51> (referer: https://www.google.com/)
+2026-07-11 10:54:03,544 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/simular/4848fd37-97f5-4595-851d-0795da9f21b4?embed=js> (referer: https://www.google.com/)
+2026-07-11 10:54:04,597 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/nox-metals/6edc2dff-7c4b-44b8-abba-32d5953b8c5f> (referer: https://www.google.com/)
+2026-07-11 10:54:05,826 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/super.com/d12fc858-e930-4f43-9c92-da2f02dd2cd2> (referer: https://www.google.com/)
+2026-07-11 10:54:06,904 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/partly.com> (referer: https://www.google.com/)
+2026-07-11 10:54:08,034 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/espa/6fa2d441-971f-44c4-9a4e-3304ea041cc8> (referer: https://www.google.com/)
+2026-07-11 10:54:09,111 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/k-ID?embed=js> (referer: https://www.google.com/)
+2026-07-11 10:54:10,269 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/Clera/5280779a-bcd0-499c-9c3b-41e5dc493092> (referer: https://www.google.com/)
+2026-07-11 10:54:11,348 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/finmid.com> (referer: https://www.google.com/)
+2026-07-11 10:54:13,553 [INFO] scrapling: Fetched (200) <GET https://www.remoterocketship.com/jobs/entry-level-backend-engineer/> (referer: https://www.google.com/)
+2026-07-11 10:54:14,869 [INFO] scrapling: Fetched (200) <GET https://remoteok.com/remote-backend-jobs> (referer: https://www.google.com/)
+2026-07-11 10:54:16,141 [INFO] scrapling: Fetched (200) <GET https://www.tokyodev.com/jobs/fully-remote> (referer: https://www.google.com/)
+2026-07-11 10:54:17,442 [INFO] scrapling: Fetched (200) <GET https://bebee.com/in/jobs/python-developer-intern-remote-entry-level-automation-backend-systems-inficore-soft--theirstack-684463812> (referer: https://www.google.com/)
+2026-07-11 10:54:18,734 [INFO] scrapling: Fetched (200) <GET https://jobgether.com/remote-jobs/india/back-end-developer> (referer: https://www.google.com/)
+2026-07-11 10:54:21,740 [INFO] scrapling: Fetched (200) <GET https://www.foundit.in/job/backend-developer-node-js-fresher-delta4-infotech-nagar-40497648> (referer: https://www.google.com/)
+2026-07-11 10:54:24,506 [INFO] scrapling: Fetched (200) <GET https://hbspl.in/jobs/backend-developer-node-js-django-spring-boot-express-js/> (referer: https://www.google.com/)
+2026-07-11 10:54:26,172 [INFO] scrapling: Fetched (200) <GET https://www.placementindia.com/job-search/node-js-developer-fresher-jobs.htm> (referer: https://www.google.com/)
+2026-07-11 10:54:28,131 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/typescript-jobs> (referer: https://www.google.com/)
+2026-07-11 10:54:29,299 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/4388448-backend-engineering-intern> (referer: https://www.google.com/)
+2026-07-11 10:54:33,088 [INFO] scrapling: Fetched (200) <GET https://www.kaseya.com/careers/jobs/> (referer: https://www.google.com/)
+2026-07-11 10:54:35,848 [INFO] scrapling: Fetched (200) <GET https://getmereferred.com/job-listing/fullstack-developerbackend-focused-intern-nestjs-nextjsand-react-cloud-flex-technologies-delhi-2-to-5-years-experience-6c95e64d-5098-4c8a-96b1-f5f5c8ad6526> (referer: https://www.google.com/)
+2026-07-11 10:54:37,863 [INFO] scrapling: Fetched (200) <GET https://nextleap.app/jobs/engineering/backend-developer-intern-nodejs-nestjs-ageit-endorse-india-technology/an546sha> (referer: https://www.google.com/)
+2026-07-11 10:54:38,999 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/2757453-associate-back-end-developer-nodejs-nestjs> (referer: https://www.google.com/)
+2026-07-11 10:54:41,064 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/binance.us/c23e9aa3-0daa-4170-a5a7-b03aaa031895> (referer: https://www.google.com/)
+2026-07-11 10:54:42,182 [INFO] scrapling: Fetched (200) <GET https://cryptocurrencyjobs.co/remote/> (referer: https://www.google.com/)
+2026-07-11 10:54:43,763 [INFO] scrapling: Fetched (200) <GET https://www.remoterocketship.com/jobs/backend-engineer/internships/> (referer: https://www.google.com/)
+2026-07-11 10:54:45,161 [INFO] scrapling: Fetched (200) <GET https://bebee.com/us/jobs/remote-software-engineering-intern-binanceus-san-antonio-tx--jooble-3849427093993935788> (referer: https://www.google.com/)
+2026-07-11 10:54:47,014 [INFO] scrapling: Fetched (200) <GET https://nextleap.app/jobs/engineering/backend-developer-intern-remote-credes/klpy2fi7> (referer: https://www.google.com/)
+2026-07-11 10:54:48,910 [INFO] scrapling: Fetched (200) <GET https://web3.career/golang+intern-jobs?page=9> (referer: https://www.google.com/)
+2026-07-11 10:54:51,160 [INFO] scrapling: Fetched (200) <GET https://myinternships.in/fresher-jobs/golang-fresher-jobs> (referer: https://www.google.com/)
+2026-07-11 10:54:59,690 [INFO] scrapling: Fetched (200) <GET https://kollam.in.expertini.com/jobs/in/golang-intern-kollam-ima/> (referer: https://www.google.com/)
+2026-07-11 10:55:01,686 [INFO] scrapling: Fetched (200) <GET https://jobs.eu.lever.co/coinspaid/565ae94f-400f-4026-a739-9ae88b957efc> (referer: https://www.google.com/)
+2026-07-11 10:55:02,886 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/certik/478ab0cd-9f5e-4b88-88b5-01d3beac4d81> (referer: https://www.google.com/)
+2026-07-11 10:55:04,064 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/insiderone?location=Istanbul%2C%20Turkiye> (referer: https://www.google.com/)
+2026-07-11 10:55:05,256 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/certik/> (referer: https://www.google.com/)
+2026-07-11 10:55:06,435 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/jumpcloud/fec0f9d7-adcd-4be5-8659-cfd1b64e724e> (referer: https://www.google.com/)
+2026-07-11 10:55:07,629 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/xsolla> (referer: https://www.google.com/)
+2026-07-11 10:55:08,795 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/insiderone> (referer: https://www.google.com/)
+2026-07-11 10:55:09,963 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/xsolla?department=Technology> (referer: https://www.google.com/)
+2026-07-11 10:55:11,119 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/certik?workplaceType=remote> (referer: https://www.google.com/)
+2026-07-11 10:55:20,177 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/binance?department=Engineering> (referer: https://www.google.com/)
+2026-07-11 10:55:21,849 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/super.com/6a0dc25b-6eb2-411e-a862-6b083d9bad3c> (referer: https://www.google.com/)
+2026-07-11 10:55:23,047 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/ellipsislabs/02136b22-35b1-4b3d-8bef-567c3380a849> (referer: https://www.google.com/)
+2026-07-11 10:55:24,266 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/blackbird-labs-inc/a901dd42-7c52-488a-bd55-f1d5dcd37b38> (referer: https://www.google.com/)
+2026-07-11 10:55:25,373 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/andercore> (referer: https://www.google.com/)
+2026-07-11 10:55:26,615 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b> (referer: https://www.google.com/)
+2026-07-11 10:55:27,648 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/super.com/8179b5ad-9074-4d96-aa92-366cf12ab5d5> (referer: https://www.google.com/)
+2026-07-11 10:55:28,685 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/ramp> (referer: https://www.google.com/)
+2026-07-11 10:55:29,776 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/base-power> (referer: https://www.google.com/)
+2026-07-11 10:55:30,880 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/freetrade> (referer: https://www.google.com/)
+2026-07-11 10:55:32,856 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/masterborn-2/672c919d-3558-44e6-87ac-c5fb57c7c229> (referer: https://www.google.com/)
+2026-07-11 10:55:34,020 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/Yassir/d709db41-312d-4bcb-9c02-db32a4f6db00> (referer: https://www.google.com/)
+2026-07-11 10:55:35,849 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/masterborn-2/?team=Backend> (referer: https://www.google.com/)
+2026-07-11 10:55:37,012 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/vacancies?workplaceType=remote> (referer: https://www.google.com/)
+2026-07-11 10:55:38,142 [INFO] scrapling: Fetched (404) <GET https://jobs.lever.co/jobgether/a0f25d39-9e8a-4c07-80c0-a51e80efdd5a> (referer: https://www.google.com/)
+2026-07-11 10:55:39,290 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/masterborn-2/?commitment=Full-Time> (referer: https://www.google.com/)
+2026-07-11 10:55:40,459 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/vacancies> (referer: https://www.google.com/)
+2026-07-11 10:55:41,652 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/gohighlevel/aa1ac843-c6a4-471f-8783-de8089e9d325> (referer: https://www.google.com/)
+2026-07-11 10:55:42,825 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/mytos/bbb558c0-d769-4b5f-a3a7-025642c2626d> (referer: https://www.google.com/)
+2026-07-11 10:55:43,986 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/RyzLabs/340f70d9-7018-41e7-b8ee-ca85165367aa> (referer: https://www.google.com/)
+2026-07-11 10:55:43,989 [INFO] sources.serper: Serper discovery: 25 queries → 86 unique URLs → 55 jobs extracted
+2026-07-11 10:55:43,989 [INFO] jobradar: --- Skipping hackernews (disabled in profile) ---
+2026-07-11 10:55:43,989 [INFO] jobradar: --- Skipping reddit (disabled in profile) ---
+2026-07-11 10:55:43,989 [INFO] jobradar: --- Fetching Naukri.com ---
+2026-07-11 10:55:43,989 [INFO] sources.naukri: Naukri: 10 keywords x 3 locations x 2 pages = up to 60 search calls (1200 raw listings max) | exp cap: 1yr | age cap: 45d
+2026-07-11 10:57:11,796 [INFO] sources.naukri: Naukri Stage-1 complete: 160 unique jobs survived (exp <= 1yr, age <= 45d)
+2026-07-11 10:57:11,797 [INFO] sources.naukri: Naukri: 160 jobs entering pipeline
+2026-07-11 10:57:11,797 [INFO] jobradar: --- Fetching Hirist.tech ---
+2026-07-11 10:57:11,797 [INFO] sources.hirist: Hirist: 45 keywords x 2 pages | exp range: 0-3 yrs | detail fetch: True | hard timeout: 600s
+2026-07-11 10:57:16,493 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/python-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:20,984 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/machine-learning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:24,956 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/deep-learning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:29,516 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/computer-vision-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:33,565 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/generative-ai-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:37,890 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/langchain-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:41,960 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/nlp-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:46,223 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/llm-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:50,935 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/rag-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:54,914 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/langgraph-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:57:59,000 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/hugging-face-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:03,254 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/prompt-engineering-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:07,292 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/vector-database-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:11,342 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/pinecone-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:15,348 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/openai-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:19,490 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/fine-tuning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:23,454 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/multimodal-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:27,524 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/backend-developer-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:32,064 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/django-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:36,544 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/fastapi-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:41,112 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/flask-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:45,481 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/rest-api-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:49,881 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/postgresql-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:54,559 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/mongodb-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:58:59,467 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/sql-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:03,988 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/redis-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:08,139 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/aws-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:12,189 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/gcp-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:16,383 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/yolo-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:20,919 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/opencv-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:24,956 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/object-detection-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:29,099 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/pytorch-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:33,717 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/tensorflow-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:37,732 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/data-science-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:41,986 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/xgboost-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:46,092 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/scikit-learn-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:50,221 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/lightgbm-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:54,287 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/catboost-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 10:59:58,258 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/mlops-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 11:00:02,245 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/docker-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 11:00:06,813 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/git-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 11:00:11,800 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/ci-cd-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 11:00:15,870 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/gradio-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 11:00:20,000 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/streamlit-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 11:00:23,886 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/model-deployment-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-11 11:00:23,985 [INFO] sources.hirist: Hirist: 0 raw jobs from listing pages
+2026-07-11 11:00:23,985 [INFO] jobradar: --- Fetching Jobicy (remote jobs API) ---
+2026-07-11 11:00:26,036 [INFO] sources.jobicy: Jobicy: 71 remote jobs found
+2026-07-11 11:00:26,036 [INFO] jobradar: --- Fetching RemoteOK (JSON API) ---
+2026-07-11 11:00:28,721 [INFO] sources.remoteok: RemoteOK: 64 dev/engineering jobs found
+2026-07-11 11:00:28,722 [INFO] jobradar: Total raw jobs from all sources: 8350
+2026-07-11 11:00:29,874 [INFO] pipeline.dedup: Dedup: 8350 raw -> 7570 new
+2026-07-11 11:00:42,082 [INFO] pipeline.prefilter: ATS company cap (25): capped companies — Zscaler, Mongodb, Databricks, Grafanalabs, Datadog, Gitlab
+2026-07-11 11:00:42,082 [INFO] pipeline.prefilter: Pre-filter: 7570 jobs -> 690 passed (sent to AI scorer)
+2026-07-11 11:00:44,208 [INFO] pipeline.ranker: Relevance ranking: 690 jobs ranked. Top scores: [25, 25, 25, 24, 24]
+2026-07-11 11:00:44,208 [WARNING] pipeline.scorer: Hard fallback cap: trimmed 490 lowest-ranked jobs (max_ai_jobs_per_run=200). Increase cap in profile.yaml if needed.
+2026-07-11 11:00:44,209 [INFO] pipeline.scorer: Scoring up to 200 ranked jobs with Groq (meta-llama/llama-4-scout-17b-16e-instruct) | token budget: 200,000
+2026-07-11 11:00:45,006 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:00:45,018 [INFO] pipeline.scorer: Scored: Software Engineer, Robotics @ Scaleai -> 1/10 [low]
+2026-07-11 11:00:49,908 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:00:49,909 [INFO] pipeline.scorer: Scored: Sr. Software Development Engineer @ Zscaler -> 2/10 [low]
+2026-07-11 11:00:54,775 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:00:54,776 [INFO] pipeline.scorer: Scored: Senior Backend Engineer — Distributed Systems & Agentic AI @ Sumologic -> 2/10 [low]
+2026-07-11 11:01:00,480 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:00,481 [INFO] pipeline.scorer: Scored: SDE IV - Backend @ Inmobi -> 1/10 [low]
+2026-07-11 11:01:04,749 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:04,750 [INFO] pipeline.scorer: Scored: Principal GenAI Data Engineer  @ Zscaler -> 1/10 [low]
+2026-07-11 11:01:09,846 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:09,847 [INFO] pipeline.scorer: Scored: Customer Engineer (Pre-Sales), Korea (Based in Seoul) @ Cloudflare -> 1/10 [low]
+2026-07-11 11:01:15,121 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:15,122 [INFO] pipeline.scorer: Scored: Sr. AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector @ Databricks -> 2/10 [low]
+2026-07-11 11:01:20,094 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:20,095 [INFO] pipeline.scorer: Scored: Binance Accelerator Program - DevSecOps Engineer @ Binance -> 2/10 [low]
+2026-07-11 11:01:24,787 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:24,787 [INFO] pipeline.scorer: Scored: Senior Software Engineer - Developer Experience (Golang, Python) @ Canva -> 1/10 [low]
+2026-07-11 11:01:29,719 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:29,720 [INFO] pipeline.scorer: Scored: Software Engineer, (L2) CDP @ Twilio -> 2/10 [low]
+2026-07-11 11:01:35,299 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:35,300 [INFO] pipeline.scorer: Scored: Python and Kubernetes Software Engineer - Data, Workflows, AI/ML & Analytics @ Canonical -> 3/10 [low]
+2026-07-11 11:01:40,024 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:40,025 [INFO] pipeline.scorer: Scored: Binance Accelerator Program - Analytics Engineer @ Binance -> 4/10 [low]
+2026-07-11 11:01:44,962 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:44,963 [INFO] pipeline.scorer: Scored: Lead Software Engineer - Machine Learning @ Freshworks -> 3/10 [low]
+2026-07-11 11:01:50,491 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:50,492 [INFO] pipeline.scorer: Scored: Customer Engineer, India (Based in Mumbai) @ Cloudflare -> 2/10 [low]
+2026-07-11 11:01:54,884 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:01:54,885 [INFO] pipeline.scorer: Scored: Staff Machine Learning Engineer @ Twilio -> 2/10 [low]
+2026-07-11 11:02:00,142 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:00,143 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 2/10 [low]
+2026-07-11 11:02:04,759 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:04,760 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 1/10 [low]
+2026-07-11 11:02:09,945 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:09,946 [INFO] pipeline.scorer: Scored: FinOps Engineer @ Jfrog -> 4/10 [low]
+2026-07-11 11:02:14,853 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:14,854 [INFO] pipeline.scorer: Scored: Machine Learning Engineer (Training Optimization）大模型训练优化工程师 @ Canva -> 2/10 [low]
+2026-07-11 11:02:19,852 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:19,852 [INFO] pipeline.scorer: Scored: Infrastructure Engineer @ Roboflow -> 1/10 [low]
+2026-07-11 11:02:25,073 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:25,074 [INFO] pipeline.scorer: Scored: Staff Software Engineer (AI) @ Druva -> 2/10 [low]
+2026-07-11 11:02:29,949 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:29,950 [INFO] pipeline.scorer: Scored: Senior Machine Learning Engineer (Agentic AI) @ Zscaler -> 3/10 [low]
+2026-07-11 11:02:34,955 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:34,956 [INFO] pipeline.scorer: Scored: Principal Presales Engineer @ Twilio -> 1/10 [low]
+2026-07-11 11:02:39,792 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:39,793 [INFO] pipeline.scorer: Scored: Principal Presales Engineer  @ Twilio -> 1/10 [low]
+2026-07-11 11:02:45,331 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:45,331 [INFO] pipeline.scorer: Scored: Senior AI Engineer @ Datadog -> 1/10 [low]
+2026-07-11 11:02:50,115 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:50,116 [INFO] pipeline.scorer: Scored: Senior Software Engineer - AI Code Gen - Agent Engineer @ Datadog -> 2/10 [low]
+2026-07-11 11:02:54,933 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:54,934 [INFO] pipeline.scorer: Scored: Talent Pipeline - Product Engineering @ Sumologic -> 2/10 [low]
+2026-07-11 11:02:59,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:02:59,839 [INFO] pipeline.scorer: Scored: Senior Staff Software Engineer in Test @ Druva -> 1/10 [low]
+2026-07-11 11:03:05,317 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:05,318 [INFO] pipeline.scorer: Scored: Senior Manager, Customer Engineering, India @ Cloudflare -> 1/10 [low]
+2026-07-11 11:03:09,900 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:09,901 [INFO] pipeline.scorer: Scored: Software Engineer 3 @ Mongodb -> 1/10 [low]
+2026-07-11 11:03:14,771 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:14,772 [INFO] pipeline.scorer: Scored: Senior Forward Deployed Engineer - Full stack @ Databricks -> 1/10 [low]
+2026-07-11 11:03:19,924 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:19,925 [INFO] pipeline.scorer: Scored: Senior AI Engineer @ Gitlab -> 2/10 [low]
+2026-07-11 11:03:24,850 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:24,851 [INFO] pipeline.scorer: Scored: Staff ML Engineer @ Buildkite -> 1/10 [low]
+2026-07-11 11:03:29,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:29,842 [INFO] pipeline.scorer: Scored: GTM AI Engineer @ Freshworks -> 2/10 [low]
+2026-07-11 11:03:34,888 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:34,888 [INFO] pipeline.scorer: Scored: Staff Software Engineer - Developer Experience  @ Canva -> 1/10 [low]
+2026-07-11 11:03:39,896 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:39,897 [INFO] pipeline.scorer: Scored: Professional Service Engineer - AI Security @ Zscaler -> 1/10 [low]
+2026-07-11 11:03:44,833 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:44,834 [INFO] pipeline.scorer: Scored: Sr. Software Development Engineer (Backend - Python/Go) @ Zscaler -> 2/10 [low]
+2026-07-11 11:03:49,871 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:49,872 [INFO] pipeline.scorer: Scored: Technical Solutions Engineer @ Stripe -> 1/10 [low]
+2026-07-11 11:03:54,933 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:54,934 [INFO] pipeline.scorer: Scored: Senior Site Reliability Engineer I  @ Sumologic -> 1/10 [low]
+2026-07-11 11:03:59,892 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:03:59,893 [INFO] pipeline.scorer: Scored: Site Reliability Engineer I @ Sumologic -> 1/10 [low]
+2026-07-11 11:04:04,914 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:04,914 [INFO] pipeline.scorer: Scored: Binance Accelerator Program - TechOps Engineer (APAC Timezone) @ Binance -> 4/10 [low]
+2026-07-11 11:04:09,805 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:09,806 [INFO] pipeline.scorer: Scored: SDE 2 @ Inmobi -> 2/10 [low]
+2026-07-11 11:04:15,060 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:15,061 [INFO] pipeline.scorer: Scored: SDE III @ Inmobi -> 1/10 [low]
+2026-07-11 11:04:19,809 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:19,810 [INFO] pipeline.scorer: Scored: Internal Audit Data Analytics Lead @ Stripe -> 1/10 [low]
+2026-07-11 11:04:25,108 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:25,108 [INFO] pipeline.scorer: Scored: Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu @ Canonical -> 2/10 [low]
+2026-07-11 11:04:29,893 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:29,893 [INFO] pipeline.scorer: Scored: Staff Machine Learning Engineer - Recommendations @ Canva -> 1/10 [low]
+2026-07-11 11:04:34,957 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:34,958 [INFO] pipeline.scorer: Scored: Intern - Software Developer (Product) @ Quadeyesecrities -> 4/10 [low]
+2026-07-11 11:04:39,924 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:39,925 [INFO] pipeline.scorer: Scored: Fresher Graduate Engineer Trainee (Full Stack Developer) @ STL Digital -> 4/10 [medium]
+2026-07-11 11:04:45,009 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:45,010 [INFO] pipeline.scorer: Scored: Agent Developer Test III @ Highradius -> 2/10 [low]
+2026-07-11 11:04:49,781 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:49,782 [INFO] pipeline.scorer: Scored: Senior Software Development Engineer @ Zscaler -> 1/10 [low]
+2026-07-11 11:04:54,806 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:04:54,807 [INFO] pipeline.scorer: Scored: Sr. Staff Site Reliability Engineer (Linux/Network troubleshooting/Scripting) @ Zscaler -> 1/10 [low]
+2026-07-11 11:05:00,039 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:05:00,040 [INFO] pipeline.scorer: Scored: Sr. Staff Software Development Engineer - AI Engineer @ Zscaler -> 3/10 [low]
+2026-07-11 11:05:04,332 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:05:04,333 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-07-11 11:05:05,921 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:05:05,927 [INFO] pipeline.scorer: Scored: Sr. Staff Software Development Engineer - C/C++/Go @ Zscaler -> 1/10 [low]
+2026-07-11 11:05:09,345 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:05:09,346 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-07-11 11:05:11,837 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:05:11,838 [INFO] pipeline.scorer: Scored:  Staff Detection Engineer  @ Zscaler -> 2/10 [low]
+2026-07-11 11:05:14,316 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:05:14,316 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-07-11 11:05:18,056 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:05:18,057 [INFO] pipeline.scorer: Scored: Senior Software Engineer, Atlas API Experience @ Mongodb -> 1/10 [low]
+2026-07-11 11:05:19,393 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:05:19,394 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-11 11:05:24,099 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:05:24,100 [INFO] pipeline.scorer: Scored: Software Engineer 3, Atlas API Experience Integrations @ Mongodb -> 1/10 [low]
+2026-07-11 11:05:24,327 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:05:24,327 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 55.000000 seconds
+2026-07-11 11:06:19,532 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:19,533 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-07-11 11:06:22,125 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 11:06:22,126 [INFO] pipeline.scorer: Scored: Senior Backend Engineer, Analytics Instrumentation (Golang) @ Gitlab -> 1/10 [low]
+2026-07-11 11:06:22,249 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:22,249 [ERROR] pipeline.scorer: Groq scoring failed for Mytos - Junior/Mid Software Engineer - Lever: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499932, Requested 2989. Please try again in 8m24.7488s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:06:27,246 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:27,247 [ERROR] pipeline.scorer: Groq scoring failed for Full Stack Developer - Fresher: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499903, Requested 2737. Please try again in 7m36.192s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:06:32,490 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:32,490 [ERROR] pipeline.scorer: Groq scoring failed for Workflow Developer & Tester: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499873, Requested 2964. Please try again in 8m10.2336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:06:37,254 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:37,254 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Development Engineer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499845, Requested 3020. Please try again in 8m15.072s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:06:42,211 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:42,212 [ERROR] pipeline.scorer: Groq scoring failed for Systems Engineer (Data Intelligence & Analytics Team): Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499830, Requested 2941. Please try again in 7m58.8288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:06:47,255 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:47,255 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 2: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499787, Requested 3000. Please try again in 8m1.5936s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:06:52,257 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:52,258 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Solutions Engineer - MFG: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499758, Requested 3014. Please try again in 7m59.0016s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:06:57,222 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:06:57,222 [ERROR] pipeline.scorer: Groq scoring failed for Manager I, Engineering - Change Experience Platform: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499729, Requested 2956. Please try again in 7m43.967999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:02,248 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:02,248 [ERROR] pipeline.scorer: Groq scoring failed for Software Developer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499700, Requested 3050. Please try again in 7m55.2s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:07,213 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:07,213 [ERROR] pipeline.scorer: Groq scoring failed for Backend Engineer (Ruby), AI Engineering: Agent Observability: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499685, Requested 3395. Please try again in 8m52.223999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:12,245 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:12,245 [ERROR] pipeline.scorer: Groq scoring failed for Applied AI Engineer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499642, Requested 2945. Please try again in 7m27.0336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:17,276 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:17,277 [ERROR] pipeline.scorer: Groq scoring failed for Senior Information Technology Engineer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499613, Requested 3020. Please try again in 7m34.9824s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:22,256 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:22,257 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer : Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499585, Requested 3020. Please try again in 7m30.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:27,220 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:27,226 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Solutions Engineer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499556, Requested 2991. Please try again in 7m20.121599999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:32,232 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:32,233 [ERROR] pipeline.scorer: Groq scoring failed for Staff AI Engineer - Grafana AI/ML | Canada | Remote: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499527, Requested 3066. Please try again in 7m28.070399999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:37,234 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:37,234 [ERROR] pipeline.scorer: Groq scoring failed for Staff AI Engineer - Grafana AI/ML | USA | Remote: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499498, Requested 3064. Please try again in 7m22.7136s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:42,289 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:42,289 [ERROR] pipeline.scorer: Groq scoring failed for Enterprise Sales Engineer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499469, Requested 3583. Please try again in 8m47.385599999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:47,270 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:47,271 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499440, Requested 3034. Please try again in 7m7.5072s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:52,481 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:52,482 [ERROR] pipeline.scorer: Groq scoring failed for Senior Security Engineer, Security Incident Response Team (SIRT) - EMEA: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499410, Requested 3005. Please try again in 6m57.312s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:07:57,250 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:07:57,250 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Python/Golang - Kubernetes: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499382, Requested 3080. Please try again in 7m5.4336s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:02,273 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:02,274 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer - Python/Golang - Kubernetes: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499353, Requested 3026. Please try again in 6m51.0912s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:07,228 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:07,229 [ERROR] pipeline.scorer: Groq scoring failed for Senior Forward Deployed Engineer (Remote Build): Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499324, Requested 3064. Please try again in 6m52.6464s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:12,226 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:12,226 [ERROR] pipeline.scorer: Groq scoring failed for Engineering Manager (BE) - Ecosystem Distribution: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499295, Requested 2971. Please try again in 6m31.5648s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:18,001 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:18,001 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer (Observability): Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499262, Requested 2978. Please try again in 6m27.071999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:22,262 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:22,263 [ERROR] pipeline.scorer: Groq scoring failed for QA Automation Engineer - Pro: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499237, Requested 2934. Please try again in 6m15.1488s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:27,232 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:27,232 [ERROR] pipeline.scorer: Groq scoring failed for SME, Support Systems Specialist: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499209, Requested 3123. Please try again in 6m42.969599999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:32,229 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:32,229 [ERROR] pipeline.scorer: Groq scoring failed for Consultant (Top Secret Clearance, Software Implementation): Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499180, Requested 2972. Please try again in 6m11.8656s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:37,252 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:37,253 [ERROR] pipeline.scorer: Groq scoring failed for Senior Staff Software Engineer (DataLake) : Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499151, Requested 3057. Please try again in 6m21.5424s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:42,290 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:42,290 [ERROR] pipeline.scorer: Groq scoring failed for Applied AI Engineer : Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499121, Requested 3031. Please try again in 6m11.8656s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:47,230 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:47,231 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 3: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499093, Requested 3040. Please try again in 6m8.5824s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:52,253 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:52,253 [ERROR] pipeline.scorer: Groq scoring failed for PhD GenAI Research Scientist Intern: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499064, Requested 3024. Please try again in 6m0.8064s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:08:57,257 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:08:57,257 [ERROR] pipeline.scorer: Groq scoring failed for Senior Staff Software Engineer- Search Quality: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499035, Requested 3075. Please try again in 6m4.608s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:02,546 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:02,547 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Manager, AI Forward Deployed Engineering (AI-FDE) – EMEA: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 499004, Requested 3058. Please try again in 5m56.3136s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:07,283 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:07,283 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Solutions Engineer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498977, Requested 3010. Please try again in 5m43.3536s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:12,268 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:12,269 [ERROR] pipeline.scorer: Groq scoring failed for Staff Backend Engineer - Grafana Enterprise | Canada | Remote: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498948, Requested 3037. Please try again in 5m43.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:17,261 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:17,262 [ERROR] pipeline.scorer: Groq scoring failed for Staff Backend Engineer - Grafana Enterprise | US | Remote: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498919, Requested 3049. Please try again in 5m40.0704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:22,481 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:22,482 [ERROR] pipeline.scorer: Groq scoring failed for Manager I, Engineering - Source Code Integration: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498889, Requested 3101. Please try again in 5m43.872s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:27,216 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:27,217 [ERROR] pipeline.scorer: Groq scoring failed for Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498875, Requested 3401. Please try again in 6m33.292799999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:32,255 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:32,255 [ERROR] pipeline.scorer: Groq scoring failed for Graduate Talent Scientist: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498832, Requested 2958. Please try again in 5m9.312s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:37,246 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:37,246 [ERROR] pipeline.scorer: Groq scoring failed for Senior Director - AI Evaluation Platform: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498803, Requested 2941. Please try again in 5m1.3632s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:42,262 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-11 11:09:42,263 [ERROR] pipeline.scorer: Groq scoring failed for Associate Site Reliability Engineer: Error code: 429 - {'error': {'message': 'Rate limit reached for model `meta-llama/llama-4-scout-17b-16e-instruct` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per day (TPD): Limit 500000, Used 498774, Requested 2930. Please try again in 4m54.4512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-11 11:09:42,279 [INFO] pipeline.scorer: Token budget: 199,579/200,000 tokens used. Skipped 102 lower-ranked jobs to stay under limit.
+2026-07-11 11:09:42,279 [INFO] pipeline.scorer: Scoring complete: 0 urgent, 0 digest, 98 low, 0 expired (dropped)
+2026-07-11 11:09:43,176 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 98 to review — 11 Jul 2026
+2026-07-11 11:09:43,176 [INFO] jobradar: Pipeline complete.
+2026-07-11 11:09:43,176 [INFO] jobradar: Summary: 8350 raw -> 7570 new -> 690 eligible -> 0 urgent
