@@ -6168,3 +6168,693 @@
 2026-07-12 11:23:03,833 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 97 to review — 12 Jul 2026
 2026-07-12 11:23:03,833 [INFO] jobradar: Pipeline complete.
 2026-07-12 11:23:03,833 [INFO] jobradar: Summary: 8364 raw -> 7587 new -> 704 eligible -> 0 urgent
+2026-07-13 06:37:16,448 [INFO] jobradar: ==================================================
+2026-07-13 06:37:16,449 [INFO] jobradar: JobRadar pipeline starting — profile: profile.yaml
+2026-07-13 06:37:16,449 [INFO] jobradar: ==================================================
+2026-07-13 06:37:16,463 [WARNING] jobradar: telegram_chat_id is not set in profile or TELEGRAM_CHAT_ID env var — Telegram notifications will fail
+2026-07-13 06:37:16,469 [INFO] jobradar: --- Fetching ATS endpoints (Greenhouse US/EU, Lever, Ashby, Workable) ---
+2026-07-13 06:37:16,755 [INFO] sources.ats: Greenhouse US razorpaysoftwareprivatelimited: 23 jobs
+2026-07-13 06:37:16,868 [INFO] sources.ats: Greenhouse US phonepe: 50 jobs
+2026-07-13 06:37:16,997 [INFO] sources.ats: Greenhouse US twitch: 65 jobs
+2026-07-13 06:37:17,285 [INFO] sources.ats: Greenhouse US airbnb: 210 jobs
+2026-07-13 06:37:17,524 [INFO] sources.ats: Greenhouse US postman: 120 jobs
+2026-07-13 06:37:17,702 [INFO] sources.ats: Greenhouse US faire: 75 jobs
+2026-07-13 06:37:18,542 [INFO] sources.ats: Greenhouse US duolingo: 66 jobs
+2026-07-13 06:37:18,870 [INFO] sources.ats: Greenhouse US scaleai: 184 jobs
+2026-07-13 06:37:19,083 [INFO] sources.ats: Greenhouse US appian: 175 jobs
+2026-07-13 06:37:19,338 [INFO] sources.ats: Greenhouse US blenheimchalcot: 1 jobs
+2026-07-13 06:37:19,602 [INFO] sources.ats: Greenhouse US nasuni: 37 jobs
+2026-07-13 06:37:19,739 [INFO] sources.ats: Greenhouse US crunchyroll: 80 jobs
+2026-07-13 06:37:19,848 [INFO] sources.ats: Greenhouse US slice: 69 jobs
+2026-07-13 06:37:19,950 [INFO] sources.ats: Greenhouse US highradius: 66 jobs
+2026-07-13 06:37:20,046 [INFO] sources.ats: Greenhouse US pine: 1 jobs
+2026-07-13 06:37:20,199 [INFO] sources.ats: Greenhouse US karbon: 29 jobs
+2026-07-13 06:37:20,273 [WARNING] sources.ats: Greenhouse US fetch failed for loop: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/loop/jobs?content=true
+2026-07-13 06:37:20,274 [INFO] sources.ats: Greenhouse US loop: 0 jobs
+2026-07-13 06:37:20,445 [INFO] sources.ats: Greenhouse US glance: 38 jobs
+2026-07-13 06:37:20,593 [INFO] sources.ats: Greenhouse US inmobi: 67 jobs
+2026-07-13 06:37:20,673 [INFO] sources.ats: Greenhouse US druva: 26 jobs
+2026-07-13 06:37:20,797 [INFO] sources.ats: Greenhouse US zenoti: 47 jobs
+2026-07-13 06:37:20,870 [INFO] sources.ats: Greenhouse US route: 4 jobs
+2026-07-13 06:37:20,952 [INFO] sources.ats: Greenhouse US hackerrank: 36 jobs
+2026-07-13 06:37:21,293 [INFO] sources.ats: Greenhouse US zscaler: 336 jobs
+2026-07-13 06:37:21,603 [INFO] sources.ats: Greenhouse US cloudflare: 251 jobs
+2026-07-13 06:37:21,941 [INFO] sources.ats: Greenhouse US stripe: 510 jobs
+2026-07-13 06:37:22,181 [INFO] sources.ats: Greenhouse US twilio: 156 jobs
+2026-07-13 06:37:22,497 [INFO] sources.ats: Greenhouse US mongodb: 385 jobs
+2026-07-13 06:37:22,900 [INFO] sources.ats: Greenhouse US elastic: 182 jobs
+2026-07-13 06:37:23,566 [INFO] sources.ats: Greenhouse US databricks: 788 jobs
+2026-07-13 06:37:23,707 [INFO] sources.ats: Greenhouse US grafanalabs: 106 jobs
+2026-07-13 06:37:24,038 [INFO] sources.ats: Greenhouse US datadog: 423 jobs
+2026-07-13 06:37:24,142 [INFO] sources.ats: Greenhouse US newrelic: 60 jobs
+2026-07-13 06:37:24,225 [INFO] sources.ats: Greenhouse US sumologic: 24 jobs
+2026-07-13 06:37:24,303 [INFO] sources.ats: Greenhouse US pagerduty: 15 jobs
+2026-07-13 06:37:24,523 [INFO] sources.ats: Greenhouse US cribl: 53 jobs
+2026-07-13 06:37:24,614 [INFO] sources.ats: Greenhouse US jfrog: 53 jobs
+2026-07-13 06:37:24,686 [INFO] sources.ats: Greenhouse US orcasecurity: 5 jobs
+2026-07-13 06:37:24,877 [INFO] sources.ats: Greenhouse US gitlab: 155 jobs
+2026-07-13 06:37:24,949 [INFO] sources.ats: Greenhouse US circleci: 10 jobs
+2026-07-13 06:37:25,017 [INFO] sources.ats: Greenhouse US buildkite: 10 jobs
+2026-07-13 06:37:25,145 [INFO] sources.ats: Greenhouse US airtable: 37 jobs
+2026-07-13 06:37:25,307 [INFO] sources.ats: Greenhouse US figma: 170 jobs
+2026-07-13 06:37:25,381 [INFO] sources.ats: Greenhouse US coursera: 11 jobs
+2026-07-13 06:37:25,455 [INFO] sources.ats: Greenhouse US udemy: 5 jobs
+2026-07-13 06:37:25,775 [INFO] sources.ats: Greenhouse US canonical: 300 jobs
+2026-07-13 06:37:26,123 [INFO] sources.ats: Greenhouse US remotecom: 281 jobs
+2026-07-13 06:37:26,215 [INFO] sources.ats: Greenhouse US turing: 27 jobs
+2026-07-13 06:37:26,289 [INFO] sources.ats: Greenhouse US upwork: 11 jobs
+2026-07-13 06:37:26,359 [INFO] sources.ats: Greenhouse US planetscale: 12 jobs
+2026-07-13 06:37:26,423 [INFO] sources.ats: Greenhouse US newton: 1 jobs
+2026-07-13 06:37:26,585 [INFO] sources.ats: Greenhouse US stage: 156 jobs
+2026-07-13 06:37:26,885 [INFO] sources.ats: Greenhouse EU groww: 15 jobs
+2026-07-13 06:37:27,943 [INFO] sources.ats: Lever meesho: 43 jobs
+2026-07-13 06:37:29,540 [INFO] sources.ats: Lever hevodata: 41 jobs
+2026-07-13 06:37:30,674 [INFO] sources.ats: Lever stable-money1: 19 jobs
+2026-07-13 06:37:31,208 [INFO] sources.ats: Lever linkedin: 20 jobs
+2026-07-13 06:37:32,610 [INFO] sources.ats: Lever paytm: 224 jobs
+2026-07-13 06:37:33,750 [INFO] sources.ats: Lever spotify: 109 jobs
+2026-07-13 06:37:35,231 [INFO] sources.ats: Lever binance: 275 jobs
+2026-07-13 06:37:36,586 [INFO] sources.ats: Lever nium: 34 jobs
+2026-07-13 06:37:37,155 [INFO] sources.ats: Lever 100ms: 10 jobs
+2026-07-13 06:37:38,192 [INFO] sources.ats: Lever GoToGroup: 46 jobs
+2026-07-13 06:37:38,695 [INFO] sources.ats: Lever cred: 4 jobs
+2026-07-13 06:37:39,796 [INFO] sources.ats: Lever fi: 7 jobs
+2026-07-13 06:37:40,919 [INFO] sources.ats: Lever capital: 49 jobs
+2026-07-13 06:37:41,682 [INFO] sources.ats: Lever porter: 19 jobs
+2026-07-13 06:37:42,444 [INFO] sources.ats: Lever mindtickle: 21 jobs
+2026-07-13 06:37:43,342 [INFO] sources.ats: Lever belong: 44 jobs
+2026-07-13 06:37:43,684 [INFO] sources.ats: Lever whereby: 1 jobs
+2026-07-13 06:37:44,821 [INFO] sources.ats: Lever toptal: 18 jobs
+2026-07-13 06:37:44,971 [INFO] sources.ats: Ashby navi: 8 jobs
+2026-07-13 06:37:45,036 [INFO] sources.ats: Ashby ditto: 25 jobs
+2026-07-13 06:37:45,094 [INFO] sources.ats: Ashby bounce: 16 jobs
+2026-07-13 06:37:45,181 [INFO] sources.ats: Ashby clarisights: 2 jobs
+2026-07-13 06:37:45,244 [INFO] sources.ats: Ashby confluent: 32 jobs
+2026-07-13 06:37:45,297 [INFO] sources.ats: Ashby linear: 24 jobs
+2026-07-13 06:37:45,438 [INFO] sources.ats: Ashby notion: 141 jobs
+2026-07-13 06:37:45,504 [INFO] sources.ats: Ashby zapier: 18 jobs
+2026-07-13 06:37:45,555 [INFO] sources.ats: Ashby buffer: 1 jobs
+2026-07-13 06:37:45,602 [INFO] sources.ats: Ashby deel: 0 jobs
+2026-07-13 06:37:45,666 [INFO] sources.ats: Ashby oyster: 12 jobs
+2026-07-13 06:37:45,721 [INFO] sources.ats: Ashby andela: 15 jobs
+2026-07-13 06:37:45,794 [INFO] sources.ats: Ashby supabase: 51 jobs
+2026-07-13 06:37:45,850 [INFO] sources.ats: Ashby railway: 9 jobs
+2026-07-13 06:37:45,920 [INFO] sources.ats: Ashby render: 25 jobs
+2026-07-13 06:37:45,975 [INFO] sources.ats: Ashby infisical: 8 jobs
+2026-07-13 06:37:46,026 [INFO] sources.ats: Ashby triggerdev: 3 jobs
+2026-07-13 06:37:46,082 [INFO] sources.ats: Ashby mintlify: 15 jobs
+2026-07-13 06:37:46,135 [INFO] sources.ats: Ashby resend: 8 jobs
+2026-07-13 06:37:46,189 [INFO] sources.ats: Ashby stytch: 5 jobs
+2026-07-13 06:37:46,247 [INFO] sources.ats: Ashby workos: 23 jobs
+2026-07-13 06:37:46,349 [INFO] sources.ats: Ashby scaler: 0 jobs
+2026-07-13 06:37:46,453 [INFO] sources.ats: Workable juspay: 0 jobs
+2026-07-13 06:37:47,184 [INFO] sources.ats: Workable gridlines: 10 jobs
+2026-07-13 06:37:47,999 [INFO] sources.ats: Workable apna: 10 jobs
+2026-07-13 06:37:48,977 [INFO] sources.ats: SmartRecruiters Upstox: 1 jobs
+2026-07-13 06:37:49,905 [INFO] sources.ats: SmartRecruiters Lendingkart: 1 jobs
+2026-07-13 06:37:50,799 [INFO] sources.ats: SmartRecruiters Turtlemint: 1 jobs
+2026-07-13 06:37:55,972 [INFO] sources.ats: SmartRecruiters Lokal: 10 jobs
+2026-07-13 06:37:56,870 [INFO] sources.ats: SmartRecruiters Cars24: 1 jobs
+2026-07-13 06:38:01,959 [INFO] sources.ats: SmartRecruiters ixigo: 10 jobs
+2026-07-13 06:38:48,663 [INFO] sources.ats: SmartRecruiters Freshworks: 100 jobs
+2026-07-13 06:38:49,600 [INFO] sources.ats: SmartRecruiters Whatfix: 1 jobs
+2026-07-13 06:38:53,950 [INFO] sources.ats: SmartRecruiters MercerMettl: 8 jobs
+2026-07-13 06:38:56,779 [INFO] sources.ats: SmartRecruiters InterviewMocha: 5 jobs
+2026-07-13 06:39:01,990 [INFO] sources.ats: SmartRecruiters Skillate: 10 jobs
+2026-07-13 06:39:49,634 [INFO] sources.ats: SmartRecruiters ServiceNow: 100 jobs
+2026-07-13 06:41:01,372 [INFO] sources.ats: SmartRecruiters Canva: 100 jobs
+2026-07-13 06:41:03,201 [INFO] sources.ats: SmartRecruiters Unacademy: 3 jobs
+2026-07-13 06:41:11,812 [INFO] sources.ats: SmartRecruiters Dailymotion: 17 jobs
+2026-07-13 06:41:12,607 [INFO] sources.ats: Rippling axio: 2 jobs
+2026-07-13 06:41:13,141 [INFO] sources.ats: Rippling multiplier: 1 jobs
+2026-07-13 06:41:14,516 [INFO] sources.ats: Rippling dub: 4 jobs
+2026-07-13 06:41:14,883 [INFO] sources.ats: BambooHR urban: 18 jobs
+2026-07-13 06:41:15,372 [INFO] sources.ats: BambooHR shadowfax: 9 jobs
+2026-07-13 06:41:16,112 [INFO] sources.ats: BambooHR google: 4 jobs
+2026-07-13 06:41:16,457 [WARNING] sources.ats: BambooHR fetch failed for meta: Expecting value: line 1 column 1 (char 0)
+2026-07-13 06:41:16,459 [INFO] sources.ats: BambooHR meta: 0 jobs
+2026-07-13 06:41:16,899 [INFO] sources.ats: BambooHR flyio: 11 jobs
+2026-07-13 06:41:17,129 [WARNING] sources.ats: Recruitee fetch failed for unstop: 404 Client Error: Not Found for url: https://unstop.recruitee.com/api/offers/
+2026-07-13 06:41:17,130 [INFO] sources.ats: Recruitee unstop: 0 jobs
+2026-07-13 06:41:17,380 [INFO] sources.ats: Recruitee salesforce: 1 jobs
+2026-07-13 06:41:17,531 [WARNING] sources.ats: Recruitee fetch failed for ibm: 404 Client Error: Not Found for url: https://ibm.recruitee.com/api/offers/
+2026-07-13 06:41:17,533 [INFO] sources.ats: Recruitee ibm: 0 jobs
+2026-07-13 06:41:18,443 [INFO] sources.ats: Personio open: 2 jobs
+2026-07-13 06:41:19,151 [INFO] sources.ats: Personio josh: 3 jobs
+2026-07-13 06:41:19,935 [INFO] sources.ats: Personio amazon: 3 jobs
+2026-07-13 06:41:20,704 [INFO] sources.ats: Personio basecamp: 4 jobs
+2026-07-13 06:41:20,704 [INFO] sources.ats: ATS total: 7892 raw jobs
+2026-07-13 06:41:20,704 [INFO] jobradar: --- Fetching Cutshort ---
+2026-07-13 06:41:52,887 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:42:24,258 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=machine+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:42:55,719 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=generative+AI+intern&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:43:27,848 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=LLM+engineer+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:44:03,021 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=computer+vision+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:44:07,372 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=python+backend+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:44:11,443 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=deep+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:44:15,437 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=NLP+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:44:19,446 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=RAG+langchain+intern&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:44:50,716 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+ML+fresher+india&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:44:50,858 [INFO] sources.cutshort: Cutshort: 0 jobs found
+2026-07-13 06:44:50,859 [INFO] jobradar: --- Fetching Instahyre ---
+2026-07-13 06:44:53,811 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=python&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:44:53,849 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:44:56,641 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=machine-learning&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:44:56,681 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:44:59,447 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=deep-learning&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:44:59,486 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:02,263 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=artificial-intelligence&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:45:02,302 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:05,085 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=computer-vision&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:45:05,124 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:08,115 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=nlp&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:45:08,154 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:10,865 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=langchain&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:45:10,905 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:13,629 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=django&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:45:13,674 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:16,499 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=fastapi&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:45:16,538 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:19,533 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=pytorch&exp=0-1> (referer: https://www.google.com/)
+2026-07-13 06:45:19,573 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-13 06:45:19,671 [INFO] sources.instahyre: Instahyre: 0 jobs found via Scrapling
+2026-07-13 06:45:19,672 [INFO] jobradar: --- Skipping wellfound (disabled in profile) ---
+2026-07-13 06:45:19,672 [INFO] jobradar: --- Fetching Internshala ---
+2026-07-13 06:45:21,934 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/backend-development-internship/> (referer: https://www.google.com/)
+2026-07-13 06:45:24,224 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-07-13 06:45:26,697 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-07-13 06:45:28,859 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/web-development-internship/> (referer: https://www.google.com/)
+2026-07-13 06:45:30,529 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-golang/> (referer: https://www.google.com/)
+2026-07-13 06:45:32,545 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-go-developer/> (referer: https://www.google.com/)
+2026-07-13 06:45:34,607 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-nodejs/> (referer: https://www.google.com/)
+2026-07-13 06:45:36,497 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-typescript/> (referer: https://www.google.com/)
+2026-07-13 06:45:38,774 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/> (referer: https://www.google.com/)
+2026-07-13 06:45:40,672 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/software-developer-jobs/> (referer: https://www.google.com/)
+2026-07-13 06:45:40,684 [INFO] sources.internshala: Internshala: 0 jobs found
+2026-07-13 06:45:40,685 [INFO] jobradar: --- Fetching Indian Fresher Blogs (RSS + Cuvette) ---
+2026-07-13 06:45:40,894 [WARNING] sources.freshers_blogs: [fresheropenings] RSS unparseable for https://fresheropenings.com/feed/: <unknown>:2:380: not well-formed (invalid token)
+2026-07-13 06:45:40,894 [INFO] sources.freshers_blogs: [fresheropenings] 0 entries from https://fresheropenings.com/feed/
+2026-07-13 06:45:41,241 [WARNING] sources.freshers_blogs: [offcampusjobs4u] RSS unparseable for https://offcampusjobs4u.com/category/offcampus-jobs/feed/: <unknown>:7:866: not well-formed (invalid token)
+2026-07-13 06:45:41,241 [INFO] sources.freshers_blogs: [offcampusjobs4u] 0 entries from https://offcampusjobs4u.com/category/offcampus-jobs/feed/
+2026-07-13 06:45:41,691 [INFO] sources.freshers_blogs: [freshershunt] 1 entries from https://freshershunt.in/feed/
+2026-07-13 06:45:43,013 [INFO] sources.freshers_blogs: [freshersdunia] 20 entries from https://freshersdunia.in/feed/
+2026-07-13 06:45:44,660 [INFO] sources.freshers_blogs: [freshersnow] 20 entries from https://freshersnow.com/feed/
+2026-07-13 06:47:54,733 [WARNING] sources.freshers_blogs: [freshers-job] RSS unparseable for https://freshers-job.com/feed/: <urlopen error [Errno 110] Connection timed out>
+2026-07-13 06:47:54,734 [WARNING] sources.freshers_blogs: [tnpofficer] RSS unparseable for https://tnpofficer.com/category/off-campus/feed/: <urlopen error [Errno 101] Network is unreachable>
+2026-07-13 06:47:54,734 [WARNING] sources.freshers_blogs: [freshersarea] RSS unparseable for https://freshersarea.in/feed/: <urlopen error [Errno 101] Network is unreachable>
+2026-07-13 06:47:54,734 [INFO] sources.freshers_blogs: [freshersarea] 0 entries from https://freshersarea.in/feed/
+2026-07-13 06:47:54,734 [INFO] sources.freshers_blogs: [tnpofficer] 0 entries from https://tnpofficer.com/category/off-campus/feed/
+2026-07-13 06:47:54,734 [INFO] sources.freshers_blogs: [freshers-job] 0 entries from https://freshers-job.com/feed/
+2026-07-13 06:47:54,735 [INFO] sources.freshers_blogs: freshers_blogs: 41 total listings from 8 RSS feeds
+2026-07-13 06:47:54,735 [INFO] jobradar: --- Fetching YC Jobs ---
+2026-07-13 06:47:57,098 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&type=fulltime,intern&remote=true> (referer: https://www.google.com/)
+2026-07-13 06:47:57,107 [INFO] sources.yc: YC listing 'q=backend&type=fulltime,intern&remote=tr': 3 candidates
+2026-07-13 06:47:59,473 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=typescript+backend&type=fulltime,intern> (referer: https://www.google.com/)
+2026-07-13 06:47:59,478 [INFO] sources.yc: YC listing 'q=typescript+backend&type=fulltime,inter': 0 candidates
+2026-07-13 06:48:01,815 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=golang&type=fulltime,intern> (referer: https://www.google.com/)
+2026-07-13 06:48:01,820 [INFO] sources.yc: YC listing 'q=golang&type=fulltime,intern': 0 candidates
+2026-07-13 06:48:04,154 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&location=india> (referer: https://www.google.com/)
+2026-07-13 06:48:04,158 [INFO] sources.yc: YC listing 'q=backend&location=india': 0 candidates
+2026-07-13 06:48:04,159 [INFO] sources.yc: YC Phase 1 complete: 3 candidate job pages to fetch
+2026-07-13 06:48:06,063 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/soraban/jobs/1qaL5ow-ai-first-fullstack-software-engineer-in-person-5x-a-week> (referer: https://www.google.com/)
+2026-07-13 06:48:07,897 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/runway/jobs/0s9VB2H-full-stack-engineer> (referer: https://www.google.com/)
+2026-07-13 06:48:09,691 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/glimpse-2/jobs/5hmOmrr-software-engineer> (referer: https://www.google.com/)
+2026-07-13 06:48:09,695 [INFO] sources.yc: YC Jobs: 1 jobs parsed from 3 fetched pages
+2026-07-13 06:48:09,695 [INFO] jobradar: --- Fetching via Serper discovery ---
+2026-07-13 06:48:09,695 [INFO] sources.serper: Serper pool: 26 tier-1 | 47 tier-2 | 31 tier-3. Running: 10 (unique) + 15 (priority) + 0 (filler) = 25 queries
+2026-07-13 06:48:11,862 [INFO] scrapling: Fetched (200) <GET https://t.me/s/gocareers?before=10592> (referer: https://www.google.com/)
+2026-07-13 06:48:14,030 [INFO] scrapling: Fetched (200) <GET https://techkalaa.tech/Apply-Jobs> (referer: https://www.google.com/)
+2026-07-13 06:48:25,038 [WARNING] scrapling: Proxy 'None' failed (attempt 1) | Retrying in 1 seconds...
+2026-07-13 06:48:36,040 [WARNING] scrapling: Proxy 'None' failed (attempt 2) | Retrying in 1 seconds...
+2026-07-13 06:48:47,043 [ERROR] scrapling: Failed after 3 attempts: Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-13 06:48:47,043 [WARNING] sources.serper: Failed to extract job from https://hiredeck.in/category/jobs/internships/: Failed to perform, curl: (28) Connection timed out after 10001 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-13 06:48:49,260 [INFO] scrapling: Fetched (200) <GET https://finazon.io/careers/golang-developer> (referer: https://www.google.com/)
+2026-07-13 06:48:51,314 [INFO] scrapling: Fetched (200) <GET https://scalablesolutions.io/careers/vacancy/senior-golang-dev> (referer: https://www.google.com/)
+2026-07-13 06:48:52,445 [INFO] scrapling: Fetched (200) <GET https://voodoo.io/careers> (referer: https://www.google.com/)
+2026-07-13 06:48:53,591 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/company/jobs-at-blockify-33-rG7fxKH7> (referer: https://www.google.com/)
+2026-07-13 06:48:54,721 [INFO] scrapling: Fetched (403) <GET https://careervault.io/remote/base-org-careers-page-26993/software/senior-fullstack-engineer-backend-leaning-remote-usa-5163763> (referer: https://www.google.com/)
+2026-07-13 06:48:55,885 [INFO] scrapling: Fetched (200) <GET https://slashdev.io/usa/careers> (referer: https://www.google.com/)
+2026-07-13 06:48:57,106 [INFO] scrapling: Fetched (200) <GET https://www.getunleash.io/careers> (referer: https://www.google.com/)
+2026-07-13 06:48:58,316 [INFO] scrapling: Fetched (429) <GET https://app.spott.io/careers/ntiative/a0840eeb-ebe6-4a8e-9ece-68fea7876a4d> (referer: https://www.google.com/)
+2026-07-13 06:48:59,451 [INFO] scrapling: Fetched (200) <GET https://nhost.io/careers> (referer: https://www.google.com/)
+2026-07-13 06:49:11,919 [WARNING] scrapling: Proxy 'None' failed (attempt 1) | Retrying in 1 seconds...
+2026-07-13 06:49:22,922 [WARNING] scrapling: Proxy 'None' failed (attempt 2) | Retrying in 1 seconds...
+2026-07-13 06:49:33,925 [ERROR] scrapling: Failed after 3 attempts: Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-13 06:49:33,926 [WARNING] sources.serper: Failed to extract job from https://www.radicaltechnologies.co.in/careers/: Failed to perform, curl: (28) Connection timed out after 10002 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+2026-07-13 06:49:37,341 [INFO] scrapling: Fetched (200) <GET https://acowale.zohorecruit.in/jobs/careers> (referer: https://www.google.com/)
+2026-07-13 06:49:38,651 [INFO] scrapling: Fetched (200) <GET https://www.webnesters.in/careers> (referer: https://www.google.com/)
+2026-07-13 06:49:39,803 [INFO] scrapling: Fetched (200) <GET https://zidio.in/careers> (referer: https://www.google.com/)
+2026-07-13 06:49:41,741 [INFO] scrapling: Fetched (200) <GET https://zyncspace.in/careers> (referer: https://www.google.com/)
+2026-07-13 06:49:44,845 [INFO] scrapling: Fetched (200) <GET https://www.foundit.in/search/training-basket-676863-jobs-career> (referer: https://www.google.com/)
+2026-07-13 06:49:47,548 [INFO] scrapling: Fetched (200) <GET https://www.finkit.in/careers> (referer: https://www.google.com/)
+2026-07-13 06:49:48,687 [INFO] scrapling: Fetched (200) <GET https://sensesemi.in/careers> (referer: https://www.google.com/)
+2026-07-13 06:49:53,303 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Backend-Developer-Intern-NodeJs-Quoality-ySNWd9q4> (referer: https://www.google.com/)
+2026-07-13 06:49:54,806 [INFO] scrapling: Fetched (200) <GET https://revpath.dealhub.io/jobs/483283369-intern-sales-business-operations> (referer: https://www.google.com/)
+2026-07-13 06:49:55,954 [INFO] scrapling: Fetched (200) <GET https://www.spainjobs.io/jobs/sector/fintech> (referer: https://www.google.com/)
+2026-07-13 06:50:02,117 [INFO] scrapling: Fetched (200) <GET https://aworker.io/backend-jobs> (referer: https://www.google.com/)
+2026-07-13 06:50:03,430 [INFO] scrapling: Fetched (200) <GET https://peerlist.io/company/phonepeinrnet/careers/software-engineer-backend-financial-services/jobhok7p97n9lmgkjhpk7kn8regben> (referer: https://www.google.com/)
+2026-07-13 06:50:04,670 [INFO] scrapling: Fetched (200) <GET https://www.tokenjobs.io/offer/45538/Backend-Developer-Intern> (referer: https://www.google.com/)
+2026-07-13 06:50:06,867 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-427297-backend-engineer-intern-at-kodo-mumbai/> (referer: https://www.google.com/)
+2026-07-13 06:50:08,431 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-405531-software-engineering-intern-internship-at-hotstuff-labs-delhi/> (referer: https://www.google.com/)
+2026-07-13 06:50:09,959 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-264129-backend-developer-intern-internship-at-atlan-work-from-home/> (referer: https://www.google.com/)
+2026-07-13 06:50:11,422 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/backend-development-internships/> (referer: https://www.google.com/)
+2026-07-13 06:50:12,996 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-254163-backend-developer-intern-at-refyne-bangalore/> (referer: https://www.google.com/)
+2026-07-13 06:50:14,561 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-128490-backend-developer-golang-sde-i-at-citymall-work-from-home/> (referer: https://www.google.com/)
+2026-07-13 06:50:16,093 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-382937-backend-engineer-internship-at-optiq-bangalore/> (referer: https://www.google.com/)
+2026-07-13 06:50:17,642 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-397005-backend-engineer-trainee-internship-at-matters-bangalore/> (referer: https://www.google.com/)
+2026-07-13 06:50:19,221 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-128492-backend-developer-golang-sde-ii-at-citymall-work-from-home/> (referer: https://www.google.com/)
+2026-07-13 06:50:20,760 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/job-426929-golang-developer-at-neosoft-technologies-noida/> (referer: https://www.google.com/)
+2026-07-13 06:50:22,501 [WARNING] sources.serper: Serper query failed '"typeform.com" "backend" "intern" OR "fresher" india -site:l': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-07-13 06:50:24,645 [INFO] scrapling: Fetched (200) <GET https://www.dheya.com/insights/fintech-careers-india-2026?srsltid=AfmBOoqdZYym8u_WkyLRzCh6WnJ8JT8TZO8XTjYLANAUnjC72lR9sQGz> (referer: https://www.google.com/)
+2026-07-13 06:50:27,155 [INFO] scrapling: Fetched (200) <GET https://www.kaseya.com/careers/jobs/> (referer: https://www.google.com/)
+2026-07-13 06:50:28,989 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/masterborn-2/672c919d-3558-44e6-87ac-c5fb57c7c229> (referer: https://www.google.com/)
+2026-07-13 06:50:30,159 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/Yassir/d709db41-312d-4bcb-9c02-db32a4f6db00> (referer: https://www.google.com/)
+2026-07-13 06:50:31,346 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/masterborn-2/?team=Backend> (referer: https://www.google.com/)
+2026-07-13 06:50:32,733 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/vacancies?workplaceType=remote> (referer: https://www.google.com/)
+2026-07-13 06:50:33,890 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/vacancies> (referer: https://www.google.com/)
+2026-07-13 06:50:35,075 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/gohighlevel/aa1ac843-c6a4-471f-8783-de8089e9d325> (referer: https://www.google.com/)
+2026-07-13 06:50:36,260 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/mytos/bbb558c0-d769-4b5f-a3a7-025642c2626d> (referer: https://www.google.com/)
+2026-07-13 06:50:37,458 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/agile-defense/1d57f9d5-95a3-4252-8649-af687cf7b29b> (referer: https://www.google.com/)
+2026-07-13 06:50:38,631 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/RyzLabs/340f70d9-7018-41e7-b8ee-ca85165367aa> (referer: https://www.google.com/)
+2026-07-13 06:50:39,846 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/dilitrust/994eaa97-98b4-463b-9cee-4d41730d9a2c> (referer: https://www.google.com/)
+2026-07-13 06:50:42,122 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/binance.us/c23e9aa3-0daa-4170-a5a7-b03aaa031895> (referer: https://www.google.com/)
+2026-07-13 06:50:43,307 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/super.com/6a0dc25b-6eb2-411e-a862-6b083d9bad3c> (referer: https://www.google.com/)
+2026-07-13 06:50:44,459 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/ellipsislabs/02136b22-35b1-4b3d-8bef-567c3380a849> (referer: https://www.google.com/)
+2026-07-13 06:50:45,632 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/blackbird-labs-inc/a901dd42-7c52-488a-bd55-f1d5dcd37b38> (referer: https://www.google.com/)
+2026-07-13 06:50:46,787 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/andercore> (referer: https://www.google.com/)
+2026-07-13 06:50:47,836 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/ramp/67fadb77-43d8-4449-954b-d4cf2c6d3b8b> (referer: https://www.google.com/)
+2026-07-13 06:50:49,071 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/super.com/8179b5ad-9074-4d96-aa92-366cf12ab5d5> (referer: https://www.google.com/)
+2026-07-13 06:50:50,108 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/ramp> (referer: https://www.google.com/)
+2026-07-13 06:50:51,253 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/base-power> (referer: https://www.google.com/)
+2026-07-13 06:50:52,342 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/freetrade> (referer: https://www.google.com/)
+2026-07-13 06:50:54,846 [INFO] scrapling: Fetched (200) <GET https://web3.career/golang+intern-jobs?page=9> (referer: https://www.google.com/)
+2026-07-13 06:50:59,572 [INFO] scrapling: Fetched (200) <GET https://myinternships.in/fresher-jobs/golang-fresher-jobs> (referer: https://www.google.com/)
+2026-07-13 06:51:04,230 [INFO] scrapling: Fetched (200) <GET https://aligarh.in.expertini.com/jobs/in/golang-intern-aligarh-ima/> (referer: https://www.google.com/)
+2026-07-13 06:51:06,299 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/4289766-backend-golang-sde-intern> (referer: https://www.google.com/)
+2026-07-13 06:51:07,794 [INFO] scrapling: Fetched (200) <GET https://us.trabajo.org/jobs-golang+backend+intern+build+high-performance+crypto/Phoenix> (referer: https://www.google.com/)
+2026-07-13 06:51:09,137 [INFO] scrapling: Fetched (200) <GET https://bebee.com/in/jobs/go-backend-intern-ostoya-gurugram--techmap_in_58157006> (referer: https://www.google.com/)
+2026-07-13 06:51:10,775 [INFO] scrapling: Fetched (200) <GET https://www.foundit.in/job/golang-backend-intern-truck-hai-vellore-48805465> (referer: https://www.google.com/)
+2026-07-13 06:51:13,292 [INFO] scrapling: Fetched (200) <GET https://cryptocurrencyjobs.co/remote/> (referer: https://www.google.com/)
+2026-07-13 06:51:14,357 [INFO] scrapling: Fetched (200) <GET https://www.remoterocketship.com/jobs/backend-engineer/internships/> (referer: https://www.google.com/)
+2026-07-13 06:51:15,672 [INFO] scrapling: Fetched (200) <GET https://bebee.com/us/jobs/remote-software-engineering-intern-binanceus-san-antonio-tx--jooble-3849427093993935788> (referer: https://www.google.com/)
+2026-07-13 06:51:18,544 [INFO] scrapling: Fetched (200) <GET https://laborx.com/jobs/web3-software-engineer-intern-93301> (referer: https://www.google.com/)
+2026-07-13 06:51:20,477 [INFO] scrapling: Fetched (200) <GET https://web3.career/golang+intern+remote-jobs> (referer: https://www.google.com/)
+2026-07-13 06:51:21,602 [INFO] scrapling: Fetched (200) <GET https://stripe.com/jobs/listing/software-engineer-intern/8031833> (referer: https://www.google.com/)
+2026-07-13 06:51:22,759 [INFO] scrapling: Fetched (200) <GET https://job-boards.greenhouse.io/nirmata/jobs/5040355008> (referer: https://www.google.com/)
+2026-07-13 06:51:24,086 [INFO] scrapling: Fetched (200) <GET https://www.virtualvocations.com/q-remote-software-engineer-intern-jobs.html> (referer: https://www.google.com/)
+2026-07-13 06:51:25,822 [INFO] scrapling: Fetched (200) <GET https://cloudhire.netlify.app/remote-jobs/software-engineer-intern-golang-paid-summer-internship-mfd> (referer: https://www.google.com/)
+2026-07-13 06:51:27,745 [INFO] scrapling: Fetched (404) <GET https://bebee.com/in/jobs/nodejs-backend-intern-graun-limited-noida-uttar-pradesh--theirstack-681079331> (referer: https://www.google.com/)
+2026-07-13 06:51:28,797 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Node-Js-Backend-Intern-Noida-Parksmart-tGu4HHwx> (referer: https://www.google.com/)
+2026-07-13 06:51:31,123 [INFO] scrapling: Fetched (200) <GET https://navrojan.com/job-details/node-js-backend-intern-code-inbound-8f29-924376> (referer: https://www.google.com/)
+2026-07-13 06:51:33,213 [INFO] scrapling: Fetched (200) <GET https://www.wantjob.in/jobs/backend-intern-bangalore-karnataka-zGaqf1zqeOPV8S0WwEYo> (referer: https://www.google.com/)
+2026-07-13 06:51:35,254 [INFO] scrapling: Fetched (200) <GET https://jobs.eu.lever.co/coinspaid/565ae94f-400f-4026-a739-9ae88b957efc> (referer: https://www.google.com/)
+2026-07-13 06:51:36,422 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/certik/478ab0cd-9f5e-4b88-88b5-01d3beac4d81> (referer: https://www.google.com/)
+2026-07-13 06:51:37,571 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/insiderone?location=Istanbul%2C%20Turkiye> (referer: https://www.google.com/)
+2026-07-13 06:51:38,715 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/certik/> (referer: https://www.google.com/)
+2026-07-13 06:51:39,882 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/jumpcloud/fec0f9d7-adcd-4be5-8659-cfd1b64e724e> (referer: https://www.google.com/)
+2026-07-13 06:51:41,078 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/xsolla> (referer: https://www.google.com/)
+2026-07-13 06:51:42,235 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/insiderone> (referer: https://www.google.com/)
+2026-07-13 06:51:43,397 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/xsolla?department=Technology> (referer: https://www.google.com/)
+2026-07-13 06:51:44,560 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/certik?workplaceType=remote> (referer: https://www.google.com/)
+2026-07-13 06:51:45,714 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/binance?department=Engineering> (referer: https://www.google.com/)
+2026-07-13 06:51:48,019 [INFO] scrapling: Fetched (200) <GET https://web3.career/entry-level+golang-jobs?page=2> (referer: https://www.google.com/)
+2026-07-13 06:51:49,373 [INFO] scrapling: Fetched (429) <GET https://golang.cafe/hiring-solutions> (referer: https://www.google.com/)
+2026-07-13 06:51:50,421 [INFO] scrapling: Fetched (200) <GET https://www.remoterocketship.com/us/jobs/go/> (referer: https://www.google.com/)
+2026-07-13 06:51:52,128 [INFO] scrapling: Fetched (200) <GET https://www.remoterocketship.com/country/asia/jobs/backend-developer/> (referer: https://www.google.com/)
+2026-07-13 06:51:53,375 [INFO] scrapling: Fetched (200) <GET https://remoteok.com/remote-backend-jobs> (referer: https://www.google.com/)
+2026-07-13 06:51:54,784 [INFO] scrapling: Fetched (200) <GET https://bebee.com/in/jobs/python-developer-intern-remote-entry-level-automation-backend-systems-inficore-soft--theirstack-684463812> (referer: https://www.google.com/)
+2026-07-13 06:51:56,672 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/shopback-2?workplaceType=onsite> (referer: https://www.google.com/)
+2026-07-13 06:51:57,831 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/yuno> (referer: https://www.google.com/)
+2026-07-13 06:51:59,003 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/binance/ef77ec2f-1ffa-49bc-a18d-9f019ca1edae> (referer: https://www.google.com/)
+2026-07-13 06:52:00,159 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/coins> (referer: https://www.google.com/)
+2026-07-13 06:52:01,449 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/paytm> (referer: https://www.google.com/)
+2026-07-13 06:52:02,620 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/paytm?department=Technology> (referer: https://www.google.com/)
+2026-07-13 06:52:03,814 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/deuna> (referer: https://www.google.com/)
+2026-07-13 06:52:04,971 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/paytm?workplaceType=onsite> (referer: https://www.google.com/)
+2026-07-13 06:52:06,163 [INFO] scrapling: Fetched (200) <GET https://jobs.lever.co/coins?ref=CryptoJobsWorld&department=Marketing> (referer: https://www.google.com/)
+2026-07-13 06:52:07,876 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Golang-Developer-Intern-RNG-DEV-nysf7abu> (referer: https://www.google.com/)
+2026-07-13 06:52:09,157 [INFO] scrapling: Fetched (200) <GET https://www.golangjobs.tech/> (referer: https://www.google.com/)
+2026-07-13 06:52:10,307 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/role/l/go-developer/india> (referer: https://www.google.com/)
+2026-07-13 06:52:11,788 [INFO] scrapling: Fetched (200) <GET https://www.golangprojects.com/golang-remote-jobs.html> (referer: https://www.google.com/)
+2026-07-13 06:52:13,037 [INFO] scrapling: Fetched (200) <GET https://jobgether.com/offer/6a2324a4f8af0ea2c4083826-golang-development-engineer-intern> (referer: https://www.google.com/)
+2026-07-13 06:52:13,043 [INFO] sources.serper: Serper discovery: 25 queries → 108 unique URLs → 85 jobs extracted
+2026-07-13 06:52:13,044 [INFO] jobradar: --- Skipping hackernews (disabled in profile) ---
+2026-07-13 06:52:13,044 [INFO] jobradar: --- Skipping reddit (disabled in profile) ---
+2026-07-13 06:52:13,044 [INFO] jobradar: --- Fetching Naukri.com ---
+2026-07-13 06:52:13,044 [INFO] sources.naukri: Naukri: 10 keywords x 3 locations x 2 pages = up to 60 search calls (1200 raw listings max) | exp cap: 1yr | age cap: 45d
+2026-07-13 06:53:49,726 [INFO] sources.naukri: Naukri Stage-1 complete: 166 unique jobs survived (exp <= 1yr, age <= 45d)
+2026-07-13 06:53:49,728 [INFO] sources.naukri: Naukri: 166 jobs entering pipeline
+2026-07-13 06:53:49,728 [INFO] jobradar: --- Fetching Hirist.tech ---
+2026-07-13 06:53:49,728 [INFO] sources.hirist: Hirist: 45 keywords x 2 pages | exp range: 0-3 yrs | detail fetch: True | hard timeout: 600s
+2026-07-13 06:53:54,396 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/python-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:53:58,755 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/machine-learning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:03,082 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/deep-learning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:07,925 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/computer-vision-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:11,978 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/generative-ai-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:16,070 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/langchain-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:20,467 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/nlp-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:24,747 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/llm-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:29,522 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/rag-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:33,826 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/langgraph-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:38,074 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/hugging-face-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:42,612 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/prompt-engineering-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:46,616 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/vector-database-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:50,811 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/pinecone-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:54:54,984 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/openai-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:00,136 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/fine-tuning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:04,361 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/multimodal-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:08,430 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/backend-developer-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:13,224 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/django-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:18,012 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/fastapi-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:22,573 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/flask-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:27,491 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/rest-api-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:32,304 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/postgresql-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:37,202 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/mongodb-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:41,942 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/sql-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:46,826 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/redis-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:51,430 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/aws-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:55,677 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/gcp-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:55:59,984 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/yolo-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:04,555 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/opencv-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:08,748 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/object-detection-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:12,917 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/pytorch-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:17,600 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/tensorflow-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:21,689 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/data-science-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:25,630 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/xgboost-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:29,591 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/scikit-learn-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:33,757 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/lightgbm-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:37,914 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/catboost-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:42,085 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/mlops-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:46,740 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/docker-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:51,416 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/git-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:56:56,187 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/ci-cd-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:57:00,339 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/gradio-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:57:04,625 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/streamlit-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:57:08,906 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/model-deployment-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-13 06:57:09,020 [INFO] sources.hirist: Hirist: 0 raw jobs from listing pages
+2026-07-13 06:57:09,020 [INFO] jobradar: --- Fetching Jobicy (remote jobs API) ---
+2026-07-13 06:57:10,973 [INFO] sources.jobicy: Jobicy: 71 remote jobs found
+2026-07-13 06:57:10,973 [INFO] jobradar: --- Fetching RemoteOK (JSON API) ---
+2026-07-13 06:57:13,568 [INFO] sources.remoteok: RemoteOK: 64 dev/engineering jobs found
+2026-07-13 06:57:13,569 [INFO] jobradar: Total raw jobs from all sources: 8320
+2026-07-13 06:57:14,701 [INFO] pipeline.dedup: Dedup: 8320 raw -> 7544 new
+2026-07-13 06:57:26,947 [INFO] pipeline.prefilter: ATS company cap (25): capped companies — Zscaler, Mongodb, Databricks, Grafanalabs, Datadog, Gitlab
+2026-07-13 06:57:26,947 [INFO] pipeline.prefilter: Pre-filter: 7544 jobs -> 693 passed (sent to AI scorer)
+2026-07-13 06:57:29,099 [INFO] pipeline.ranker: Relevance ranking: 693 jobs ranked. Top scores: [25, 25, 25, 24, 24]
+2026-07-13 06:57:29,099 [WARNING] pipeline.scorer: Hard fallback cap: trimmed 493 lowest-ranked jobs (max_ai_jobs_per_run=200). Increase cap in profile.yaml if needed.
+2026-07-13 06:57:29,099 [INFO] pipeline.scorer: Scoring up to 200 ranked jobs with Groq (meta-llama/llama-4-scout-17b-16e-instruct) | token budget: 200,000
+2026-07-13 06:57:30,061 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:57:30,073 [INFO] pipeline.scorer: Scored: Software Engineer, Robotics @ Scaleai -> 2/10 [low]
+2026-07-13 06:57:35,108 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:57:35,109 [INFO] pipeline.scorer: Scored: Sr. Software Development Engineer @ Zscaler -> 2/10 [low]
+2026-07-13 06:57:39,682 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:57:39,683 [INFO] pipeline.scorer: Scored: Senior Backend Engineer — Distributed Systems & Agentic AI @ Sumologic -> 2/10 [low]
+2026-07-13 06:57:44,985 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:57:44,986 [INFO] pipeline.scorer: Scored: SDE IV - Backend @ Inmobi -> 1/10 [low]
+2026-07-13 06:57:49,999 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:57:50,000 [INFO] pipeline.scorer: Scored: Principal GenAI Data Engineer  @ Zscaler -> 1/10 [low]
+2026-07-13 06:57:54,890 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:57:54,891 [INFO] pipeline.scorer: Scored: Customer Engineer (Pre-Sales), Korea (Based in Seoul) @ Cloudflare -> 1/10 [low]
+2026-07-13 06:57:59,696 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:57:59,697 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 1/10 [low]
+2026-07-13 06:58:04,825 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:04,825 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 2/10 [low]
+2026-07-13 06:58:09,657 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:09,657 [INFO] pipeline.scorer: Scored: Sr. AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector @ Databricks -> 2/10 [low]
+2026-07-13 06:58:15,672 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:15,673 [INFO] pipeline.scorer: Scored: Senior Software Engineer - Developer Experience (Golang, Python) @ Canva -> 1/10 [low]
+2026-07-13 06:58:19,692 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:19,693 [INFO] pipeline.scorer: Scored: Software Engineer, (L2) CDP @ Twilio -> 2/10 [low]
+2026-07-13 06:58:24,728 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:24,729 [INFO] pipeline.scorer: Scored: Python and Kubernetes Software Engineer - Data, Workflows, AI/ML & Analytics @ Canonical -> 3/10 [low]
+2026-07-13 06:58:29,977 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:29,978 [INFO] pipeline.scorer: Scored: Binance Accelerator Program - Analytics Engineer @ Binance -> 4/10 [low]
+2026-07-13 06:58:34,833 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:34,833 [INFO] pipeline.scorer: Scored: Lead Software Engineer - Machine Learning @ Freshworks -> 3/10 [low]
+2026-07-13 06:58:39,731 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:39,732 [INFO] pipeline.scorer: Scored: Customer Engineer, India (Based in Mumbai) @ Cloudflare -> 2/10 [low]
+2026-07-13 06:58:45,098 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:45,098 [INFO] pipeline.scorer: Scored: Staff Machine Learning Engineer @ Twilio -> 2/10 [low]
+2026-07-13 06:58:50,332 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:50,333 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 2/10 [low]
+2026-07-13 06:58:54,859 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:54,859 [INFO] pipeline.scorer: Scored: FinOps Engineer @ Jfrog -> 4/10 [low]
+2026-07-13 06:58:59,950 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:58:59,951 [INFO] pipeline.scorer: Scored: Binance Accelerator Program - DevSecOps Engineer @ Binance -> 2/10 [low]
+2026-07-13 06:59:04,856 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:04,857 [INFO] pipeline.scorer: Scored: Staff Software Engineer (AI) @ Druva -> 2/10 [low]
+2026-07-13 06:59:09,824 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:09,825 [INFO] pipeline.scorer: Scored: Senior Machine Learning Engineer (Agentic AI) @ Zscaler -> 3/10 [low]
+2026-07-13 06:59:14,702 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:14,703 [INFO] pipeline.scorer: Scored: Principal Presales Engineer @ Twilio -> 1/10 [low]
+2026-07-13 06:59:19,777 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:19,778 [INFO] pipeline.scorer: Scored: Principal Presales Engineer  @ Twilio -> 1/10 [low]
+2026-07-13 06:59:25,182 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:25,183 [INFO] pipeline.scorer: Scored: Senior AI Engineer @ Datadog -> 1/10 [low]
+2026-07-13 06:59:30,184 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:30,185 [INFO] pipeline.scorer: Scored: Senior Software Engineer - AI Code Gen - Agent Engineer @ Datadog -> 2/10 [low]
+2026-07-13 06:59:34,678 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:34,679 [INFO] pipeline.scorer: Scored: Senior Staff Software Engineer in Test @ Druva -> 1/10 [low]
+2026-07-13 06:59:39,716 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:39,717 [INFO] pipeline.scorer: Scored: Senior Manager, Customer Engineering, India @ Cloudflare -> 1/10 [low]
+2026-07-13 06:59:44,796 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:44,797 [INFO] pipeline.scorer: Scored: Software Engineer 3 @ Mongodb -> 1/10 [low]
+2026-07-13 06:59:49,769 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:49,770 [INFO] pipeline.scorer: Scored: Senior Forward Deployed Engineer - Full stack @ Databricks -> 2/10 [low]
+2026-07-13 06:59:54,679 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:54,680 [INFO] pipeline.scorer: Scored: Talent Pipeline - Product Engineering @ Sumologic -> 2/10 [low]
+2026-07-13 06:59:59,968 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 06:59:59,968 [INFO] pipeline.scorer: Scored: Senior AI Engineer @ Gitlab -> 2/10 [low]
+2026-07-13 07:00:05,452 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:05,453 [INFO] pipeline.scorer: Scored: Staff ML Engineer @ Buildkite -> 1/10 [low]
+2026-07-13 07:00:10,512 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:10,513 [INFO] pipeline.scorer: Scored: GTM AI Engineer @ Freshworks -> 2/10 [low]
+2026-07-13 07:00:15,338 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:15,339 [INFO] pipeline.scorer: Scored: Staff Software Engineer - Developer Experience  @ Canva -> 1/10 [low]
+2026-07-13 07:00:19,769 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:19,770 [INFO] pipeline.scorer: Scored: Professional Service Engineer - AI Security @ Zscaler -> 1/10 [low]
+2026-07-13 07:00:24,869 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:24,870 [INFO] pipeline.scorer: Scored: Sr. Software Development Engineer (Backend - Python/Go) @ Zscaler -> 2/10 [low]
+2026-07-13 07:00:30,060 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:30,061 [INFO] pipeline.scorer: Scored: Senior Site Reliability Engineer I  @ Sumologic -> 1/10 [low]
+2026-07-13 07:00:34,879 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:34,880 [INFO] pipeline.scorer: Scored: Site Reliability Engineer I @ Sumologic -> 1/10 [low]
+2026-07-13 07:00:39,885 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:39,886 [INFO] pipeline.scorer: Scored: Binance Accelerator Program - TechOps Engineer (APAC Timezone) @ Binance -> 4/10 [low]
+2026-07-13 07:00:44,785 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:44,785 [INFO] pipeline.scorer: Scored: SDE 2 @ Inmobi -> 2/10 [low]
+2026-07-13 07:00:49,890 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:49,891 [INFO] pipeline.scorer: Scored: SDE III @ Inmobi -> 1/10 [low]
+2026-07-13 07:00:55,036 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:00:55,037 [INFO] pipeline.scorer: Scored: Internal Audit Data Analytics Lead @ Stripe -> 1/10 [low]
+2026-07-13 07:01:00,480 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:00,480 [INFO] pipeline.scorer: Scored: Technical Solutions Engineer @ Stripe -> 1/10 [low]
+2026-07-13 07:01:04,987 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:04,987 [INFO] pipeline.scorer: Scored: Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu @ Canonical -> 2/10 [low]
+2026-07-13 07:01:09,692 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:09,693 [INFO] pipeline.scorer: Scored: Staff Machine Learning Engineer - Recommendations @ Canva -> 1/10 [low]
+2026-07-13 07:01:15,034 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:15,035 [INFO] pipeline.scorer: Scored: Intern - Software Developer (Product) @ Quadeyesecrities -> 4/10 [low]
+2026-07-13 07:01:20,323 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:20,324 [INFO] pipeline.scorer: Scored: Fresher Graduate Engineer Trainee (Full Stack Developer) @ STL Digital -> 4/10 [medium]
+2026-07-13 07:01:24,985 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:24,986 [INFO] pipeline.scorer: Scored: Agent Developer Test III @ Highradius -> 2/10 [low]
+2026-07-13 07:01:30,094 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:30,095 [INFO] pipeline.scorer: Scored: Senior Software Development Engineer @ Zscaler -> 1/10 [low]
+2026-07-13 07:01:34,922 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:34,923 [INFO] pipeline.scorer: Scored: Sr. Staff Site Reliability Engineer (Linux/Network troubleshooting/Scripting) @ Zscaler -> 1/10 [low]
+2026-07-13 07:01:40,047 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:40,048 [INFO] pipeline.scorer: Scored: Sr. Staff Software Development Engineer - AI Engineer @ Zscaler -> 3/10 [low]
+2026-07-13 07:01:44,988 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:44,989 [INFO] pipeline.scorer: Scored: Sr. Staff Software Development Engineer - C/C++/Go @ Zscaler -> 1/10 [low]
+2026-07-13 07:01:49,194 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:01:49,195 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-07-13 07:01:50,640 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:50,641 [INFO] pipeline.scorer: Scored:  Staff Detection Engineer  @ Zscaler -> 2/10 [low]
+2026-07-13 07:01:54,230 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:01:54,231 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-07-13 07:01:57,549 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:01:57,550 [INFO] pipeline.scorer: Scored: Senior Software Engineer, Atlas API Experience @ Mongodb -> 1/10 [low]
+2026-07-13 07:01:59,253 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:01:59,253 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-07-13 07:02:03,164 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:03,165 [INFO] pipeline.scorer: Scored: Software Engineer 3, Atlas API Experience Integrations @ Mongodb -> 1/10 [low]
+2026-07-13 07:02:04,246 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:04,246 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-13 07:02:08,918 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:08,919 [INFO] pipeline.scorer: Scored: Technical Services Engineer @ Mongodb -> 1/10 [low]
+2026-07-13 07:02:09,251 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:09,251 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:02:15,045 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:15,046 [INFO] pipeline.scorer: Scored: Intermediate Backend Engineer - Analytics Instrumentation @ Gitlab -> 2/10 [low]
+2026-07-13 07:02:15,133 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:15,134 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:02:21,539 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:21,539 [INFO] pipeline.scorer: Scored: Senior Backend Engineer, Analytics Instrumentation (Golang) @ Gitlab -> 1/10 [low]
+2026-07-13 07:02:21,650 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:21,651 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-13 07:02:26,366 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:26,366 [INFO] pipeline.scorer: Scored: Careers at SSIT | Join Our Engineering & Training Team @ Sensesemi -> 9/10 [high]
+2026-07-13 07:02:26,766 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:26,766 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:02:33,037 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:33,038 [INFO] pipeline.scorer: Scored: Mytos - Junior/Mid Software Engineer - Lever @ Bbb558C0 D769 4B5F A3A7 025642C2626D -> 2/10 [low]
+2026-07-13 07:02:33,163 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:33,164 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-13 07:02:37,861 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:37,862 [INFO] pipeline.scorer: Scored: Full Stack Developer - Fresher @ Zyphra Tech Solutions -> 2/10 [low]
+2026-07-13 07:02:38,137 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:38,138 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:02:43,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:43,842 [INFO] pipeline.scorer: Scored: Senior Software Development Engineer @ Razorpaysoftwareprivatelimited -> 1/10 [low]
+2026-07-13 07:02:43,976 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:43,976 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:02:49,706 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:49,707 [INFO] pipeline.scorer: Scored: Systems Engineer (Data Intelligence & Analytics Team) @ Cloudflare -> 2/10 [low]
+2026-07-13 07:02:49,792 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:49,792 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:02:55,541 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:02:55,542 [INFO] pipeline.scorer: Scored: Software Engineer 2 @ Mongodb -> 1/10 [low]
+2026-07-13 07:02:55,668 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:02:55,669 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:01,344 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:01,348 [INFO] pipeline.scorer: Scored: Sr. Solutions Engineer - MFG @ Databricks -> 1/10 [low]
+2026-07-13 07:03:01,494 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:01,495 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:07,222 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:07,223 [INFO] pipeline.scorer: Scored: Manager I, Engineering - Change Experience Platform @ Datadog -> 1/10 [low]
+2026-07-13 07:03:07,657 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:07,658 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:13,657 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:13,658 [INFO] pipeline.scorer: Scored: Software Developer @ Orcasecurity -> 4/10 [low]
+2026-07-13 07:03:13,799 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:13,799 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:19,554 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:19,554 [INFO] pipeline.scorer: Scored: Backend Engineer (Ruby), AI Engineering: Agent Observability @ Gitlab -> 2/10 [low]
+2026-07-13 07:03:19,668 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:19,669 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:25,444 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:25,448 [INFO] pipeline.scorer: Scored: Remote Backend Developer Jobs in Asia – Apply Now @ Remoterocketship -> 2/10 [low]
+2026-07-13 07:03:25,612 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:25,613 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:31,373 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:31,374 [INFO] pipeline.scorer: Scored: Applied AI Engineer @ Bjak  -> 4/10 [low]
+2026-07-13 07:03:31,466 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:31,466 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:37,429 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:37,430 [INFO] pipeline.scorer: Scored: Senior Information Technology Engineer @ Appian -> 1/10 [low]
+2026-07-13 07:03:37,533 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:37,534 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:43,341 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:43,342 [INFO] pipeline.scorer: Scored: Software Engineer  @ Twilio -> 2/10 [low]
+2026-07-13 07:03:43,477 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:43,477 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:49,104 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:49,108 [INFO] pipeline.scorer: Scored: Sr. Solutions Engineer @ Databricks -> 1/10 [low]
+2026-07-13 07:03:49,281 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:49,281 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:03:55,210 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:03:55,211 [INFO] pipeline.scorer: Scored: Staff AI Engineer - Grafana AI/ML | Canada | Remote @ Grafanalabs -> 2/10 [low]
+2026-07-13 07:03:55,342 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:03:55,342 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:04:01,036 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:01,037 [INFO] pipeline.scorer: Scored: Staff AI Engineer - Grafana AI/ML | USA | Remote @ Grafanalabs -> 2/10 [low]
+2026-07-13 07:04:01,167 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:01,168 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-07-13 07:04:08,781 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:08,782 [INFO] pipeline.scorer: Scored: Enterprise Sales Engineer @ Datadog -> 1/10 [low]
+2026-07-13 07:04:08,906 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:08,907 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:04:15,220 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:15,224 [INFO] pipeline.scorer: Scored: Senior Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools @ Gitlab -> 1/10 [low]
+2026-07-13 07:04:15,346 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:15,346 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-13 07:04:20,223 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:20,224 [INFO] pipeline.scorer: Scored: Senior Security Engineer, Security Incident Response Team (SIRT) - EMEA @ Gitlab -> 1/10 [low]
+2026-07-13 07:04:21,046 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:21,047 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:04:27,020 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:27,021 [INFO] pipeline.scorer: Scored: Senior Software Engineer - Python/Golang - Kubernetes @ Canonical -> 1/10 [low]
+2026-07-13 07:04:27,126 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:27,126 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:04:32,824 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:32,825 [INFO] pipeline.scorer: Scored: Software Engineer - Python/Golang - Kubernetes @ Canonical -> 2/10 [low]
+2026-07-13 07:04:32,911 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:32,911 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:04:38,746 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:38,747 [INFO] pipeline.scorer: Scored: Senior Forward Deployed Engineer (Remote Build) @ Remotecom -> 3/10 [low]
+2026-07-13 07:04:38,844 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:38,844 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:04:44,522 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:44,523 [INFO] pipeline.scorer: Scored: Senior Software Engineer (Observability) @ Canva -> 1/10 [low]
+2026-07-13 07:04:44,675 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:44,676 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:04:50,767 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:50,768 [INFO] pipeline.scorer: Scored: Workflow Developer & Tester @ Webbing -> 1/10 [low]
+2026-07-13 07:04:50,976 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:50,976 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-13 07:04:55,802 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:04:55,803 [INFO] pipeline.scorer: Scored: QA Automation Engineer - Pro @ Kraken -> 1/10 [low]
+2026-07-13 07:04:55,934 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:04:55,935 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:01,803 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:01,804 [INFO] pipeline.scorer: Scored: SME, Support Systems Specialist @ Scaleai -> 1/10 [low]
+2026-07-13 07:05:01,939 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:01,939 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:07,673 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:07,674 [INFO] pipeline.scorer: Scored: Consultant (Top Secret Clearance, Software Implementation) @ Appian -> 1/10 [low]
+2026-07-13 07:05:07,786 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:07,787 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:13,908 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:13,909 [INFO] pipeline.scorer: Scored: Senior Staff Software Engineer (DataLake)  @ Druva -> 1/10 [low]
+2026-07-13 07:05:14,069 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:14,070 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:19,955 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:19,956 [INFO] pipeline.scorer: Scored: Applied AI Engineer  @ Hackerrank -> 2/10 [low]
+2026-07-13 07:05:20,143 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:20,143 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:26,049 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:26,050 [INFO] pipeline.scorer: Scored: PhD GenAI Research Scientist Intern @ Databricks -> 2/10 [low]
+2026-07-13 07:05:26,191 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:26,191 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:32,448 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:32,449 [INFO] pipeline.scorer: Scored: Senior Staff Software Engineer- Search Quality @ Databricks -> 2/10 [low]
+2026-07-13 07:05:32,585 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:32,585 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:38,749 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:38,750 [INFO] pipeline.scorer: Scored: Sr. Manager, AI Forward Deployed Engineering (AI-FDE) – EMEA @ Databricks -> 1/10 [low]
+2026-07-13 07:05:38,893 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:38,893 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-13 07:05:43,676 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:43,677 [INFO] pipeline.scorer: Scored: Sr. Solutions Engineer @ Databricks -> 1/10 [low]
+2026-07-13 07:05:43,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:43,839 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:50,233 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:50,234 [INFO] pipeline.scorer: Scored: Staff Backend Engineer - Grafana Enterprise | Canada | Remote @ Grafanalabs -> 1/10 [low]
+2026-07-13 07:05:50,329 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:50,329 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:05:56,223 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:05:56,224 [INFO] pipeline.scorer: Scored: Staff Backend Engineer - Grafana Enterprise | US | Remote @ Grafanalabs -> 1/10 [low]
+2026-07-13 07:05:56,315 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:05:56,315 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:06:02,030 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:06:02,031 [INFO] pipeline.scorer: Scored: Manager I, Engineering - Source Code Integration @ Datadog -> 1/10 [low]
+2026-07-13 07:06:02,161 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:06:02,161 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:06:08,588 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:06:08,589 [INFO] pipeline.scorer: Scored: Backend Engineer (Ruby), AI Engineering: Duo Agent Platform Tools @ Gitlab -> 2/10 [low]
+2026-07-13 07:06:08,719 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:06:08,719 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-07-13 07:06:13,580 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:06:13,581 [INFO] pipeline.scorer: Scored: Graduate Talent Scientist @ Canonical -> 1/10 [low]
+2026-07-13 07:06:13,697 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-07-13 07:06:13,697 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-07-13 07:06:19,460 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-13 07:06:19,461 [INFO] pipeline.scorer: Scored: Senior Director - AI Evaluation Platform @ ServiceNow -> 1/10 [low]
+2026-07-13 07:06:19,477 [INFO] pipeline.scorer: Token budget: 199,592/200,000 tokens used. Skipped 102 lower-ranked jobs to stay under limit.
+2026-07-13 07:06:19,477 [INFO] pipeline.scorer: Scoring complete: 1 urgent, 0 digest, 97 low, 0 expired (dropped)
+2026-07-13 07:06:19,477 [INFO] jobradar: Sending 1 urgent email alerts
+2026-07-13 07:06:20,139 [INFO] notify.telegram_bot: Email sent: 🚨 JobRadar: 1 urgent job(s) — 13 Jul 2026
+2026-07-13 07:06:20,793 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 1 urgent · 97 to review — 13 Jul 2026
+2026-07-13 07:06:20,793 [INFO] jobradar: Pipeline complete.
+2026-07-13 07:06:20,793 [INFO] jobradar: Summary: 8320 raw -> 7544 new -> 693 eligible -> 1 urgent
