@@ -5180,3 +5180,556 @@
 2026-07-18 06:05:40,325 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 98 to review — 18 Jul 2026
 2026-07-18 06:05:40,326 [INFO] jobradar: Pipeline complete.
 2026-07-18 06:05:40,326 [INFO] jobradar: Summary: 8350 raw -> 7626 new -> 704 eligible -> 0 urgent
+2026-07-18 10:47:23,267 [INFO] jobradar: ==================================================
+2026-07-18 10:47:23,267 [INFO] jobradar: JobRadar pipeline starting — profile: profile.yaml
+2026-07-18 10:47:23,267 [INFO] jobradar: ==================================================
+2026-07-18 10:47:23,284 [WARNING] jobradar: telegram_chat_id is not set in profile or TELEGRAM_CHAT_ID env var — Telegram notifications will fail
+2026-07-18 10:47:23,290 [INFO] jobradar: --- Fetching ATS endpoints (Greenhouse US/EU, Lever, Ashby, Workable) ---
+2026-07-18 10:47:23,430 [INFO] sources.ats: Greenhouse US razorpaysoftwareprivatelimited: 23 jobs
+2026-07-18 10:47:23,522 [INFO] sources.ats: Greenhouse US phonepe: 51 jobs
+2026-07-18 10:47:23,643 [INFO] sources.ats: Greenhouse US twitch: 65 jobs
+2026-07-18 10:47:23,906 [INFO] sources.ats: Greenhouse US airbnb: 195 jobs
+2026-07-18 10:47:24,119 [INFO] sources.ats: Greenhouse US postman: 113 jobs
+2026-07-18 10:47:24,303 [INFO] sources.ats: Greenhouse US faire: 75 jobs
+2026-07-18 10:47:24,494 [INFO] sources.ats: Greenhouse US duolingo: 63 jobs
+2026-07-18 10:47:24,828 [INFO] sources.ats: Greenhouse US scaleai: 191 jobs
+2026-07-18 10:47:25,016 [INFO] sources.ats: Greenhouse US appian: 171 jobs
+2026-07-18 10:47:25,078 [INFO] sources.ats: Greenhouse US blenheimchalcot: 1 jobs
+2026-07-18 10:47:25,365 [INFO] sources.ats: Greenhouse US nasuni: 39 jobs
+2026-07-18 10:47:25,479 [INFO] sources.ats: Greenhouse US crunchyroll: 88 jobs
+2026-07-18 10:47:25,727 [INFO] sources.ats: Greenhouse US slice: 62 jobs
+2026-07-18 10:47:25,844 [INFO] sources.ats: Greenhouse US highradius: 68 jobs
+2026-07-18 10:47:25,899 [INFO] sources.ats: Greenhouse US pine: 1 jobs
+2026-07-18 10:47:26,008 [INFO] sources.ats: Greenhouse US karbon: 22 jobs
+2026-07-18 10:47:26,061 [WARNING] sources.ats: Greenhouse US fetch failed for loop: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/loop/jobs?content=true
+2026-07-18 10:47:26,062 [INFO] sources.ats: Greenhouse US loop: 0 jobs
+2026-07-18 10:47:26,153 [INFO] sources.ats: Greenhouse US glance: 39 jobs
+2026-07-18 10:47:26,329 [INFO] sources.ats: Greenhouse US inmobi: 71 jobs
+2026-07-18 10:47:26,406 [INFO] sources.ats: Greenhouse US druva: 29 jobs
+2026-07-18 10:47:26,524 [INFO] sources.ats: Greenhouse US zenoti: 45 jobs
+2026-07-18 10:47:26,576 [INFO] sources.ats: Greenhouse US route: 6 jobs
+2026-07-18 10:47:26,672 [INFO] sources.ats: Greenhouse US hackerrank: 33 jobs
+2026-07-18 10:47:26,987 [INFO] sources.ats: Greenhouse US zscaler: 330 jobs
+2026-07-18 10:47:27,271 [INFO] sources.ats: Greenhouse US cloudflare: 263 jobs
+2026-07-18 10:47:27,600 [INFO] sources.ats: Greenhouse US stripe: 524 jobs
+2026-07-18 10:47:27,796 [INFO] sources.ats: Greenhouse US twilio: 165 jobs
+2026-07-18 10:47:28,120 [INFO] sources.ats: Greenhouse US mongodb: 389 jobs
+2026-07-18 10:47:28,338 [INFO] sources.ats: Greenhouse US elastic: 177 jobs
+2026-07-18 10:47:28,920 [INFO] sources.ats: Greenhouse US databricks: 789 jobs
+2026-07-18 10:47:29,075 [INFO] sources.ats: Greenhouse US grafanalabs: 114 jobs
+2026-07-18 10:47:29,412 [INFO] sources.ats: Greenhouse US datadog: 416 jobs
+2026-07-18 10:47:29,505 [INFO] sources.ats: Greenhouse US newrelic: 68 jobs
+2026-07-18 10:47:29,567 [INFO] sources.ats: Greenhouse US sumologic: 23 jobs
+2026-07-18 10:47:29,631 [INFO] sources.ats: Greenhouse US pagerduty: 18 jobs
+2026-07-18 10:47:29,725 [INFO] sources.ats: Greenhouse US cribl: 58 jobs
+2026-07-18 10:47:29,804 [INFO] sources.ats: Greenhouse US jfrog: 42 jobs
+2026-07-18 10:47:29,860 [INFO] sources.ats: Greenhouse US orcasecurity: 7 jobs
+2026-07-18 10:47:30,044 [INFO] sources.ats: Greenhouse US gitlab: 167 jobs
+2026-07-18 10:47:30,174 [INFO] sources.ats: Greenhouse US circleci: 10 jobs
+2026-07-18 10:47:30,242 [INFO] sources.ats: Greenhouse US buildkite: 11 jobs
+2026-07-18 10:47:30,321 [INFO] sources.ats: Greenhouse US airtable: 35 jobs
+2026-07-18 10:47:30,473 [INFO] sources.ats: Greenhouse US figma: 169 jobs
+2026-07-18 10:47:30,534 [INFO] sources.ats: Greenhouse US coursera: 11 jobs
+2026-07-18 10:47:30,595 [INFO] sources.ats: Greenhouse US udemy: 9 jobs
+2026-07-18 10:47:30,894 [INFO] sources.ats: Greenhouse US canonical: 302 jobs
+2026-07-18 10:47:31,208 [INFO] sources.ats: Greenhouse US remotecom: 235 jobs
+2026-07-18 10:47:31,280 [INFO] sources.ats: Greenhouse US turing: 28 jobs
+2026-07-18 10:47:31,339 [INFO] sources.ats: Greenhouse US upwork: 11 jobs
+2026-07-18 10:47:31,396 [INFO] sources.ats: Greenhouse US planetscale: 11 jobs
+2026-07-18 10:47:31,476 [INFO] sources.ats: Greenhouse US newton: 1 jobs
+2026-07-18 10:47:31,631 [INFO] sources.ats: Greenhouse US stage: 160 jobs
+2026-07-18 10:47:31,883 [INFO] sources.ats: Greenhouse EU groww: 12 jobs
+2026-07-18 10:47:32,880 [INFO] sources.ats: Lever meesho: 44 jobs
+2026-07-18 10:47:33,745 [INFO] sources.ats: Lever hevodata: 40 jobs
+2026-07-18 10:47:34,510 [INFO] sources.ats: Lever stable-money1: 18 jobs
+2026-07-18 10:47:34,930 [INFO] sources.ats: Lever linkedin: 20 jobs
+2026-07-18 10:47:36,247 [INFO] sources.ats: Lever paytm: 234 jobs
+2026-07-18 10:47:37,367 [INFO] sources.ats: Lever spotify: 111 jobs
+2026-07-18 10:47:38,906 [INFO] sources.ats: Lever binance: 279 jobs
+2026-07-18 10:47:39,958 [INFO] sources.ats: Lever nium: 38 jobs
+2026-07-18 10:47:40,508 [INFO] sources.ats: Lever 100ms: 10 jobs
+2026-07-18 10:47:41,330 [INFO] sources.ats: Lever GoToGroup: 46 jobs
+2026-07-18 10:47:41,795 [INFO] sources.ats: Lever cred: 4 jobs
+2026-07-18 10:47:42,448 [INFO] sources.ats: Lever fi: 8 jobs
+2026-07-18 10:47:43,258 [INFO] sources.ats: Lever capital: 44 jobs
+2026-07-18 10:47:43,990 [INFO] sources.ats: Lever porter: 18 jobs
+2026-07-18 10:47:44,744 [INFO] sources.ats: Lever mindtickle: 21 jobs
+2026-07-18 10:47:45,685 [INFO] sources.ats: Lever belong: 44 jobs
+2026-07-18 10:47:46,069 [INFO] sources.ats: Lever whereby: 1 jobs
+2026-07-18 10:47:47,123 [INFO] sources.ats: Lever toptal: 19 jobs
+2026-07-18 10:47:47,241 [INFO] sources.ats: Ashby navi: 7 jobs
+2026-07-18 10:47:47,288 [INFO] sources.ats: Ashby ditto: 21 jobs
+2026-07-18 10:47:47,330 [INFO] sources.ats: Ashby bounce: 18 jobs
+2026-07-18 10:47:47,369 [INFO] sources.ats: Ashby clarisights: 2 jobs
+2026-07-18 10:47:47,417 [INFO] sources.ats: Ashby confluent: 31 jobs
+2026-07-18 10:47:47,462 [INFO] sources.ats: Ashby linear: 24 jobs
+2026-07-18 10:47:47,557 [INFO] sources.ats: Ashby notion: 141 jobs
+2026-07-18 10:47:47,615 [INFO] sources.ats: Ashby zapier: 17 jobs
+2026-07-18 10:47:47,652 [INFO] sources.ats: Ashby buffer: 1 jobs
+2026-07-18 10:47:47,689 [INFO] sources.ats: Ashby deel: 0 jobs
+2026-07-18 10:47:47,733 [INFO] sources.ats: Ashby oyster: 14 jobs
+2026-07-18 10:47:47,781 [INFO] sources.ats: Ashby andela: 15 jobs
+2026-07-18 10:47:47,838 [INFO] sources.ats: Ashby supabase: 55 jobs
+2026-07-18 10:47:47,879 [INFO] sources.ats: Ashby railway: 9 jobs
+2026-07-18 10:47:47,936 [INFO] sources.ats: Ashby render: 31 jobs
+2026-07-18 10:47:47,973 [INFO] sources.ats: Ashby infisical: 8 jobs
+2026-07-18 10:47:48,008 [INFO] sources.ats: Ashby triggerdev: 3 jobs
+2026-07-18 10:47:48,053 [INFO] sources.ats: Ashby mintlify: 19 jobs
+2026-07-18 10:47:48,097 [INFO] sources.ats: Ashby resend: 9 jobs
+2026-07-18 10:47:48,132 [INFO] sources.ats: Ashby stytch: 5 jobs
+2026-07-18 10:47:48,177 [INFO] sources.ats: Ashby workos: 23 jobs
+2026-07-18 10:47:48,215 [INFO] sources.ats: Ashby scaler: 0 jobs
+2026-07-18 10:47:48,332 [INFO] sources.ats: Workable juspay: 0 jobs
+2026-07-18 10:47:48,933 [INFO] sources.ats: Workable gridlines: 10 jobs
+2026-07-18 10:47:49,554 [INFO] sources.ats: Workable apna: 10 jobs
+2026-07-18 10:47:50,545 [INFO] sources.ats: SmartRecruiters Upstox: 1 jobs
+2026-07-18 10:47:51,417 [INFO] sources.ats: SmartRecruiters Lendingkart: 1 jobs
+2026-07-18 10:47:52,316 [INFO] sources.ats: SmartRecruiters Turtlemint: 1 jobs
+2026-07-18 10:47:57,186 [INFO] sources.ats: SmartRecruiters Lokal: 10 jobs
+2026-07-18 10:47:58,050 [INFO] sources.ats: SmartRecruiters Cars24: 1 jobs
+2026-07-18 10:48:02,881 [INFO] sources.ats: SmartRecruiters ixigo: 10 jobs
+2026-07-18 10:48:47,290 [INFO] sources.ats: SmartRecruiters Freshworks: 100 jobs
+2026-07-18 10:48:48,168 [INFO] sources.ats: SmartRecruiters Whatfix: 1 jobs
+2026-07-18 10:48:52,288 [INFO] sources.ats: SmartRecruiters MercerMettl: 8 jobs
+2026-07-18 10:48:55,130 [INFO] sources.ats: SmartRecruiters InterviewMocha: 5 jobs
+2026-07-18 10:49:00,145 [INFO] sources.ats: SmartRecruiters Skillate: 10 jobs
+2026-07-18 10:49:46,344 [INFO] sources.ats: SmartRecruiters ServiceNow: 100 jobs
+2026-07-18 10:50:56,625 [INFO] sources.ats: SmartRecruiters Canva: 100 jobs
+2026-07-18 10:50:58,407 [INFO] sources.ats: SmartRecruiters Unacademy: 3 jobs
+2026-07-18 10:51:05,785 [INFO] sources.ats: SmartRecruiters Dailymotion: 15 jobs
+2026-07-18 10:51:06,509 [INFO] sources.ats: Rippling axio: 2 jobs
+2026-07-18 10:51:07,094 [INFO] sources.ats: Rippling multiplier: 1 jobs
+2026-07-18 10:51:08,227 [INFO] sources.ats: Rippling dub: 4 jobs
+2026-07-18 10:51:08,594 [INFO] sources.ats: BambooHR urban: 20 jobs
+2026-07-18 10:51:08,930 [INFO] sources.ats: BambooHR shadowfax: 0 jobs
+2026-07-18 10:51:09,183 [WARNING] sources.ats: BambooHR fetch failed for google: Expecting value: line 1 column 1 (char 0)
+2026-07-18 10:51:09,185 [INFO] sources.ats: BambooHR google: 0 jobs
+2026-07-18 10:51:09,401 [WARNING] sources.ats: BambooHR fetch failed for meta: Expecting value: line 1 column 1 (char 0)
+2026-07-18 10:51:09,402 [INFO] sources.ats: BambooHR meta: 0 jobs
+2026-07-18 10:51:10,610 [INFO] sources.ats: BambooHR flyio: 10 jobs
+2026-07-18 10:51:10,817 [WARNING] sources.ats: Recruitee fetch failed for unstop: 404 Client Error: Not Found for url: https://unstop.recruitee.com/api/offers/
+2026-07-18 10:51:10,818 [INFO] sources.ats: Recruitee unstop: 0 jobs
+2026-07-18 10:51:11,026 [INFO] sources.ats: Recruitee salesforce: 1 jobs
+2026-07-18 10:51:11,230 [WARNING] sources.ats: Recruitee fetch failed for ibm: 404 Client Error: Not Found for url: https://ibm.recruitee.com/api/offers/
+2026-07-18 10:51:11,231 [INFO] sources.ats: Recruitee ibm: 0 jobs
+2026-07-18 10:51:12,204 [INFO] sources.ats: Personio open: 2 jobs
+2026-07-18 10:51:12,859 [INFO] sources.ats: Personio josh: 3 jobs
+2026-07-18 10:51:13,581 [INFO] sources.ats: Personio amazon: 3 jobs
+2026-07-18 10:51:14,375 [INFO] sources.ats: Personio basecamp: 4 jobs
+2026-07-18 10:51:14,376 [INFO] sources.ats: ATS total: 7894 raw jobs
+2026-07-18 10:51:14,376 [INFO] jobradar: --- Fetching Cutshort ---
+2026-07-18 10:51:20,449 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:51:51,860 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=machine+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:51:55,595 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=generative+AI+intern&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:51:59,290 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=LLM+engineer+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:52:30,481 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=computer+vision+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:53:01,724 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=python+backend+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:53:32,939 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=deep+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:53:36,753 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=NLP+intern+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:53:40,622 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=RAG+langchain+intern&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:54:11,837 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+ML+fresher+india&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:54:11,953 [INFO] sources.cutshort: Cutshort: 0 jobs found
+2026-07-18 10:54:11,954 [INFO] jobradar: --- Fetching Instahyre ---
+2026-07-18 10:54:15,336 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=python&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:15,375 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:18,256 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=machine-learning&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:18,294 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:20,910 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=deep-learning&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:20,949 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:23,762 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=artificial-intelligence&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:23,802 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:26,455 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=computer-vision&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:26,494 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:29,241 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=nlp&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:29,279 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:32,024 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=langchain&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:32,063 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:34,658 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=django&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:34,698 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:37,346 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=fastapi&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:37,386 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:40,088 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=pytorch&exp=0-1> (referer: https://www.google.com/)
+2026-07-18 10:54:40,128 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-07-18 10:54:40,222 [INFO] sources.instahyre: Instahyre: 0 jobs found via Scrapling
+2026-07-18 10:54:40,222 [INFO] jobradar: --- Skipping wellfound (disabled in profile) ---
+2026-07-18 10:54:40,222 [INFO] jobradar: --- Fetching Internshala ---
+2026-07-18 10:54:42,342 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/backend-development-internship/> (referer: https://www.google.com/)
+2026-07-18 10:54:45,280 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-07-18 10:54:47,597 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-07-18 10:54:49,634 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/web-development-internship/> (referer: https://www.google.com/)
+2026-07-18 10:54:51,309 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-golang/> (referer: https://www.google.com/)
+2026-07-18 10:54:53,492 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-go-developer/> (referer: https://www.google.com/)
+2026-07-18 10:54:55,516 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-nodejs/> (referer: https://www.google.com/)
+2026-07-18 10:54:57,362 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-typescript/> (referer: https://www.google.com/)
+2026-07-18 10:54:59,826 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/> (referer: https://www.google.com/)
+2026-07-18 10:55:01,913 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/software-developer-jobs/> (referer: https://www.google.com/)
+2026-07-18 10:55:01,925 [INFO] sources.internshala: Internshala: 0 jobs found
+2026-07-18 10:55:01,926 [INFO] jobradar: --- Fetching Indian Fresher Blogs (RSS + Cuvette) ---
+2026-07-18 10:55:02,734 [INFO] sources.freshers_blogs: [freshers-job] 10 entries from https://freshers-job.com/feed/
+2026-07-18 10:55:02,852 [INFO] sources.freshers_blogs: [fresheropenings] 12 entries from https://fresheropenings.com/feed/
+2026-07-18 10:55:02,963 [INFO] sources.freshers_blogs: [freshersarea] 10 entries from https://freshersarea.in/feed/
+2026-07-18 10:55:03,014 [INFO] sources.freshers_blogs: [offcampusjobs4u] 10 entries from https://offcampusjobs4u.com/category/offcampus-jobs/feed/
+2026-07-18 10:55:03,338 [INFO] sources.freshers_blogs: [freshershunt] 1 entries from https://freshershunt.in/feed/
+2026-07-18 10:55:04,001 [INFO] sources.freshers_blogs: [freshersdunia] 20 entries from https://freshersdunia.in/feed/
+2026-07-18 10:55:06,109 [INFO] sources.freshers_blogs: [freshersnow] 20 entries from https://freshersnow.com/feed/
+2026-07-18 10:55:06,390 [INFO] sources.freshers_blogs: [tnpofficer] 10 entries from https://tnpofficer.com/category/off-campus/feed/
+2026-07-18 10:55:06,391 [INFO] sources.freshers_blogs: freshers_blogs: 93 total listings from 8 RSS feeds
+2026-07-18 10:55:06,391 [INFO] jobradar: --- Fetching YC Jobs ---
+2026-07-18 10:55:08,668 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&type=fulltime,intern&remote=true> (referer: https://www.google.com/)
+2026-07-18 10:55:08,673 [INFO] sources.yc: YC listing 'q=backend&type=fulltime,intern&remote=tr': 1 candidates
+2026-07-18 10:55:10,926 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=typescript+backend&type=fulltime,intern> (referer: https://www.google.com/)
+2026-07-18 10:55:10,931 [INFO] sources.yc: YC listing 'q=typescript+backend&type=fulltime,inter': 0 candidates
+2026-07-18 10:55:13,208 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=golang&type=fulltime,intern> (referer: https://www.google.com/)
+2026-07-18 10:55:13,213 [INFO] sources.yc: YC listing 'q=golang&type=fulltime,intern': 0 candidates
+2026-07-18 10:55:15,483 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&location=india> (referer: https://www.google.com/)
+2026-07-18 10:55:15,487 [INFO] sources.yc: YC listing 'q=backend&location=india': 0 candidates
+2026-07-18 10:55:15,487 [INFO] sources.yc: YC Phase 1 complete: 1 candidate job pages to fetch
+2026-07-18 10:55:17,288 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/glimpse-2/jobs/5hmOmrr-software-engineer> (referer: https://www.google.com/)
+2026-07-18 10:55:17,292 [INFO] sources.yc: YC Jobs: 0 jobs parsed from 1 fetched pages
+2026-07-18 10:55:17,292 [INFO] jobradar: --- Fetching via Serper discovery ---
+2026-07-18 10:55:17,293 [INFO] sources.serper: Serper pool: 26 tier-1 | 47 tier-2 | 31 tier-3. Running: 10 (unique) + 15 (priority) + 0 (filler) = 25 queries
+2026-07-18 10:55:17,791 [WARNING] sources.serper: Serper query failed '"notion.so" "apply" OR "hiring" "backend" "intern" OR "fresh': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-07-18 10:55:20,319 [INFO] scrapling: Fetched (200) <GET https://telegram.me/s/jobs_and_internships_updates?before=3933> (referer: https://www.google.com/)
+2026-07-18 10:55:21,739 [INFO] scrapling: Fetched (200) <GET https://t.me/s/jobs_and_internships_updates?before=4254> (referer: https://www.google.com/)
+2026-07-18 10:55:24,200 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/2153913-software-engineer-backend-intern-remote> (referer: https://www.google.com/)
+2026-07-18 10:55:25,242 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/2878516-backend-intern> (referer: https://www.google.com/)
+2026-07-18 10:55:26,284 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/3792825-backend-engineer-intern> (referer: https://www.google.com/)
+2026-07-18 10:55:27,393 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/3166756-backend-developer-internship-read-the-description-before-applying> (referer: https://www.google.com/)
+2026-07-18 10:55:28,439 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/4118818-backend-intern-python> (referer: https://www.google.com/)
+2026-07-18 10:55:29,516 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/3627614-backend-developer-intern> (referer: https://www.google.com/)
+2026-07-18 10:55:30,552 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/4383016-intern-backend-engineering-python> (referer: https://www.google.com/)
+2026-07-18 10:55:31,599 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/4289766-backend-golang-sde-intern> (referer: https://www.google.com/)
+2026-07-18 10:55:32,641 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/3865841-ai-ml-backend-systems-intern> (referer: https://www.google.com/)
+2026-07-18 10:55:33,707 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/jobs/99788-remote-back-end-developer-intern-node-js> (referer: https://www.google.com/)
+2026-07-18 10:55:33,773 [WARNING] sources.serper: Serper query failed '"forms.gle" "apply" "software engineer" "intern" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-07-18 10:55:36,322 [INFO] scrapling: Fetched (200) <GET https://t.me/s/gocareers?before=10820> (referer: https://www.google.com/)
+2026-07-18 10:55:37,435 [INFO] scrapling: Fetched (403) <GET https://sg.jobstreet.com/fresher-java-developer-jobs/in-Little-India-Central-Region> (referer: https://www.google.com/)
+2026-07-18 10:55:39,478 [INFO] scrapling: Fetched (200) <GET https://madello.zohorecruit.eu/jobs/Careers> (referer: https://www.google.com/)
+2026-07-18 10:55:41,086 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Node-Js-Backend-Intern-Noida-Parksmart-tGu4HHwx> (referer: https://www.google.com/)
+2026-07-18 10:55:43,759 [INFO] scrapling: Fetched (200) <GET https://navrojan.com/job-details/node-js-backend-intern-code-inbound-8f29-924376> (referer: https://www.google.com/)
+2026-07-18 10:55:46,013 [INFO] scrapling: Fetched (200) <GET https://www.foundit.in/job/node-js-developer-intern-entry-level-fresher-backend-api-development-remote-skillzenloop-india-54495370> (referer: https://www.google.com/)
+2026-07-18 10:55:47,656 [INFO] scrapling: Fetched (200) <GET https://bebee.com/in/jobs/remote-nodejs-backend-developer-lead-intern-unpaid-startup-role-venture-launcher--theirstack-689425832> (referer: https://www.google.com/)
+2026-07-18 10:55:49,648 [INFO] scrapling: Fetched (403) <GET https://www.glassdoor.com.hk/Job/india-software-intern-jobs-SRCH_IL.0,5_IN115_KO6,21.htm> (referer: https://www.google.com/)
+2026-07-18 10:55:50,984 [INFO] scrapling: Fetched (200) <GET https://github.com/speedyapply/2027-SWE-College-Jobs> (referer: https://www.google.com/)
+2026-07-18 10:55:52,596 [INFO] scrapling: Fetched (200) <GET https://careers.gehealthcare.com/global/en/job/GEVGHLGLOBALR4041234EXTERNALENGLOBAL/Software-Intern> (referer: https://www.google.com/)
+2026-07-18 10:55:54,487 [INFO] scrapling: Fetched (403) <GET https://startup.jobs/backend-engineering-intern-python-golang-only-fampayindia-4945664> (referer: https://www.google.com/)
+2026-07-18 10:55:55,582 [INFO] scrapling: Fetched (404) <GET https://vacancyglobal.up.railway.app/job/backend-engineering-intern-python-golang-only-on-site-bengaluru> (referer: https://www.google.com/)
+2026-07-18 10:55:56,660 [INFO] scrapling: Fetched (429) <GET https://www.productbased.in/jobs/6242/backend-engineering-intern-golang> (referer: https://www.google.com/)
+2026-07-18 10:55:58,400 [INFO] scrapling: Fetched (200) <GET https://jaabz.com/jobs/245807-full-stack-engineer-internship> (referer: https://www.google.com/)
+2026-07-18 10:55:59,756 [INFO] scrapling: Fetched (200) <GET https://bebee.com/in/jobs/backend-engineering-intern-golang-aitainment-bengaluru-karnataka--theirstack-740469102> (referer: https://www.google.com/)
+2026-07-18 10:56:01,499 [INFO] scrapling: Fetched (200) <GET https://www.thejobcompany.co.in/frontend/job_details?job_id=5709> (referer: https://www.google.com/)
+2026-07-18 10:56:03,623 [INFO] scrapling: Fetched (403) <GET https://www.remoterocketship.com/company/vestcodes-co/jobs/react-native-app-development-intern-typescript-india-remote/> (referer: https://www.google.com/)
+2026-07-18 10:56:04,659 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Backend-Developer-Intern-NodeJs-Quoality-ySNWd9q4> (referer: https://www.google.com/)
+2026-07-18 10:56:05,707 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/role/r/typescript-developer> (referer: https://www.google.com/)
+2026-07-18 10:56:07,801 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/clickpe/jobs/N3kIxQj-backend-intern-python> (referer: https://www.google.com/)
+2026-07-18 10:56:10,120 [INFO] scrapling: Fetched (200) <GET https://ralliant.eightfold.ai/careers/job/1133911078933-software-engineering-intern-summer-2026--beaverton-or-united-states> (referer: https://www.google.com/)
+2026-07-18 10:56:12,039 [INFO] scrapling: Fetched (200) <GET https://hopinjobs.com/software-engineer-jobs-in-remote> (referer: https://www.google.com/)
+2026-07-18 10:56:13,808 [INFO] scrapling: Fetched (200) <GET https://apply.hp.com/careers/job/40793735?hl=fr&domain=hp.com> (referer: https://www.google.com/)
+2026-07-18 10:56:15,839 [INFO] scrapling: Fetched (403) <GET https://www.remoterocketship.com/jobs/backend-engineer/internships/> (referer: https://www.google.com/)
+2026-07-18 10:56:17,069 [INFO] scrapling: Fetched (200) <GET https://cryptocurrencyjobs.co/remote/> (referer: https://www.google.com/)
+2026-07-18 10:56:18,225 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/binance.us/c23e9aa3-0daa-4170-a5a7-b03aaa031895> (referer: https://www.google.com/)
+2026-07-18 10:56:19,469 [INFO] scrapling: Fetched (200) <GET https://bebee.com/us/jobs/remote-software-engineering-intern-binanceus-san-antonio-tx--jooble-3849427093993935788> (referer: https://www.google.com/)
+2026-07-18 10:56:21,247 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/typescript-jobs> (referer: https://www.google.com/)
+2026-07-18 10:56:22,349 [INFO] scrapling: Fetched (200) <GET https://devcareers-one.vercel.app/company-details> (referer: https://www.google.com/)
+2026-07-18 10:56:24,208 [INFO] scrapling: Fetched (200) <GET https://remotive.com/remote-jobs/o-typescript-node-js-developer> (referer: https://www.google.com/)
+2026-07-18 10:56:26,218 [INFO] scrapling: Fetched (200) <GET https://simplify.jobs/l/List-Big-Tech-SWE-Internships> (referer: https://www.google.com/)
+2026-07-18 10:56:27,239 [INFO] scrapling: Fetched (403) <GET https://startup.jobs/roles/engineering> (referer: https://www.google.com/)
+2026-07-18 10:56:29,461 [INFO] scrapling: Fetched (200) <GET https://www.remotefront.com/remote-jobs/miko-software-development-intern-backend-java-kw292> (referer: https://www.google.com/)
+2026-07-18 10:56:30,500 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/role/r/backend-engineer?page=5> (referer: https://www.google.com/)
+2026-07-18 10:56:32,615 [INFO] scrapling: Fetched (200) <GET https://careers.cisco.com/global/en/job/CISCISGLOBAL2012410EXTERNALENGLOBAL/Principal-Engineer-Golang-Distributed-Systems-Isovalent-Secure-Workload-remote> (referer: https://www.google.com/)
+2026-07-18 10:56:33,632 [INFO] scrapling: Fetched (403) <GET https://www.remoterocketship.com/us/jobs/go/> (referer: https://www.google.com/)
+2026-07-18 10:56:35,172 [INFO] scrapling: Fetched (200) <GET https://web3.career/entry-level+golang-jobs?page=2> (referer: https://www.google.com/)
+2026-07-18 10:56:37,016 [INFO] scrapling: Fetched (403) <GET https://www.remoterocketship.com/country/india/jobs/entry-level-software-engineer/> (referer: https://www.google.com/)
+2026-07-18 10:56:38,229 [INFO] scrapling: Fetched (200) <GET https://www.griddynamics.com/careers/discover-openings> (referer: https://www.google.com/)
+2026-07-18 10:56:39,278 [INFO] scrapling: Fetched (200) <GET https://corvi.careers/blog/global_software-engineering_jobs_march_2026/> (referer: https://www.google.com/)
+2026-07-18 10:56:41,443 [INFO] scrapling: Fetched (200) <GET https://apna.co/jobs/title_backend_developer_intern-freshers-jobs-in-noida> (referer: https://www.google.com/)
+2026-07-18 10:56:44,550 [INFO] scrapling: Fetched (200) <GET https://www.foundit.in/job/backend-developer-node-js-fresher-delta4-infotech-nagar-40497648> (referer: https://www.google.com/)
+2026-07-18 10:56:46,249 [INFO] scrapling: Fetched (200) <GET https://jaabz.com/jobs/157343-back-end-developer> (referer: https://www.google.com/)
+2026-07-18 10:56:48,657 [INFO] scrapling: Fetched (200) <GET https://hbspl.in/jobs/backend-developer-node-js-django-spring-boot-express-js/> (referer: https://www.google.com/)
+2026-07-18 10:56:50,577 [INFO] scrapling: Fetched (200) <GET https://web3.career/backend+intern-jobs?page=2> (referer: https://www.google.com/)
+2026-07-18 10:56:52,556 [INFO] scrapling: Fetched (200) <GET https://aworker.io/defi-jobs> (referer: https://www.google.com/)
+2026-07-18 10:56:53,858 [INFO] scrapling: Fetched (200) <GET https://cryptocurrencyjobs.co/software-engineer/> (referer: https://www.google.com/)
+2026-07-18 10:56:55,140 [INFO] scrapling: Fetched (200) <GET https://cryptojobslist.com/talent/full-stack/india> (referer: https://www.google.com/)
+2026-07-18 10:56:56,397 [INFO] scrapling: Fetched (200) <GET https://www.paradigm.xyz/careers> (referer: https://www.google.com/)
+2026-07-18 10:56:57,655 [INFO] scrapling: Fetched (403) <GET https://wellfound.com/role/r/defi> (referer: https://www.google.com/)
+2026-07-18 10:56:59,262 [INFO] scrapling: Fetched (200) <GET https://thejobcompany.co.in/frontend/job_details?job_id=1559> (referer: https://www.google.com/)
+2026-07-18 10:57:01,274 [INFO] scrapling: Fetched (200) <GET https://www.dheya.com/insights/fintech-careers-india-2026?srsltid=AfmBOoq6AfgtRlgu7E3_lgt1tSvXOMGUYtc-RvAVRa3ilZhoVn2NQvZ_> (referer: https://www.google.com/)
+2026-07-18 10:57:03,257 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Golang-Developer-Intern-RNG-DEV-nysf7abu> (referer: https://www.google.com/)
+2026-07-18 10:57:04,538 [INFO] scrapling: Fetched (404) <GET https://jobmesh.io/job/99d731d6-1486-4ec6-ad7f-09afae120623> (referer: https://www.google.com/)
+2026-07-18 10:57:05,791 [INFO] scrapling: Fetched (200) <GET https://voodoo.io/careers> (referer: https://www.google.com/)
+2026-07-18 10:57:07,077 [INFO] scrapling: Fetched (200) <GET https://reactjobs.io/react-jobs/screenzai/7851-full-stack-engineer-reacttypescript-intern> (referer: https://www.google.com/)
+2026-07-18 10:57:08,267 [INFO] scrapling: Fetched (200) <GET https://peerlist.io/company/lifeattinder/careers/backend-engineer-intern/jobhbargoeder9ddlfpej9jk8gqrm7> (referer: https://www.google.com/)
+2026-07-18 10:57:09,331 [INFO] scrapling: Fetched (202) <GET https://career.io/job/intern-software-engineer-boston-blink-charging-aa0c47da867da7d05053a54f73c9ec00> (referer: https://www.google.com/)
+2026-07-18 10:57:11,315 [INFO] scrapling: Fetched (200) <GET https://prepverse.io/jobs/node-js-and-typescript-developer-tata-consultancy-services-mq7jh9z7> (referer: https://www.google.com/)
+2026-07-18 10:57:13,507 [INFO] scrapling: Fetched (429) <GET https://careers.confluent.io/early-talent> (referer: https://www.google.com/)
+2026-07-18 10:57:15,007 [INFO] scrapling: Fetched (200) <GET https://apna.co/jobs/title_software_developer_intern> (referer: https://www.google.com/)
+2026-07-18 10:57:16,034 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254> (referer: https://www.google.com/)
+2026-07-18 10:57:18,801 [INFO] scrapling: Fetched (200) <GET https://joinsaarthi.com/jobs/internships> (referer: https://www.google.com/)
+2026-07-18 10:57:20,630 [INFO] scrapling: Fetched (200) <GET https://us.trabajo.org/jobs-golang+backend+intern+build+high-performance+crypto/Phoenix> (referer: https://www.google.com/)
+2026-07-18 10:57:20,634 [INFO] sources.serper: Serper discovery: 25 queries → 76 unique URLs → 45 jobs extracted
+2026-07-18 10:57:20,635 [INFO] jobradar: --- Skipping hackernews (disabled in profile) ---
+2026-07-18 10:57:20,635 [INFO] jobradar: --- Skipping reddit (disabled in profile) ---
+2026-07-18 10:57:20,635 [INFO] jobradar: --- Fetching Naukri.com ---
+2026-07-18 10:57:20,635 [INFO] sources.naukri: Naukri: 10 keywords x 3 locations x 2 pages = up to 60 search calls (1200 raw listings max) | exp cap: 1yr | age cap: 45d
+2026-07-18 10:58:50,271 [INFO] sources.naukri: Naukri Stage-1 complete: 175 unique jobs survived (exp <= 1yr, age <= 45d)
+2026-07-18 10:58:50,272 [INFO] sources.naukri: Naukri: 175 jobs entering pipeline
+2026-07-18 10:58:50,272 [INFO] jobradar: --- Fetching Hirist.tech ---
+2026-07-18 10:58:50,272 [INFO] sources.hirist: Hirist: 45 keywords x 2 pages | exp range: 0-3 yrs | detail fetch: True | hard timeout: 600s
+2026-07-18 10:58:54,856 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/python-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:58:58,849 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/machine-learning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:03,270 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/deep-learning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:07,680 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/computer-vision-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:11,599 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/generative-ai-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:15,628 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/langchain-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:19,736 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/nlp-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:23,655 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/llm-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:28,117 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/rag-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:32,178 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/langgraph-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:36,262 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/hugging-face-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:40,568 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/prompt-engineering-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:44,646 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/vector-database-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:48,765 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/pinecone-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:52,904 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/openai-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 10:59:56,975 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/fine-tuning-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:01,085 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/multimodal-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:05,568 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/backend-developer-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:10,120 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/django-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:14,649 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/fastapi-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:19,216 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/flask-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:23,980 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/rest-api-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:28,508 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/postgresql-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:33,029 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/mongodb-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:37,530 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/sql-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:41,865 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/redis-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:46,041 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/aws-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:50,186 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/gcp-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:54,212 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/yolo-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:00:59,037 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/opencv-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:03,110 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/object-detection-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:07,330 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/pytorch-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:11,894 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/tensorflow-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:16,015 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/data-science-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:19,969 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/xgboost-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:24,301 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/scikit-learn-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:28,509 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/lightgbm-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:32,642 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/catboost-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:36,836 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/mlops-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:41,036 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/docker-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:45,496 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/git-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:50,196 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/ci-cd-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:54,319 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/gradio-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:01:58,325 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/streamlit-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:02:02,215 [INFO] scrapling: Fetched (200) <GET https://www.hirist.tech/k/model-deployment-jobs?minexp=0&maxexp=3> (referer: https://www.google.com/)
+2026-07-18 11:02:02,311 [INFO] sources.hirist: Hirist: 0 raw jobs from listing pages
+2026-07-18 11:02:02,311 [INFO] jobradar: --- Fetching Jobicy (remote jobs API) ---
+2026-07-18 11:02:04,442 [INFO] sources.jobicy: Jobicy: 70 remote jobs found
+2026-07-18 11:02:04,442 [INFO] jobradar: --- Fetching RemoteOK (JSON API) ---
+2026-07-18 11:02:06,744 [INFO] sources.remoteok: RemoteOK: 62 dev/engineering jobs found
+2026-07-18 11:02:06,745 [INFO] jobradar: Total raw jobs from all sources: 8339
+2026-07-18 11:02:08,024 [INFO] pipeline.dedup: Dedup: 8339 raw -> 7617 new
+2026-07-18 11:02:20,071 [INFO] pipeline.prefilter: ATS company cap (25): capped companies — Zscaler, Mongodb, Databricks, Grafanalabs, Datadog, Gitlab, Canonical
+2026-07-18 11:02:20,071 [INFO] pipeline.prefilter: Pre-filter: 7617 jobs -> 702 passed (sent to AI scorer)
+2026-07-18 11:02:22,103 [INFO] pipeline.ranker: Relevance ranking: 702 jobs ranked. Top scores: [25, 25, 24, 24, 24]
+2026-07-18 11:02:22,104 [WARNING] pipeline.scorer: Hard fallback cap: trimmed 502 lowest-ranked jobs (max_ai_jobs_per_run=200). Increase cap in profile.yaml if needed.
+2026-07-18 11:02:22,104 [INFO] pipeline.scorer: Scoring up to 200 ranked jobs with Groq (meta-llama/llama-4-scout-17b-16e-instruct) | token budget: 200,000
+2026-07-18 11:02:22,210 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:22,211 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Software Development Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:02:27,246 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:27,246 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer — Distributed Systems & Agentic AI: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:02:32,256 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:32,257 [ERROR] pipeline.scorer: Groq scoring failed for Principal GenAI Data Engineer : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:02:37,231 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:37,232 [ERROR] pipeline.scorer: Groq scoring failed for Senior Machine Learning Engineer (Agentic AI): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:02:42,227 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:42,228 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:02:47,189 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:47,189 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:02:52,173 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:52,174 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:02:57,224 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:02:57,224 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:02,488 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:02,488 [ERROR] pipeline.scorer: Groq scoring failed for Sr. AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:07,211 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:07,211 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer, Robotics: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:12,176 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:12,176 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer, (L2) CDP: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:17,184 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:17,185 [ERROR] pipeline.scorer: Groq scoring failed for SDE IV - Backend: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:22,223 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:22,224 [ERROR] pipeline.scorer: Groq scoring failed for Customer Engineer (Pre-Sales), Korea (Based in Seoul): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:27,188 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:27,188 [ERROR] pipeline.scorer: Groq scoring failed for Senior Forward Deployed Engineer - Full stack: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:32,338 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:32,338 [ERROR] pipeline.scorer: Groq scoring failed for Alliances Field Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:37,225 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:37,226 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Field Engineering Manager: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:42,191 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:42,192 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Professional Services Manager: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:47,176 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:47,177 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Solutions Architect - Alliances: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:52,181 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:52,182 [ERROR] pipeline.scorer: Groq scoring failed for Binance Accelerator Program - Analytics Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:03:57,204 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:03:57,204 [ERROR] pipeline.scorer: Groq scoring failed for Binance Accelerator Program - DevSecOps Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:02,485 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:02,485 [ERROR] pipeline.scorer: Groq scoring failed for Lead Software Engineer - Machine Learning: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:07,184 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:07,184 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Developer Experience (Golang, Python): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:12,216 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:12,217 [ERROR] pipeline.scorer: Groq scoring failed for Customer Engineer, India (Based in Mumbai): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:17,209 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:17,209 [ERROR] pipeline.scorer: Groq scoring failed for Technical Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:22,175 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:22,176 [ERROR] pipeline.scorer: Groq scoring failed for Principal Presales Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:27,177 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:27,177 [ERROR] pipeline.scorer: Groq scoring failed for Principal Presales Engineer : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:32,210 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:32,210 [ERROR] pipeline.scorer: Groq scoring failed for FinOps Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:37,198 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:37,199 [ERROR] pipeline.scorer: Groq scoring failed for Remote Full-Stack Engineer React/Typescript (Intern) at Screenz.ai: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:42,238 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:42,238 [ERROR] pipeline.scorer: Groq scoring failed for Java Backend Engineer (AI/LLM Chatbot, Customer Service): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:47,269 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:47,270 [ERROR] pipeline.scorer: Groq scoring failed for Software Developer React NextJS: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:52,377 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:52,378 [ERROR] pipeline.scorer: Groq scoring failed for Staff Software Engineer (AI): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:04:57,177 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:04:57,178 [ERROR] pipeline.scorer: Groq scoring failed for  Staff Detection Engineer : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:02,209 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:02,210 [ERROR] pipeline.scorer: Groq scoring failed for Internal Audit Data Analytics Lead: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:07,185 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:07,185 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 3: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:12,248 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:12,248 [ERROR] pipeline.scorer: Groq scoring failed for Talent Pipeline - Product Engineering: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:17,245 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:17,245 [ERROR] pipeline.scorer: Groq scoring failed for Senior AI Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:22,222 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:22,223 [ERROR] pipeline.scorer: Groq scoring failed for Staff ML Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:27,192 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:27,192 [ERROR] pipeline.scorer: Groq scoring failed for GTM AI Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:32,181 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:32,182 [ERROR] pipeline.scorer: Groq scoring failed for Page 2 - Backend Internships - Jun 2026: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:37,180 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:37,181 [ERROR] pipeline.scorer: Groq scoring failed for Python With Gen AI: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:42,223 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:42,223 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Software Development Engineer (Backend - Python/Go): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:47,184 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:47,185 [ERROR] pipeline.scorer: Groq scoring failed for Senior Manager, Customer Engineering, India: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:52,246 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:52,246 [ERROR] pipeline.scorer: Groq scoring failed for Senior AI Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:05:57,234 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:05:57,234 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - AI Code Gen - Agent Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:02,239 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:02,240 [ERROR] pipeline.scorer: Groq scoring failed for Senior Site Reliability Engineer I : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:07,178 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:07,178 [ERROR] pipeline.scorer: Groq scoring failed for Distributed Systems Testing Software Engineer, Python / Go: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:12,179 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:12,179 [ERROR] pipeline.scorer: Groq scoring failed for Embedded Linux Field Engineer for Devices/IoT: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:17,188 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:17,189 [ERROR] pipeline.scorer: Groq scoring failed for Embedded Linux Field Engineer (Mandarin speaking): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:22,221 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:22,221 [ERROR] pipeline.scorer: Groq scoring failed for Binance Accelerator Program - TechOps Engineer (APAC Timezone): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:27,178 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:27,178 [ERROR] pipeline.scorer: Groq scoring failed for Staff Software Engineer - Developer Experience : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:32,496 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:32,497 [ERROR] pipeline.scorer: Groq scoring failed for Global insights on Software Engineering, AI and Devops ...: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:38,929 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:38,929 [ERROR] pipeline.scorer: Groq scoring failed for Senior Staff Software Engineer in Test: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:42,223 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:42,224 [ERROR] pipeline.scorer: Groq scoring failed for Containerization & Virtualisation Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:47,185 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:47,186 [ERROR] pipeline.scorer: Groq scoring failed for Backend Engineer Intern at Tinder: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:52,944 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:52,945 [ERROR] pipeline.scorer: Groq scoring failed for Intern - Software Developer (Product): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:06:57,186 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:06:57,187 [ERROR] pipeline.scorer: Groq scoring failed for Fresher Graduate Engineer Trainee (Full Stack Developer): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:02,183 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:02,183 [ERROR] pipeline.scorer: Groq scoring failed for Agent Developer Test III: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:07,457 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:07,458 [ERROR] pipeline.scorer: Groq scoring failed for SDE 2: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:12,185 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:12,186 [ERROR] pipeline.scorer: Groq scoring failed for SDE III: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:17,224 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:17,225 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Staff Site Reliability Engineer (Linux/Network troubleshooting/Scripting): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:22,232 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:22,233 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Staff Software Development Engineer - AI Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:27,198 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:27,199 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Staff Software Development Engineer - C/C++/Go: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:32,478 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:32,479 [ERROR] pipeline.scorer: Groq scoring failed for Associate Technical Services Engineer II: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:37,207 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:37,208 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer, Atlas API Experience: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:42,179 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:42,179 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 3, Atlas API Experience Integrations: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:47,179 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:47,180 [ERROR] pipeline.scorer: Groq scoring failed for Technical Services Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:52,221 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:52,222 [ERROR] pipeline.scorer: Groq scoring failed for Technical Services Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:07:57,194 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:07:57,194 [ERROR] pipeline.scorer: Groq scoring failed for Intermediate Backend Engineer - Analytics Instrumentation: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:02,458 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:02,459 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Streaming AI (Remote - Ontario / British Columbia) : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:07,284 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:07,284 [ERROR] pipeline.scorer: Groq scoring failed for Senior Full-Stack Engineer (TypeScript/AI Automation) - Real Estate - LATAM: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:12,235 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:12,236 [ERROR] pipeline.scorer: Groq scoring failed for Federal Security Operations - SkillBridge Intern: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:17,223 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:17,224 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 2: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:22,230 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:22,230 [ERROR] pipeline.scorer: Groq scoring failed for PhD GenAI Research Scientist Intern: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:27,211 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:27,212 [ERROR] pipeline.scorer: Groq scoring failed for Senior Staff Software Engineer- Search Quality: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:32,215 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:32,215 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:37,219 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:37,220 [ERROR] pipeline.scorer: Groq scoring failed for Distributed Systems Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:42,236 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:42,237 [ERROR] pipeline.scorer: Groq scoring failed for Cybersecurity Intern : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:47,183 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:47,183 [ERROR] pipeline.scorer: Groq scoring failed for Full Stack Developer - Fresher: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:52,211 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:52,211 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Development Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:08:57,513 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:08:57,514 [ERROR] pipeline.scorer: Groq scoring failed for Senior Information Technology Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:02,250 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:02,251 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer II: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:07,220 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:07,220 [ERROR] pipeline.scorer: Groq scoring failed for Staff Software Development Engineer - Platform: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:12,211 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:12,211 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:17,243 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:17,244 [ERROR] pipeline.scorer: Groq scoring failed for Lead, Cloud Operations Engineering: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:22,283 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:22,284 [ERROR] pipeline.scorer: Groq scoring failed for Senior Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:27,270 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:27,271 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:32,228 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:32,228 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:37,184 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:37,184 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Networking: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:42,267 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:42,268 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer, Analytics Instrumentation (Golang): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:47,221 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:47,221 [ERROR] pipeline.scorer: Groq scoring failed for Senior Security Engineer, Security Incident Response Team (SIRT) - EMEA: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:52,187 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:52,187 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Engineering Manager: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:09:57,231 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:09:57,231 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Field Engineer: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:10:02,198 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:10:02,198 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer (Java): Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:10:07,196 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:10:07,197 [ERROR] pipeline.scorer: Groq scoring failed for Engineering Manager (BE) - Ecosystem Distribution: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:10:12,187 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:10:12,188 [ERROR] pipeline.scorer: Groq scoring failed for Workflow Developer & Tester: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:10:17,183 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:10:17,184 [ERROR] pipeline.scorer: Groq scoring failed for SME, Support Systems Specialist: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:10:22,188 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:10:22,189 [ERROR] pipeline.scorer: Groq scoring failed for Applied AI Engineer : Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:10:27,190 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-07-18 11:10:27,191 [ERROR] pipeline.scorer: Groq scoring failed for Escalation Engineer - AI Security: Error code: 404 - {'error': {'message': 'The model `meta-llama/llama-4-scout-17b-16e-instruct` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-07-18 11:10:27,208 [INFO] pipeline.scorer: Token budget: 199,464/200,000 tokens used. Skipped 102 lower-ranked jobs to stay under limit.
+2026-07-18 11:10:27,209 [INFO] pipeline.scorer: Scoring complete: 0 urgent, 0 digest, 98 low, 0 expired (dropped)
+2026-07-18 11:10:28,191 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 98 to review — 18 Jul 2026
+2026-07-18 11:10:28,191 [INFO] jobradar: Pipeline complete.
+2026-07-18 11:10:28,192 [INFO] jobradar: Summary: 8339 raw -> 7617 new -> 702 eligible -> 0 urgent
