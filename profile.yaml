@@ -8,7 +8,7 @@ sources:
   ats:            true
   cutshort:       true
   instahyre:      true
-  wellfound:      false
+  wellfound:      true
   serper:         true
   hackernews:     false
   reddit:         false
@@ -16,7 +16,7 @@ sources:
   yc:             true
   freshers_blogs: true
   naukri:         true
-  hirist:         true
+  hirist:         false
   jobicy:         true
   remoteok:       true
 
