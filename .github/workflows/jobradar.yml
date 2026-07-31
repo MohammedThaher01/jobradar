@@ -3,7 +3,6 @@ name: JobRadar
 on:
   schedule:
     - cron: '30 3 * * *'   # 9:00 AM IST
-    - cron: '30 9 * * *'   # 3:00 PM IST
   workflow_dispatch:
 
 jobs:
