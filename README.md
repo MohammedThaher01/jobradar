@@ -9,7 +9,7 @@
 
 Built for freshers, interns, and early-career developers — but **fully configurable for any role, stack, domain, or location via `profile.yaml` alone**.
 
-> **Forked from [reorx/jobradar](https://github.com/reorx/jobradar) and extensively modified** — replaced Telegram notifications with Gmail SMTP email alerts, added GitHub Actions CI/CD with persistent SQLite DB, recalibrated AI scoring for AI/ML fresher roles, expanded ATS company list with Indian AI startups, and tuned all sources and filters for the Indian job market.
+> **Forked from [reorx/jobradar]((https://github.com/kayden-vs/jobradar)) and extensively modified** — replaced Telegram notifications with Gmail SMTP email alerts, added GitHub Actions CI/CD with persistent SQLite DB, recalibrated AI scoring for AI/ML fresher roles, expanded ATS company list with Indian AI startups, and tuned all sources and filters for the Indian job market.
 
 ---
 
