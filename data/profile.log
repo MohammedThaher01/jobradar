@@ -5866,3 +5866,883 @@
 2026-08-16 05:04:40,527 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 1 urgent · 94 to review — 16 Aug 2026
 2026-08-16 05:04:40,527 [INFO] jobradar: Pipeline complete.
 2026-08-16 05:04:40,527 [INFO] jobradar: Summary: 8391 raw -> 7656 new -> 562 eligible -> 1 urgent
+2026-08-17 04:11:00,283 [INFO] jobradar: ==================================================
+2026-08-17 04:11:00,283 [INFO] jobradar: JobRadar pipeline starting — profile: profile.yaml
+2026-08-17 04:11:00,283 [INFO] jobradar: ==================================================
+2026-08-17 04:11:00,298 [WARNING] jobradar: telegram_chat_id is not set in profile or TELEGRAM_CHAT_ID env var — Telegram notifications will fail
+2026-08-17 04:11:00,304 [INFO] jobradar: --- Fetching ATS endpoints (Greenhouse US/EU, Lever, Ashby, Workable) ---
+2026-08-17 04:11:00,741 [INFO] sources.ats: Greenhouse US razorpaysoftwareprivatelimited: 23 jobs
+2026-08-17 04:11:00,987 [INFO] sources.ats: Greenhouse US phonepe: 76 jobs
+2026-08-17 04:11:01,199 [INFO] sources.ats: Greenhouse US twitch: 63 jobs
+2026-08-17 04:11:01,591 [INFO] sources.ats: Greenhouse US airbnb: 186 jobs
+2026-08-17 04:11:01,818 [INFO] sources.ats: Greenhouse US postman: 109 jobs
+2026-08-17 04:11:02,042 [INFO] sources.ats: Greenhouse US faire: 67 jobs
+2026-08-17 04:11:02,264 [INFO] sources.ats: Greenhouse US duolingo: 69 jobs
+2026-08-17 04:11:02,549 [INFO] sources.ats: Greenhouse US scaleai: 210 jobs
+2026-08-17 04:11:02,880 [INFO] sources.ats: Greenhouse US appian: 182 jobs
+2026-08-17 04:11:03,030 [INFO] sources.ats: Greenhouse US blenheimchalcot: 6 jobs
+2026-08-17 04:11:03,207 [INFO] sources.ats: Greenhouse US nasuni: 30 jobs
+2026-08-17 04:11:03,437 [INFO] sources.ats: Greenhouse US crunchyroll: 73 jobs
+2026-08-17 04:11:03,610 [INFO] sources.ats: Greenhouse US slice: 43 jobs
+2026-08-17 04:11:03,846 [INFO] sources.ats: Greenhouse US highradius: 76 jobs
+2026-08-17 04:11:03,978 [INFO] sources.ats: Greenhouse US pine: 5 jobs
+2026-08-17 04:11:04,145 [INFO] sources.ats: Greenhouse US karbon: 13 jobs
+2026-08-17 04:11:04,271 [WARNING] sources.ats: Greenhouse US fetch failed for loop: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/loop/jobs?content=true
+2026-08-17 04:11:04,272 [INFO] sources.ats: Greenhouse US loop: 0 jobs
+2026-08-17 04:11:04,498 [INFO] sources.ats: Greenhouse US glance: 46 jobs
+2026-08-17 04:11:04,746 [INFO] sources.ats: Greenhouse US inmobi: 68 jobs
+2026-08-17 04:11:04,914 [INFO] sources.ats: Greenhouse US druva: 34 jobs
+2026-08-17 04:11:05,091 [INFO] sources.ats: Greenhouse US zenoti: 37 jobs
+2026-08-17 04:11:05,228 [INFO] sources.ats: Greenhouse US route: 5 jobs
+2026-08-17 04:11:05,389 [INFO] sources.ats: Greenhouse US hackerrank: 30 jobs
+2026-08-17 04:11:05,815 [INFO] sources.ats: Greenhouse US zscaler: 338 jobs
+2026-08-17 04:11:06,222 [INFO] sources.ats: Greenhouse US cloudflare: 305 jobs
+2026-08-17 04:11:06,633 [INFO] sources.ats: Greenhouse US stripe: 576 jobs
+2026-08-17 04:11:06,922 [INFO] sources.ats: Greenhouse US twilio: 157 jobs
+2026-08-17 04:11:07,334 [INFO] sources.ats: Greenhouse US mongodb: 407 jobs
+2026-08-17 04:11:07,721 [INFO] sources.ats: Greenhouse US elastic: 256 jobs
+2026-08-17 04:11:08,306 [INFO] sources.ats: Greenhouse US databricks: 804 jobs
+2026-08-17 04:11:08,553 [INFO] sources.ats: Greenhouse US grafanalabs: 148 jobs
+2026-08-17 04:11:09,002 [INFO] sources.ats: Greenhouse US datadog: 425 jobs
+2026-08-17 04:11:09,224 [INFO] sources.ats: Greenhouse US newrelic: 61 jobs
+2026-08-17 04:11:09,382 [INFO] sources.ats: Greenhouse US sumologic: 22 jobs
+2026-08-17 04:11:09,557 [INFO] sources.ats: Greenhouse US pagerduty: 26 jobs
+2026-08-17 04:11:09,734 [INFO] sources.ats: Greenhouse US cribl: 66 jobs
+2026-08-17 04:11:09,894 [INFO] sources.ats: Greenhouse US jfrog: 33 jobs
+2026-08-17 04:11:10,036 [INFO] sources.ats: Greenhouse US orcasecurity: 11 jobs
+2026-08-17 04:11:10,345 [INFO] sources.ats: Greenhouse US gitlab: 196 jobs
+2026-08-17 04:11:10,487 [INFO] sources.ats: Greenhouse US circleci: 5 jobs
+2026-08-17 04:11:10,631 [INFO] sources.ats: Greenhouse US buildkite: 10 jobs
+2026-08-17 04:11:10,775 [INFO] sources.ats: Greenhouse US airtable: 17 jobs
+2026-08-17 04:11:11,034 [INFO] sources.ats: Greenhouse US figma: 161 jobs
+2026-08-17 04:11:11,198 [INFO] sources.ats: Greenhouse US coursera: 22 jobs
+2026-08-17 04:11:11,344 [INFO] sources.ats: Greenhouse US udemy: 13 jobs
+2026-08-17 04:11:11,681 [INFO] sources.ats: Greenhouse US canonical: 303 jobs
+2026-08-17 04:11:12,062 [INFO] sources.ats: Greenhouse US remotecom: 225 jobs
+2026-08-17 04:11:12,222 [INFO] sources.ats: Greenhouse US turing: 21 jobs
+2026-08-17 04:11:12,371 [INFO] sources.ats: Greenhouse US upwork: 7 jobs
+2026-08-17 04:11:12,514 [INFO] sources.ats: Greenhouse US planetscale: 10 jobs
+2026-08-17 04:11:12,642 [INFO] sources.ats: Greenhouse US newton: 1 jobs
+2026-08-17 04:11:12,876 [INFO] sources.ats: Greenhouse US stage: 128 jobs
+2026-08-17 04:11:13,138 [INFO] sources.ats: Greenhouse EU groww: 8 jobs
+2026-08-17 04:11:13,827 [INFO] sources.ats: Lever meesho: 54 jobs
+2026-08-17 04:11:15,413 [INFO] sources.ats: Lever hevodata: 40 jobs
+2026-08-17 04:11:15,855 [INFO] sources.ats: Lever stable-money1: 23 jobs
+2026-08-17 04:11:16,134 [INFO] sources.ats: Lever linkedin: 23 jobs
+2026-08-17 04:11:16,916 [INFO] sources.ats: Lever paytm: 247 jobs
+2026-08-17 04:11:17,572 [INFO] sources.ats: Lever spotify: 103 jobs
+2026-08-17 04:11:18,555 [INFO] sources.ats: Lever binance: 272 jobs
+2026-08-17 04:11:19,954 [INFO] sources.ats: Lever nium: 38 jobs
+2026-08-17 04:11:20,239 [INFO] sources.ats: Lever 100ms: 10 jobs
+2026-08-17 04:11:20,718 [INFO] sources.ats: Lever GoToGroup: 40 jobs
+2026-08-17 04:11:21,018 [INFO] sources.ats: Lever cred: 6 jobs
+2026-08-17 04:11:21,325 [INFO] sources.ats: Lever fi: 8 jobs
+2026-08-17 04:11:21,777 [INFO] sources.ats: Lever capital: 44 jobs
+2026-08-17 04:11:22,212 [INFO] sources.ats: Lever porter: 29 jobs
+2026-08-17 04:11:22,620 [INFO] sources.ats: Lever mindtickle: 25 jobs
+2026-08-17 04:11:22,802 [WARNING] sources.ats: Lever fetch failed for belong: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/belong
+2026-08-17 04:11:22,804 [INFO] sources.ats: Lever belong: 0 jobs
+2026-08-17 04:11:22,993 [INFO] sources.ats: Lever whereby: 1 jobs
+2026-08-17 04:11:23,489 [INFO] sources.ats: Lever toptal: 22 jobs
+2026-08-17 04:11:23,691 [INFO] sources.ats: Ashby navi: 8 jobs
+2026-08-17 04:11:23,818 [INFO] sources.ats: Ashby ditto: 11 jobs
+2026-08-17 04:11:24,016 [INFO] sources.ats: Ashby bounce: 14 jobs
+2026-08-17 04:11:24,161 [INFO] sources.ats: Ashby clarisights: 2 jobs
+2026-08-17 04:11:24,299 [INFO] sources.ats: Ashby confluent: 30 jobs
+2026-08-17 04:11:24,408 [INFO] sources.ats: Ashby linear: 33 jobs
+2026-08-17 04:11:24,595 [INFO] sources.ats: Ashby notion: 133 jobs
+2026-08-17 04:11:24,739 [INFO] sources.ats: Ashby zapier: 12 jobs
+2026-08-17 04:11:24,959 [INFO] sources.ats: Ashby buffer: 3 jobs
+2026-08-17 04:11:25,048 [INFO] sources.ats: Ashby deel: 0 jobs
+2026-08-17 04:11:25,189 [INFO] sources.ats: Ashby oyster: 21 jobs
+2026-08-17 04:11:25,377 [INFO] sources.ats: Ashby andela: 19 jobs
+2026-08-17 04:11:25,534 [INFO] sources.ats: Ashby supabase: 54 jobs
+2026-08-17 04:11:25,641 [INFO] sources.ats: Ashby railway: 8 jobs
+2026-08-17 04:11:25,753 [INFO] sources.ats: Ashby render: 35 jobs
+2026-08-17 04:11:25,930 [INFO] sources.ats: Ashby infisical: 6 jobs
+2026-08-17 04:11:26,097 [INFO] sources.ats: Ashby triggerdev: 1 jobs
+2026-08-17 04:11:26,230 [INFO] sources.ats: Ashby mintlify: 19 jobs
+2026-08-17 04:11:26,363 [INFO] sources.ats: Ashby resend: 11 jobs
+2026-08-17 04:11:26,608 [INFO] sources.ats: Ashby stytch: 5 jobs
+2026-08-17 04:11:26,716 [INFO] sources.ats: Ashby workos: 26 jobs
+2026-08-17 04:11:26,871 [INFO] sources.ats: Ashby scaler: 0 jobs
+2026-08-17 04:11:27,128 [INFO] sources.ats: Workable juspay: 0 jobs
+2026-08-17 04:11:28,850 [INFO] sources.ats: Workable gridlines: 10 jobs
+2026-08-17 04:11:30,450 [INFO] sources.ats: Workable apna: 10 jobs
+2026-08-17 04:11:31,680 [INFO] sources.ats: SmartRecruiters Upstox: 1 jobs
+2026-08-17 04:11:32,685 [INFO] sources.ats: SmartRecruiters Lendingkart: 1 jobs
+2026-08-17 04:11:33,737 [INFO] sources.ats: SmartRecruiters Turtlemint: 1 jobs
+2026-08-17 04:11:38,749 [INFO] sources.ats: SmartRecruiters Lokal: 8 jobs
+2026-08-17 04:11:39,733 [INFO] sources.ats: SmartRecruiters Cars24: 1 jobs
+2026-08-17 04:11:45,139 [INFO] sources.ats: SmartRecruiters ixigo: 9 jobs
+2026-08-17 04:12:38,110 [INFO] sources.ats: SmartRecruiters Freshworks: 100 jobs
+2026-08-17 04:12:39,123 [INFO] sources.ats: SmartRecruiters Whatfix: 1 jobs
+2026-08-17 04:12:43,877 [INFO] sources.ats: SmartRecruiters MercerMettl: 8 jobs
+2026-08-17 04:12:47,215 [INFO] sources.ats: SmartRecruiters InterviewMocha: 5 jobs
+2026-08-17 04:12:52,889 [INFO] sources.ats: SmartRecruiters Skillate: 10 jobs
+2026-08-17 04:13:45,259 [INFO] sources.ats: SmartRecruiters ServiceNow: 100 jobs
+2026-08-17 04:15:06,498 [INFO] sources.ats: SmartRecruiters Canva: 100 jobs
+2026-08-17 04:15:08,598 [INFO] sources.ats: SmartRecruiters Unacademy: 3 jobs
+2026-08-17 04:15:16,724 [INFO] sources.ats: SmartRecruiters Dailymotion: 14 jobs
+2026-08-17 04:15:17,638 [INFO] sources.ats: Rippling axio: 2 jobs
+2026-08-17 04:15:18,366 [INFO] sources.ats: Rippling multiplier: 1 jobs
+2026-08-17 04:15:19,909 [INFO] sources.ats: Rippling dub: 5 jobs
+2026-08-17 04:15:20,430 [INFO] sources.ats: BambooHR urban: 23 jobs
+2026-08-17 04:15:20,946 [INFO] sources.ats: BambooHR shadowfax: 0 jobs
+2026-08-17 04:15:21,457 [WARNING] sources.ats: BambooHR fetch failed for google: Expecting value: line 1 column 1 (char 0)
+2026-08-17 04:15:21,459 [INFO] sources.ats: BambooHR google: 0 jobs
+2026-08-17 04:15:21,986 [WARNING] sources.ats: BambooHR fetch failed for meta: Expecting value: line 1 column 1 (char 0)
+2026-08-17 04:15:21,988 [INFO] sources.ats: BambooHR meta: 0 jobs
+2026-08-17 04:15:22,485 [INFO] sources.ats: BambooHR flyio: 10 jobs
+2026-08-17 04:15:22,733 [WARNING] sources.ats: Recruitee fetch failed for unstop: 404 Client Error: Not Found for url: https://unstop.recruitee.com/api/offers/
+2026-08-17 04:15:22,735 [INFO] sources.ats: Recruitee unstop: 0 jobs
+2026-08-17 04:15:22,966 [WARNING] sources.ats: Recruitee fetch failed for salesforce: 404 Client Error: Not Found for url: https://salesforce.recruitee.com/api/offers/
+2026-08-17 04:15:22,967 [INFO] sources.ats: Recruitee salesforce: 0 jobs
+2026-08-17 04:15:23,234 [WARNING] sources.ats: Recruitee fetch failed for ibm: 404 Client Error: Not Found for url: https://ibm.recruitee.com/api/offers/
+2026-08-17 04:15:23,235 [INFO] sources.ats: Recruitee ibm: 0 jobs
+2026-08-17 04:15:24,574 [INFO] sources.ats: Personio open: 4 jobs
+2026-08-17 04:15:25,340 [INFO] sources.ats: Personio josh: 3 jobs
+2026-08-17 04:15:26,036 [INFO] sources.ats: Personio amazon: 3 jobs
+2026-08-17 04:15:26,814 [INFO] sources.ats: Personio basecamp: 4 jobs
+2026-08-17 04:15:26,815 [INFO] sources.ats: ATS total: 8086 raw jobs
+2026-08-17 04:15:26,815 [INFO] jobradar: --- Fetching Cutshort ---
+2026-08-17 04:15:27,211 [WARNING] sources.cutshort: Cutshort scrape failed for query 'AI intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:27,548 [WARNING] sources.cutshort: Cutshort scrape failed for query 'machine learning intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:27,891 [WARNING] sources.cutshort: Cutshort scrape failed for query 'generative AI intern': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:28,237 [WARNING] sources.cutshort: Cutshort scrape failed for query 'LLM engineer intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:28,580 [WARNING] sources.cutshort: Cutshort scrape failed for query 'computer vision intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:28,919 [WARNING] sources.cutshort: Cutshort scrape failed for query 'python backend intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:29,268 [WARNING] sources.cutshort: Cutshort scrape failed for query 'deep learning intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:29,610 [WARNING] sources.cutshort: Cutshort scrape failed for query 'NLP intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:29,955 [WARNING] sources.cutshort: Cutshort scrape failed for query 'RAG langchain intern': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:30,295 [WARNING] sources.cutshort: Cutshort scrape failed for query 'AI ML fresher india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:30,295 [INFO] sources.cutshort: Cutshort: 0 jobs found
+2026-08-17 04:15:30,295 [INFO] jobradar: --- Fetching Instahyre ---
+2026-08-17 04:15:30,637 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=python&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:30,979 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=machine-learning&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:31,318 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=deep-learning&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:31,662 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=artificial-intelligence&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:32,009 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=computer-vision&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:32,356 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=nlp&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:32,691 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=langchain&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:33,027 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=django&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:33,364 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=fastapi&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:33,698 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=pytorch&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-08-17 04:15:33,698 [INFO] sources.instahyre: Instahyre: 0 jobs found via Scrapling
+2026-08-17 04:15:33,698 [INFO] jobradar: --- Fetching Wellfound ---
+2026-08-17 04:15:33,698 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=machine+learning+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-17 04:15:33,698 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=AI+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-17 04:15:33,698 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=python+backend+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-17 04:15:33,698 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=generative+AI+intern&remote=true: name 'StealthyFetcher' is not defined
+2026-08-17 04:15:33,698 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=computer+vision+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-17 04:15:33,698 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=LLM+engineer+intern&remote=true: name 'StealthyFetcher' is not defined
+2026-08-17 04:15:33,698 [INFO] sources.wellfound: Wellfound: 0 jobs found
+2026-08-17 04:15:33,698 [INFO] jobradar: --- Fetching Internshala ---
+2026-08-17 04:15:35,962 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/backend-development-internship/> (referer: https://www.google.com/)
+2026-08-17 04:15:38,589 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-08-17 04:15:41,486 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-08-17 04:15:43,740 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/web-development-internship/> (referer: https://www.google.com/)
+2026-08-17 04:15:45,665 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-golang/> (referer: https://www.google.com/)
+2026-08-17 04:15:48,703 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-go-developer/> (referer: https://www.google.com/)
+2026-08-17 04:15:50,827 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-nodejs/> (referer: https://www.google.com/)
+2026-08-17 04:15:52,865 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-typescript/> (referer: https://www.google.com/)
+2026-08-17 04:15:55,787 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/> (referer: https://www.google.com/)
+2026-08-17 04:15:59,157 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/software-developer-jobs/> (referer: https://www.google.com/)
+2026-08-17 04:15:59,169 [INFO] sources.internshala: Internshala: 0 jobs found
+2026-08-17 04:15:59,169 [INFO] jobradar: --- Fetching Indian Fresher Blogs (RSS + Cuvette) ---
+2026-08-17 04:15:59,575 [INFO] sources.freshers_blogs: [freshersarea] 10 entries from https://freshersarea.in/feed/
+2026-08-17 04:16:00,045 [INFO] sources.freshers_blogs: [freshers-job] 10 entries from https://freshers-job.com/feed/
+2026-08-17 04:16:00,236 [INFO] sources.freshers_blogs: [fresheropenings] 12 entries from https://fresheropenings.com/feed/
+2026-08-17 04:16:00,418 [INFO] sources.freshers_blogs: [offcampusjobs4u] 10 entries from https://offcampusjobs4u.com/category/offcampus-jobs/feed/
+2026-08-17 04:16:00,603 [INFO] sources.freshers_blogs: [freshershunt] 1 entries from https://freshershunt.in/feed/
+2026-08-17 04:16:01,610 [INFO] sources.freshers_blogs: [freshersdunia] 20 entries from https://freshersdunia.in/feed/
+2026-08-17 04:16:01,983 [INFO] sources.freshers_blogs: [freshersnow] 20 entries from https://freshersnow.com/feed/
+2026-08-17 04:16:04,149 [INFO] sources.freshers_blogs: [tnpofficer] 10 entries from https://tnpofficer.com/category/off-campus/feed/
+2026-08-17 04:16:04,150 [INFO] sources.freshers_blogs: freshers_blogs: 93 total listings from 8 RSS feeds
+2026-08-17 04:16:04,150 [INFO] jobradar: --- Fetching YC Jobs ---
+2026-08-17 04:16:06,524 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&type=fulltime,intern&remote=true> (referer: https://www.google.com/)
+2026-08-17 04:16:06,527 [INFO] sources.yc: YC listing 'q=backend&type=fulltime,intern&remote=tr': 1 candidates
+2026-08-17 04:16:08,894 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=typescript+backend&type=fulltime,intern> (referer: https://www.google.com/)
+2026-08-17 04:16:08,898 [INFO] sources.yc: YC listing 'q=typescript+backend&type=fulltime,inter': 0 candidates
+2026-08-17 04:16:11,168 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=golang&type=fulltime,intern> (referer: https://www.google.com/)
+2026-08-17 04:16:11,171 [INFO] sources.yc: YC listing 'q=golang&type=fulltime,intern': 0 candidates
+2026-08-17 04:16:13,675 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&location=india> (referer: https://www.google.com/)
+2026-08-17 04:16:13,678 [INFO] sources.yc: YC listing 'q=backend&location=india': 0 candidates
+2026-08-17 04:16:13,678 [INFO] sources.yc: YC Phase 1 complete: 1 candidate job pages to fetch
+2026-08-17 04:16:15,480 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/gogograndparent/jobs/2vbzAw8-backend-engineer> (referer: https://www.google.com/)
+2026-08-17 04:16:15,485 [INFO] sources.yc: YC Jobs: 1 jobs parsed from 1 fetched pages
+2026-08-17 04:16:15,485 [INFO] jobradar: --- Fetching via Serper discovery ---
+2026-08-17 04:16:15,486 [INFO] sources.serper: Serper pool: 26 tier-1 | 47 tier-2 | 31 tier-3. Running: 10 (unique) + 15 (priority) + 0 (filler) = 25 queries
+2026-08-17 04:16:18,384 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Backend-Developer-Intern-NodeJs-Quoality-ySNWd9q4> (referer: https://www.google.com/)
+2026-08-17 04:16:19,474 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Node-Js-Backend-Intern-Noida-Parksmart-tGu4HHwx> (referer: https://www.google.com/)
+2026-08-17 04:16:20,677 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/golang-jobs> (referer: https://www.google.com/)
+2026-08-17 04:16:21,877 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/nodejs-jobs> (referer: https://www.google.com/)
+2026-08-17 04:16:23,138 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/nodejs-jobs-in-delhi-ncr-gurgaon-noida> (referer: https://www.google.com/)
+2026-08-17 04:16:24,294 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/remote-golang-jobs> (referer: https://www.google.com/)
+2026-08-17 04:16:25,455 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/remote-nodejs-jobs> (referer: https://www.google.com/)
+2026-08-17 04:16:26,564 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Golang-Developer-Intern-RNG-DEV-nysf7abu> (referer: https://www.google.com/)
+2026-08-17 04:16:27,744 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs/typescript-jobs> (referer: https://www.google.com/)
+2026-08-17 04:16:28,884 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/job/Backend-Developer-intern-Hyderabad-Garnish-Company-gaoNRHb0> (referer: https://www.google.com/)
+2026-08-17 04:16:31,630 [INFO] scrapling: Fetched (200) <GET https://web3.career/backend+intern-jobs?page=2> (referer: https://www.google.com/)
+2026-08-17 04:16:33,681 [INFO] scrapling: Fetched (200) <GET https://gethiredfaster.in/fj-group-hiring-sde-intern-backend-bangalore-india/> (referer: https://www.google.com/)
+2026-08-17 04:16:35,448 [INFO] scrapling: Fetched (200) <GET https://github.com/speedyapply/2027-SWE-College-Jobs/blob/main/INTERN_INTL.md> (referer: https://www.google.com/)
+2026-08-17 04:16:37,934 [INFO] scrapling: Fetched (200) <GET https://thejobcompany.co.in/frontend/job_details?job_id=4697> (referer: https://www.google.com/)
+2026-08-17 04:16:40,819 [INFO] scrapling: Fetched (200) <GET https://telegram.me/s/jobs_and_internships_updates?before=3933> (referer: https://www.google.com/)
+2026-08-17 04:16:41,084 [WARNING] sources.serper: Serper query failed '"forms.gle" "apply" "software engineer" "intern" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:16:43,474 [INFO] scrapling: Fetched (200) <GET https://techkalaa.tech/Apply-Jobs> (referer: https://www.google.com/)
+2026-08-17 04:16:46,281 [INFO] scrapling: Fetched (403) <GET https://sg.jobstreet.com/junior-java-jobs/in-Little-India-Central-Region/full-time> (referer: https://www.google.com/)
+2026-08-17 04:16:48,656 [INFO] scrapling: Fetched (200) <GET https://madello.zohorecruit.eu/jobs/Careers> (referer: https://www.google.com/)
+2026-08-17 04:16:50,354 [INFO] scrapling: Fetched (200) <GET https://bebee.com/in/jobs/role/software-engineer/kochi> (referer: https://www.google.com/)
+2026-08-17 04:16:52,564 [INFO] scrapling: Fetched (200) <GET https://t.me/s/gocareers?before=10830> (referer: https://www.google.com/)
+2026-08-17 04:16:53,809 [INFO] scrapling: Fetched (200) <GET https://hnhiring.com/technologies/java> (referer: https://www.google.com/)
+2026-08-17 04:16:53,998 [WARNING] sources.serper: Serper query failed '"typeform.com" "backend" "intern" OR "fresher" india -site:l': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:16:56,687 [INFO] scrapling: Fetched (200) <GET https://bebee.com/in/jobs/nodejs-backend-developer-intern-remote-fulltime-medinex-workforce--theirstack-744526207> (referer: https://www.google.com/)
+2026-08-17 04:17:00,352 [INFO] scrapling: Fetched (200) <GET https://github.com/speedyapply/2027-SWE-College-Jobs> (referer: https://www.google.com/)
+2026-08-17 04:17:01,429 [INFO] scrapling: Fetched (403) <GET https://sg.jobstreet.com/software-intern-jobs/in-Little-India-Central-Region> (referer: https://www.google.com/)
+2026-08-17 04:17:03,672 [INFO] scrapling: Fetched (200) <GET https://gethiredfaster.in/rapido-hiring-software-intern-frontend-jobs-remote-india-2026/> (referer: https://www.google.com/)
+2026-08-17 04:17:05,128 [INFO] scrapling: Fetched (200) <GET https://hirecolony.com/jobs/?search=Java> (referer: https://www.google.com/)
+2026-08-17 04:17:07,460 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/simular/4848fd37-97f5-4595-851d-0795da9f21b4?embed> (referer: https://www.google.com/)
+2026-08-17 04:17:08,649 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/uplane/e430a9f5-e324-4204-913e-d4d7bf1afb51> (referer: https://www.google.com/)
+2026-08-17 04:17:09,830 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/colonist/b9285b46-6972-4443-b34f-8d74631a0dbd> (referer: https://www.google.com/)
+2026-08-17 04:17:11,049 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/simular/b8281155-c4e2-41c5-9b8d-c4588c90fc24?embed> (referer: https://www.google.com/)
+2026-08-17 04:17:12,246 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/simular/0597dd82-d5e7-4d3d-b434-7396a81c91d4?embed> (referer: https://www.google.com/)
+2026-08-17 04:17:13,609 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/super.com/d12fc858-e930-4f43-9c92-da2f02dd2cd2> (referer: https://www.google.com/)
+2026-08-17 04:17:14,803 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/plasiv/3af3da10-1473-4c92-b9bd-d7ffab7aa4e1> (referer: https://www.google.com/)
+2026-08-17 04:17:15,974 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/espa/6fa2d441-971f-44c4-9a4e-3304ea041cc8> (referer: https://www.google.com/)
+2026-08-17 04:17:17,171 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/simular?embed> (referer: https://www.google.com/)
+2026-08-17 04:17:18,300 [INFO] scrapling: Fetched (200) <GET https://jobs.ashbyhq.com/partly.com> (referer: https://www.google.com/)
+2026-08-17 04:17:21,007 [INFO] scrapling: Fetched (200) <GET https://careers.valura.ai/97f3f8d3-6975-4e25-bade-3602beb33151> (referer: https://www.google.com/)
+2026-08-17 04:17:22,133 [INFO] scrapling: Fetched (403) <GET https://www.remoterocketship.com/jobs/backend-engineer/internships/> (referer: https://www.google.com/)
+2026-08-17 04:17:22,263 [WARNING] sources.serper: Serper query failed 'site:lever.co "remote" "backend" "intern" OR "entry level" "': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:24,591 [INFO] scrapling: Fetched (200) <GET https://indexventures.getro.com/companies/kong/jobs/41252927-software-engineer-typescript-backend-devx-remote> (referer: https://www.google.com/)
+2026-08-17 04:17:25,929 [INFO] scrapling: Fetched (200) <GET https://4dayweek.io/golang-jobs> (referer: https://www.google.com/)
+2026-08-17 04:17:27,252 [INFO] scrapling: Fetched (200) <GET https://nurdsoft.applytojob.com/apply/hYaXjTTGXp/Senior-Golang-Engineer-India> (referer: https://www.google.com/)
+2026-08-17 04:17:28,915 [INFO] scrapling: Fetched (200) <GET https://trulyremotework.com/remote-typescript-jobs> (referer: https://www.google.com/)
+2026-08-17 04:17:31,112 [INFO] scrapling: Fetched (200) <GET https://jobs.generalcatalyst.com/companies/deel-2/jobs/69360398-backend-engineer-node-js-typescript> (referer: https://www.google.com/)
+2026-08-17 04:17:31,259 [WARNING] sources.serper: Serper query failed '"express" OR "nestjs" OR "nest.js" "intern" OR "fresher" ind': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:31,365 [WARNING] sources.serper: Serper query failed '"grpc" OR "gRPC" "golang" "intern" OR "fresher" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:31,472 [WARNING] sources.serper: Serper query failed '"remote backend engineer" "intern" OR "fresher" OR "entry le': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:31,576 [WARNING] sources.serper: Serper query failed '"india time zone" OR "IST" "backend" "intern" OR "fresher" r': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:31,682 [WARNING] sources.serper: Serper query failed 'site:lever.co "typescript" OR "node.js" "backend" "intern" O': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:31,809 [WARNING] sources.serper: Serper query failed '"distributed systems" "golang" "fresher" OR "entry level" in': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:33,796 [INFO] scrapling: Fetched (200) <GET https://wellfound.com/jobs/2878516-backend-intern> (referer: https://www.google.com/)
+2026-08-17 04:17:35,058 [INFO] scrapling: Fetched (200) <GET https://startup.jobs/backend-intern-ridecell-4530422> (referer: https://www.google.com/)
+2026-08-17 04:17:36,462 [INFO] scrapling: Fetched (200) <GET https://careers.pypl.com/university-hiring/north-america-latin-america/default.aspx> (referer: https://www.google.com/)
+2026-08-17 04:17:36,654 [WARNING] sources.serper: Serper query failed 'site:boards.greenhouse.io "remote" "backend" "intern" OR "fr': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:36,757 [WARNING] sources.serper: Serper query failed '"go developer" intern OR fresher india OR remote -site:linke': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:36,891 [WARNING] sources.serper: Serper query failed '"wallet" OR "defi" "backend engineer" "intern" OR "fresher" ': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:36,996 [WARNING] sources.serper: Serper query failed 'site:lever.co "fintech" OR "payments" "backend" "intern" OR ': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-17 04:17:36,998 [INFO] sources.serper: Serper discovery: 25 queries → 46 unique URLs → 31 jobs extracted
+2026-08-17 04:17:36,998 [INFO] jobradar: --- Skipping hackernews (disabled in profile) ---
+2026-08-17 04:17:36,998 [INFO] jobradar: --- Skipping reddit (disabled in profile) ---
+2026-08-17 04:17:36,998 [INFO] jobradar: --- Fetching Naukri.com ---
+2026-08-17 04:17:36,998 [INFO] sources.naukri: Naukri: 10 keywords x 3 locations x 2 pages = up to 60 search calls (1200 raw listings max) | exp cap: 1yr | age cap: 45d
+2026-08-17 04:18:34,588 [INFO] sources.naukri: Naukri Stage-1 complete: 0 unique jobs survived (exp <= 1yr, age <= 45d)
+2026-08-17 04:18:34,589 [INFO] sources.naukri: Naukri: 0 jobs entering pipeline
+2026-08-17 04:18:34,589 [INFO] jobradar: --- Skipping hirist (disabled in profile) ---
+2026-08-17 04:18:34,589 [INFO] jobradar: --- Fetching Jobicy (remote jobs API) ---
+2026-08-17 04:18:37,188 [INFO] sources.jobicy: Jobicy: 86 remote jobs found
+2026-08-17 04:18:37,188 [INFO] jobradar: --- Fetching RemoteOK (JSON API) ---
+2026-08-17 04:18:40,424 [INFO] sources.remoteok: RemoteOK: 58 dev/engineering jobs found
+2026-08-17 04:18:40,425 [INFO] jobradar: Total raw jobs from all sources: 8355
+2026-08-17 04:18:41,591 [INFO] pipeline.dedup: Dedup: 8355 raw -> 7632 new
+2026-08-17 04:18:54,407 [INFO] pipeline.prefilter: ATS company cap (25): capped companies — Mongodb, Databricks, Grafanalabs, Datadog, Gitlab, Canonical
+2026-08-17 04:18:54,407 [INFO] pipeline.prefilter: Pre-filter: 7632 jobs -> 555 passed (sent to AI scorer)
+2026-08-17 04:18:56,507 [INFO] pipeline.ranker: Relevance ranking: 555 jobs ranked. Top scores: [24, 24, 24, 24, 24]
+2026-08-17 04:18:56,507 [WARNING] pipeline.scorer: Hard fallback cap: trimmed 355 lowest-ranked jobs (max_ai_jobs_per_run=200). Increase cap in profile.yaml if needed.
+2026-08-17 04:18:56,507 [INFO] pipeline.scorer: Scoring up to 200 ranked jobs with Groq (llama-3.1-8b-instant) | token budget: 200,000
+2026-08-17 04:18:57,156 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:18:57,168 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 2/10 [low]
+2026-08-17 04:19:01,684 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:19:01,684 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-08-17 04:19:09,176 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:19:09,177 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 2/10 [low]
+2026-08-17 04:19:09,353 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:19:09,354 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 35.000000 seconds
+2026-08-17 04:19:45,054 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:19:45,054 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 4/10 [low]
+2026-08-17 04:19:45,219 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:19:45,220 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:20:15,778 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:20:15,779 [INFO] pipeline.scorer: Scored: AI Engineer - FDE (Forward Deployed Engineer) @ Databricks -> 2/10 [low]
+2026-08-17 04:20:15,949 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:20:15,949 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:20:47,587 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:20:47,589 [INFO] pipeline.scorer: Scored: Sr. AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector @ Databricks -> 2/10 [low]
+2026-08-17 04:20:47,761 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:20:47,761 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:21:18,307 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:21:18,308 [INFO] pipeline.scorer: Scored: Software Engineer, Robotics @ Scaleai -> 1/10 [low]
+2026-08-17 04:21:18,480 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:21:18,480 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:21:49,619 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:21:49,619 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-17 04:21:53,003 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:21:53,004 [INFO] pipeline.scorer: Scored: Sr. Software Development Engineer @ Zscaler -> 3/10 [low]
+2026-08-17 04:21:53,189 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:21:53,189 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:22:23,681 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:22:23,682 [INFO] pipeline.scorer: Scored: Senior Go-To-Market (GTM) Analytics Engineer (AI & Pipelines) @ Databricks -> 1/10 [low]
+2026-08-17 04:22:23,849 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:22:23,850 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:22:55,479 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:22:55,480 [INFO] pipeline.scorer: Scored: Customer Engineer, India (Based in Mumbai) @ Cloudflare -> 4/10 [low]
+2026-08-17 04:22:55,643 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:22:55,643 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 33.000000 seconds
+2026-08-17 04:23:29,089 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:23:29,090 [INFO] pipeline.scorer: Scored: Customer Engineer (Pre-Sales), Korea (Based in Seoul) @ Cloudflare -> 3/10 [low]
+2026-08-17 04:23:29,273 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:23:29,274 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:23:59,772 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:23:59,772 [INFO] pipeline.scorer: Scored: Senior Forward Deployed Engineering - Architect @ Databricks -> 2/10 [low]
+2026-08-17 04:23:59,937 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:23:59,937 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:24:30,088 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:24:30,088 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-17 04:24:31,443 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:24:31,443 [INFO] pipeline.scorer: Scored: Presales Engineer @ Twilio -> 1/10 [low]
+2026-08-17 04:24:31,588 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:24:31,588 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:25:01,717 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:25:01,717 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-17 04:25:03,167 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:25:03,168 [INFO] pipeline.scorer: Scored: SDE 2 @ Inmobi -> 3/10 [low]
+2026-08-17 04:25:03,333 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:25:03,334 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 34.000000 seconds
+2026-08-17 04:25:37,770 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:25:37,770 [INFO] pipeline.scorer: Scored: Senior Staff Software Engineer in Test @ Druva -> 3/10 [low]
+2026-08-17 04:25:37,954 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:25:37,954 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 25.000000 seconds
+2026-08-17 04:26:03,109 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:26:03,110 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:26:07,555 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:26:07,556 [INFO] pipeline.scorer: Scored: Senior Manager, Customer Engineering, India @ Cloudflare -> 1/10 [low]
+2026-08-17 04:26:07,703 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:26:07,703 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:26:39,357 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:26:39,358 [INFO] pipeline.scorer: Scored: Talent Pipeline - Product Engineering @ Sumologic -> 3/10 [low]
+2026-08-17 04:26:39,519 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:26:39,519 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 35.000000 seconds
+2026-08-17 04:27:14,993 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:27:14,994 [INFO] pipeline.scorer: Scored: Staff ML Engineer @ Buildkite -> 2/10 [low]
+2026-08-17 04:27:15,203 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:27:15,203 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 25.000000 seconds
+2026-08-17 04:27:40,785 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:27:40,785 [INFO] pipeline.scorer: Scored: Alliances Field Engineer @ Canonical -> 3/10 [low]
+2026-08-17 04:27:40,963 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:27:40,963 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:28:10,586 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:28:10,587 [INFO] pipeline.scorer: Scored: Cloud Field Engineering Manager @ Canonical -> 1/10 [low]
+2026-08-17 04:28:10,748 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:28:10,749 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 28.000000 seconds
+2026-08-17 04:28:39,113 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:28:39,114 [INFO] pipeline.scorer: Scored: Cloud Professional Services Manager @ Canonical -> 1/10 [low]
+2026-08-17 04:28:39,285 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:28:39,285 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 15.000000 seconds
+2026-08-17 04:28:54,720 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:28:54,720 [INFO] pipeline.scorer: Scored: Cloud Solutions Architect - Alliances @ Canonical -> 3/10 [low]
+2026-08-17 04:28:54,901 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:28:54,902 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 28.000000 seconds
+2026-08-17 04:29:23,118 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:29:23,118 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-17 04:29:24,517 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:29:24,517 [INFO] pipeline.scorer: Scored: Data Engineer (SQL, PySpark, Snowflake, DBT, Redshift) - Associate @ Stage -> 3/10 [low]
+2026-08-17 04:29:24,689 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:29:24,689 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 32.000000 seconds
+2026-08-17 04:29:57,249 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:29:57,250 [INFO] pipeline.scorer: Scored: Insurance Data Engineering - Data Engineer @ Stage -> 3/10 [low]
+2026-08-17 04:29:57,433 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:29:57,433 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:30:28,927 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:30:28,928 [INFO] pipeline.scorer: Scored: Binance Accelerator Program - DevSecOps Engineer @ Binance -> 3/10 [low]
+2026-08-17 04:30:29,089 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:30:29,089 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 28.000000 seconds
+2026-08-17 04:30:57,274 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:30:57,275 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-17 04:30:58,741 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:30:58,742 [INFO] pipeline.scorer: Scored: Senior Solution Engineer (CX-NA) @ Freshworks -> 3/10 [low]
+2026-08-17 04:30:58,920 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:30:58,920 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:31:30,126 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:31:30,126 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-17 04:31:33,657 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:31:33,658 [INFO] pipeline.scorer: Scored: Page 2 - Backend Internships - Jun 2026 @ Web3 -> 3/10 [low]
+2026-08-17 04:31:33,833 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:31:33,833 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:32:05,314 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:32:05,315 [INFO] pipeline.scorer: Scored: Associate Solution Engineer (2027 Graduate) @ Appian -> 3/10 [low]
+2026-08-17 04:32:05,480 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:32:05,481 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 33.000000 seconds
+2026-08-17 04:32:38,921 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:32:38,921 [INFO] pipeline.scorer: Scored: Technical Solutions Engineer @ Stripe -> 3/10 [low]
+2026-08-17 04:32:39,085 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:32:39,085 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 26.000000 seconds
+2026-08-17 04:33:05,582 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:33:05,583 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-17 04:33:09,338 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:33:09,339 [INFO] pipeline.scorer: Scored: Internal Audit Data Analytics Lead @ Stripe -> 1/10 [low]
+2026-08-17 04:33:09,511 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:33:09,512 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:33:40,703 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:33:40,704 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-17 04:33:44,162 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:33:44,166 [INFO] pipeline.scorer: Scored: Senior Manager, Internal Audit - Audit Automation & Technology Risk @ Gitlab -> 1/10 [low]
+2026-08-17 04:33:44,338 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:33:44,338 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:34:14,800 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:34:14,801 [INFO] pipeline.scorer: Scored: Senior Software Engineer (Developer Tooling) - Python/Java @ Canva -> 3/10 [low]
+2026-08-17 04:34:14,946 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:34:14,947 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:34:45,105 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:34:45,106 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:34:49,584 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:34:49,585 [INFO] pipeline.scorer: Scored: Go (Golang) Software Engineer, Developer Tooling and Containers @ Canonical Ltd. -> 2/10 [low]
+2026-08-17 04:34:49,747 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:34:49,747 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:35:21,039 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:35:21,039 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:35:25,644 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:35:25,645 [INFO] pipeline.scorer: Scored: Associate Solutions Consultant (2027 Graduates) @ Appian -> 3/10 [low]
+2026-08-17 04:35:25,810 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:35:25,810 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 32.000000 seconds
+2026-08-17 04:35:58,325 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:35:58,329 [INFO] pipeline.scorer: Scored: Senior Staff Software Engineer (DataLake)  @ Druva -> 2/10 [low]
+2026-08-17 04:35:58,491 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:35:58,491 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 33.000000 seconds
+2026-08-17 04:36:31,888 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:36:31,889 [INFO] pipeline.scorer: Scored: Security Engineer, Privy @ Stripe -> 1/10 [low]
+2026-08-17 04:36:32,047 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:36:32,048 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 20.000000 seconds
+2026-08-17 04:36:52,479 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:36:52,480 [INFO] pipeline.scorer: Scored: Associate Technical Services Engineer II @ Mongodb -> 3/10 [low]
+2026-08-17 04:36:52,649 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:36:52,650 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:37:23,148 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:37:23,148 [INFO] pipeline.scorer: Scored: Senior Software Engineer, Atlas API Experience @ Mongodb -> 3/10 [low]
+2026-08-17 04:37:23,319 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:37:23,319 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:37:53,751 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:37:53,752 [INFO] pipeline.scorer: Scored: Technical Services Engineer @ Mongodb -> 2/10 [low]
+2026-08-17 04:37:53,921 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:37:53,926 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 28.000000 seconds
+2026-08-17 04:38:22,054 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:38:22,055 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-08-17 04:38:27,561 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:38:27,562 [INFO] pipeline.scorer: Scored: Intermediate Backend Engineer @ Gitlab -> 3/10 [low]
+2026-08-17 04:38:27,731 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:38:27,731 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:38:57,235 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:38:57,235 [INFO] pipeline.scorer: Scored: Senior Backend Engineer, Analytics Instrumentation (Golang) @ Gitlab -> 3/10 [low]
+2026-08-17 04:38:57,380 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:38:57,380 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:39:27,950 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:39:27,951 [INFO] pipeline.scorer: Scored: Senior Backend Engineer - Monitoring and Anomaly Detection (Monetization) @ Gitlab -> 3/10 [low]
+2026-08-17 04:39:28,118 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:39:28,119 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:39:58,264 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:39:58,264 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-17 04:39:59,354 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:39:59,355 [ERROR] pipeline.scorer: Groq scoring failed for Distributed Systems Testing Software Engineer, Python / Go: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 2823, Requested 3432. Please try again in 2.55s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 04:39:59,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:39:59,843 [INFO] pipeline.scorer: Scored: Embedded Linux Field Engineer for Devices/IoT @ Canonical -> 1/10 [low]
+2026-08-17 04:40:04,529 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:40:04,530 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 23.000000 seconds
+2026-08-17 04:40:27,670 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:40:27,670 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:40:32,160 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:40:32,161 [INFO] pipeline.scorer: Scored: Embedded Linux Field Engineer (Mandarin speaking) @ Canonical -> 1/10 [low]
+2026-08-17 04:40:32,343 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:40:32,344 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:41:03,529 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:41:03,529 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-17 04:41:07,011 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:41:07,012 [INFO] pipeline.scorer: Scored: PhD Research Scientist Intern - Edge AI @ Canva -> 4/10 [low]
+2026-08-17 04:41:07,221 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:41:07,222 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:41:37,676 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:41:37,676 [INFO] pipeline.scorer: Scored: Senior Full-Stack Engineer (TypeScript/AI Automation) - Real Estate - LATAM @ Truelogic -> 3/10 [low]
+2026-08-17 04:41:37,853 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:41:37,854 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 19.000000 seconds
+2026-08-17 04:41:57,338 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:41:57,339 [INFO] pipeline.scorer: Scored: Data/ Java Engineer (AI/LLM Chatbot, Customer Service) @ Binance -> 3/10 [low]
+2026-08-17 04:41:57,506 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:41:57,507 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:42:26,638 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:42:26,638 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-17 04:42:28,036 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:42:28,037 [INFO] pipeline.scorer: Scored: Database Engineer II @ Appian -> 1/10 [low]
+2026-08-17 04:42:28,193 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:42:28,193 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:42:58,863 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:42:58,864 [INFO] pipeline.scorer: Scored: Senior Software Engineer - Engineering Enablement @ Appian -> 2/10 [low]
+2026-08-17 04:42:59,040 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:42:59,041 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:43:30,180 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:43:30,180 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:43:34,569 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:43:34,570 [INFO] pipeline.scorer: Scored: SDE III @ Inmobi -> 3/10 [low]
+2026-08-17 04:43:34,727 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:43:34,728 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:44:06,186 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:44:06,186 [INFO] pipeline.scorer: Scored: Software Engineer 2 @ Mongodb -> 3/10 [low]
+2026-08-17 04:44:06,363 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:44:06,363 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2026-08-17 04:44:20,521 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:44:20,521 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:44:25,086 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:44:25,087 [INFO] pipeline.scorer: Scored: PhD GenAI Research Scientist Intern @ Databricks -> 4/10 [low]
+2026-08-17 04:44:25,260 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:44:25,260 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 32.000000 seconds
+2026-08-17 04:44:57,661 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:44:57,661 [INFO] pipeline.scorer: Scored: Senior Staff Software Engineer- Search Quality @ Databricks -> 3/10 [low]
+2026-08-17 04:44:57,811 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:44:57,811 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:45:27,401 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:45:27,402 [INFO] pipeline.scorer: Scored: Sr. Solutions Engineer - MFG @ Databricks -> 2/10 [low]
+2026-08-17 04:45:27,548 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:45:27,549 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:45:56,968 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:45:56,969 [INFO] pipeline.scorer: Scored: Manager I, Engineering - Change Experience Platform @ Datadog -> 1/10 [low]
+2026-08-17 04:45:57,115 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:45:57,115 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:46:27,756 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:46:27,757 [INFO] pipeline.scorer: Scored: Backend Engineer (Ruby), AI Engineering: Agent Observability @ Gitlab -> 3/10 [low]
+2026-08-17 04:46:27,931 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:46:27,931 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:46:59,521 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:46:59,522 [INFO] pipeline.scorer: Scored: Software Engineer Intern (Winter 2027) @ Figma -> 3/10 [low]
+2026-08-17 04:46:59,692 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:46:59,692 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:47:29,199 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:47:29,200 [INFO] pipeline.scorer: Scored: Containerization & Virtualisation Engineer @ Canonical -> 3/10 [low]
+2026-08-17 04:47:29,363 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:47:29,363 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:47:58,852 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:47:58,853 [INFO] pipeline.scorer: Scored: Sr. Dir., AI Engineering  @ ServiceNow -> 2/10 [low]
+2026-08-17 04:47:59,011 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:47:59,011 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:48:28,400 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:48:28,400 [INFO] pipeline.scorer: Scored: Embedded Linux Field Engineer for Devices/IoT @ Canonical Ltd. -> 1/10 [low]
+2026-08-17 04:48:28,573 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:48:28,574 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:48:57,718 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:48:57,718 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 3.000000 seconds
+2026-08-17 04:49:01,293 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:49:01,294 [INFO] pipeline.scorer: Scored: Full Stack Developer @ FastLane Group -> 3/10 [low]
+2026-08-17 04:49:01,467 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:49:01,468 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 27.000000 seconds
+2026-08-17 04:49:28,934 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:49:28,935 [INFO] pipeline.scorer: Scored: Senior Information Technology Engineer @ Appian -> 1/10 [low]
+2026-08-17 04:49:29,110 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:49:29,111 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 33.000000 seconds
+2026-08-17 04:50:02,561 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:50:02,562 [INFO] pipeline.scorer: Scored: Test Automation Engineer @ Appian -> 3/10 [low]
+2026-08-17 04:50:02,744 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:50:02,744 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:50:34,164 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:50:34,165 [INFO] pipeline.scorer: Scored: Software Engineer  @ Pine -> 3/10 [low]
+2026-08-17 04:50:34,347 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:50:34,347 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:51:03,765 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:51:03,766 [INFO] pipeline.scorer: Scored: Sr. Staff Site Reliability Engineer (Linux/Network troubleshooting/Scripting) @ Zscaler -> 1/10 [low]
+2026-08-17 04:51:03,936 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:51:03,936 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:51:35,170 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:51:35,173 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:51:39,636 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:51:39,637 [INFO] pipeline.scorer: Scored: Sr. Staff Software Development Engineer - AI Engineer @ Zscaler -> 4/10 [low]
+2026-08-17 04:51:39,784 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:51:39,785 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:52:09,929 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:52:09,929 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:52:14,482 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:52:14,483 [INFO] pipeline.scorer: Scored: Software Engineer Intern (Fall 2026) @ Cloudflare -> 4/10 [low]
+2026-08-17 04:52:14,650 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:52:14,650 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 27.000000 seconds
+2026-08-17 04:52:42,119 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:52:42,120 [INFO] pipeline.scorer: Scored: Backend Engineer, Credit Decisions  @ Stripe -> 3/10 [low]
+2026-08-17 04:52:42,295 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:52:42,295 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:53:12,830 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:53:12,830 [INFO] pipeline.scorer: Scored: Software Engineer  @ Twilio -> 3/10 [low]
+2026-08-17 04:53:12,995 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:53:12,995 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 24.000000 seconds
+2026-08-17 04:53:37,483 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:53:37,484 [INFO] pipeline.scorer: Scored: Lead, Cloud Operations Engineering @ Mongodb -> 1/10 [low]
+2026-08-17 04:53:37,662 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:53:37,662 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:54:07,094 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:54:07,095 [INFO] pipeline.scorer: Scored: Technical Services Engineer @ Mongodb -> 3/10 [low]
+2026-08-17 04:54:07,252 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:54:07,253 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:54:37,429 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:54:37,430 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 04:54:41,956 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:54:41,957 [INFO] pipeline.scorer: Scored: Marketplace Sales Specialist - EMEA (Azure, AWS & Google Cloud) @ Elastic -> 1/10 [low]
+2026-08-17 04:54:42,106 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:54:42,106 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 04:55:13,525 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:55:13,526 [INFO] pipeline.scorer: Scored: Senior Solutions Engineer @ Databricks -> 1/10 [low]
+2026-08-17 04:55:13,692 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:55:13,692 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:55:44,126 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:55:44,127 [INFO] pipeline.scorer: Scored: Senior AI Engineer - Grafana AI/ML | USA | Remote @ Grafanalabs -> 2/10 [low]
+2026-08-17 04:55:44,328 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:55:44,329 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:56:14,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:56:14,837 [INFO] pipeline.scorer: Scored: Senior Backend Engineer - Databases - Loki Query | UK | Remote @ Grafanalabs -> 3/10 [low]
+2026-08-17 04:56:15,000 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:56:15,001 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 38.000000 seconds
+2026-08-17 04:56:53,718 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:56:53,719 [INFO] pipeline.scorer: Scored: Enterprise Sales Engineer @ Datadog -> 1/10 [expired]
+2026-08-17 04:56:53,893 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:56:53,894 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 28.000000 seconds
+2026-08-17 04:57:22,319 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:57:22,320 [INFO] pipeline.scorer: Scored: Senior Site Reliability Engineer I  @ Sumologic -> 1/10 [low]
+2026-08-17 04:57:22,487 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:57:22,488 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 04:57:52,919 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:57:52,920 [INFO] pipeline.scorer: Scored: Staff Security Operations Engineer @ Cribl -> 1/10 [low]
+2026-08-17 04:57:53,063 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:57:53,063 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 29.000000 seconds
+2026-08-17 04:58:22,209 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:58:22,209 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-08-17 04:58:23,291 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:58:23,291 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Build Platform: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01jr3kb0aef68rjprkbm74e8zq` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 2850, Requested 3434. Please try again in 2.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 04:58:23,790 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:58:23,790 [INFO] pipeline.scorer: Scored: Engineering Manager (BE) - Ecosystem Distribution @ Canva -> 1/10 [low]
+2026-08-17 04:58:28,461 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:58:28,462 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 27.000000 seconds
+2026-08-17 04:58:55,976 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:58:55,977 [INFO] pipeline.scorer: Scored: Embedded Linux Consultant - Japan @ Canonical Ltd. -> 1/10 [low]
+2026-08-17 04:58:56,160 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:58:56,160 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 25.000000 seconds
+2026-08-17 04:59:21,565 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:59:21,566 [INFO] pipeline.scorer: Scored: Containerization & Virtualisation Engineer @ Canonical Ltd. -> 1/10 [low]
+2026-08-17 04:59:21,726 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:59:21,727 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 33.000000 seconds
+2026-08-17 04:59:55,268 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 04:59:55,269 [INFO] pipeline.scorer: Scored: Full Stack Developer - Java & React (f/m/d) @ ecosio -> 3/10 [low]
+2026-08-17 04:59:55,432 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 04:59:55,433 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 05:00:25,945 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:00:25,946 [INFO] pipeline.scorer: Scored: Senior Software Engineer - MAAS @ Canonical Ltd. -> 3/10 [low]
+2026-08-17 05:00:26,120 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:00:26,124 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 25.000000 seconds
+2026-08-17 05:00:51,581 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:00:51,582 [INFO] pipeline.scorer: Scored: Workflow Developer & Tester @ Webbing -> 3/10 [low]
+2026-08-17 05:00:51,750 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:00:51,751 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 33.000000 seconds
+2026-08-17 05:01:25,234 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:01:25,235 [INFO] pipeline.scorer: Scored: Machine Learning Engineer, Customer Support Engineering @ Airbnb -> 3/10 [low]
+2026-08-17 05:01:25,395 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:01:25,396 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 36.000000 seconds
+2026-08-17 05:02:02,031 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:02:02,032 [INFO] pipeline.scorer: Scored: Federal Security Operations - SkillBridge Intern @ Zscaler -> 4/10 [low]
+2026-08-17 05:02:02,245 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:02:02,246 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 25.000000 seconds
+2026-08-17 05:02:27,380 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:02:27,380 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-08-17 05:02:31,904 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:02:31,905 [INFO] pipeline.scorer: Scored: Systems Engineer (Data Intelligence & Analytics Team) @ Cloudflare -> 3/10 [low]
+2026-08-17 05:02:32,051 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:02:32,052 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 26.000000 seconds
+2026-08-17 05:02:58,533 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:02:58,534 [INFO] pipeline.scorer: Scored: Manager, Forward Deployed Engineering @ Databricks -> 1/10 [low]
+2026-08-17 05:02:58,703 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:02:58,704 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 35.000000 seconds
+2026-08-17 05:03:34,174 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:03:34,174 [INFO] pipeline.scorer: Scored: Senior Backend Engineer - Databases - Loki Query  | Germany | Remote @ Grafanalabs -> 3/10 [low]
+2026-08-17 05:03:34,341 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:03:34,341 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 32.000000 seconds
+2026-08-17 05:04:06,882 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:04:06,883 [INFO] pipeline.scorer: Scored: Senior Backend Engineer - Databases - Loki Query  | Spain | Remote @ Grafanalabs -> 3/10 [low]
+2026-08-17 05:04:07,053 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:04:07,053 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 05:04:37,568 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:04:37,569 [INFO] pipeline.scorer: Scored: Senior Backend Engineer - Databases - Loki Query  | Sweden | Remote @ Grafanalabs -> 3/10 [low]
+2026-08-17 05:04:37,743 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:04:37,743 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 05:05:08,257 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:05:08,258 [INFO] pipeline.scorer: Scored: Senior Platform Engineer - Platform Metal | Ireland | Remote @ Grafanalabs -> 1/10 [low]
+2026-08-17 05:05:08,421 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:05:08,422 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 05:05:38,863 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:05:38,866 [INFO] pipeline.scorer: Scored: Senior Platform Engineer - Platform Metal | Spain | Remote @ Grafanalabs -> 1/10 [low]
+2026-08-17 05:05:39,039 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:05:39,039 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 30.000000 seconds
+2026-08-17 05:06:09,415 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:06:09,416 [INFO] pipeline.scorer: Scored: Senior Platform Engineer - Platform Metal | UK | Remote @ Grafanalabs -> 1/10 [expired]
+2026-08-17 05:06:09,574 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:06:09,575 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-08-17 05:06:41,023 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:06:41,024 [INFO] pipeline.scorer: Scored: Manager I, Engineering - Source Code Integration @ Datadog -> 2/10 [low]
+2026-08-17 05:06:41,313 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-08-17 05:06:41,313 [INFO] groq._base_client: Retrying request to /openai/v1/chat/completions in 33.000000 seconds
+2026-08-17 05:07:14,853 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-17 05:07:14,854 [INFO] pipeline.scorer: Scored: Senior Backend Engineer @ Gitlab -> 3/10 [low]
+2026-08-17 05:07:14,870 [INFO] pipeline.scorer: Token budget: 198,673/200,000 tokens used. Skipped 103 lower-ranked jobs to stay under limit.
+2026-08-17 05:07:14,871 [INFO] pipeline.scorer: Scoring complete: 0 urgent, 0 digest, 95 low, 2 expired (dropped)
+2026-08-17 05:07:16,306 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 95 to review — 17 Aug 2026
+2026-08-17 05:07:16,307 [INFO] jobradar: Pipeline complete.
+2026-08-17 05:07:16,307 [INFO] jobradar: Summary: 8355 raw -> 7632 new -> 555 eligible -> 0 urgent
