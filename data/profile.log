@@ -6746,3 +6746,471 @@
 2026-08-17 05:07:16,306 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 95 to review — 17 Aug 2026
 2026-08-17 05:07:16,307 [INFO] jobradar: Pipeline complete.
 2026-08-17 05:07:16,307 [INFO] jobradar: Summary: 8355 raw -> 7632 new -> 555 eligible -> 0 urgent
+2026-08-18 04:06:23,079 [INFO] jobradar: ==================================================
+2026-08-18 04:06:23,079 [INFO] jobradar: JobRadar pipeline starting — profile: profile.yaml
+2026-08-18 04:06:23,079 [INFO] jobradar: ==================================================
+2026-08-18 04:06:23,097 [WARNING] jobradar: telegram_chat_id is not set in profile or TELEGRAM_CHAT_ID env var — Telegram notifications will fail
+2026-08-18 04:06:23,103 [INFO] jobradar: --- Fetching ATS endpoints (Greenhouse US/EU, Lever, Ashby, Workable) ---
+2026-08-18 04:06:23,295 [INFO] sources.ats: Greenhouse US razorpaysoftwareprivatelimited: 25 jobs
+2026-08-18 04:06:23,464 [INFO] sources.ats: Greenhouse US phonepe: 77 jobs
+2026-08-18 04:06:23,607 [INFO] sources.ats: Greenhouse US twitch: 59 jobs
+2026-08-18 04:06:23,855 [INFO] sources.ats: Greenhouse US airbnb: 193 jobs
+2026-08-18 04:06:24,039 [INFO] sources.ats: Greenhouse US postman: 111 jobs
+2026-08-18 04:06:24,242 [INFO] sources.ats: Greenhouse US faire: 67 jobs
+2026-08-18 04:06:24,394 [INFO] sources.ats: Greenhouse US duolingo: 67 jobs
+2026-08-18 04:06:24,624 [INFO] sources.ats: Greenhouse US scaleai: 210 jobs
+2026-08-18 04:06:24,888 [INFO] sources.ats: Greenhouse US appian: 180 jobs
+2026-08-18 04:06:25,003 [INFO] sources.ats: Greenhouse US blenheimchalcot: 6 jobs
+2026-08-18 04:06:25,965 [INFO] sources.ats: Greenhouse US nasuni: 30 jobs
+2026-08-18 04:06:26,116 [INFO] sources.ats: Greenhouse US crunchyroll: 72 jobs
+2026-08-18 04:06:26,253 [INFO] sources.ats: Greenhouse US slice: 43 jobs
+2026-08-18 04:06:26,385 [INFO] sources.ats: Greenhouse US highradius: 74 jobs
+2026-08-18 04:06:26,465 [INFO] sources.ats: Greenhouse US pine: 5 jobs
+2026-08-18 04:06:26,553 [INFO] sources.ats: Greenhouse US karbon: 13 jobs
+2026-08-18 04:06:26,635 [WARNING] sources.ats: Greenhouse US fetch failed for loop: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/loop/jobs?content=true
+2026-08-18 04:06:26,636 [INFO] sources.ats: Greenhouse US loop: 0 jobs
+2026-08-18 04:06:26,776 [INFO] sources.ats: Greenhouse US glance: 43 jobs
+2026-08-18 04:06:26,949 [INFO] sources.ats: Greenhouse US inmobi: 67 jobs
+2026-08-18 04:06:27,052 [INFO] sources.ats: Greenhouse US druva: 35 jobs
+2026-08-18 04:06:27,201 [INFO] sources.ats: Greenhouse US zenoti: 37 jobs
+2026-08-18 04:06:27,280 [INFO] sources.ats: Greenhouse US route: 5 jobs
+2026-08-18 04:06:27,382 [INFO] sources.ats: Greenhouse US hackerrank: 30 jobs
+2026-08-18 04:06:27,722 [INFO] sources.ats: Greenhouse US zscaler: 337 jobs
+2026-08-18 04:06:28,052 [INFO] sources.ats: Greenhouse US cloudflare: 298 jobs
+2026-08-18 04:06:28,420 [INFO] sources.ats: Greenhouse US stripe: 576 jobs
+2026-08-18 04:06:28,754 [INFO] sources.ats: Greenhouse US twilio: 157 jobs
+2026-08-18 04:06:29,141 [INFO] sources.ats: Greenhouse US mongodb: 404 jobs
+2026-08-18 04:06:33,519 [INFO] sources.ats: Greenhouse US elastic: 251 jobs
+2026-08-18 04:06:34,118 [INFO] sources.ats: Greenhouse US databricks: 805 jobs
+2026-08-18 04:06:34,306 [INFO] sources.ats: Greenhouse US grafanalabs: 142 jobs
+2026-08-18 04:06:34,676 [INFO] sources.ats: Greenhouse US datadog: 421 jobs
+2026-08-18 04:06:34,801 [INFO] sources.ats: Greenhouse US newrelic: 55 jobs
+2026-08-18 04:06:34,899 [INFO] sources.ats: Greenhouse US sumologic: 22 jobs
+2026-08-18 04:06:35,032 [INFO] sources.ats: Greenhouse US pagerduty: 28 jobs
+2026-08-18 04:06:35,153 [INFO] sources.ats: Greenhouse US cribl: 68 jobs
+2026-08-18 04:06:35,252 [INFO] sources.ats: Greenhouse US jfrog: 33 jobs
+2026-08-18 04:06:35,340 [INFO] sources.ats: Greenhouse US orcasecurity: 12 jobs
+2026-08-18 04:06:35,613 [INFO] sources.ats: Greenhouse US gitlab: 199 jobs
+2026-08-18 04:06:35,702 [INFO] sources.ats: Greenhouse US circleci: 5 jobs
+2026-08-18 04:06:35,787 [INFO] sources.ats: Greenhouse US buildkite: 10 jobs
+2026-08-18 04:06:35,880 [INFO] sources.ats: Greenhouse US airtable: 16 jobs
+2026-08-18 04:06:36,057 [INFO] sources.ats: Greenhouse US figma: 165 jobs
+2026-08-18 04:06:36,165 [INFO] sources.ats: Greenhouse US coursera: 24 jobs
+2026-08-18 04:06:36,266 [INFO] sources.ats: Greenhouse US udemy: 14 jobs
+2026-08-18 04:06:36,555 [INFO] sources.ats: Greenhouse US canonical: 303 jobs
+2026-08-18 04:06:36,885 [INFO] sources.ats: Greenhouse US remotecom: 228 jobs
+2026-08-18 04:06:36,997 [INFO] sources.ats: Greenhouse US turing: 23 jobs
+2026-08-18 04:06:37,082 [INFO] sources.ats: Greenhouse US upwork: 7 jobs
+2026-08-18 04:06:37,166 [INFO] sources.ats: Greenhouse US planetscale: 10 jobs
+2026-08-18 04:06:37,250 [INFO] sources.ats: Greenhouse US newton: 1 jobs
+2026-08-18 04:06:37,420 [INFO] sources.ats: Greenhouse US stage: 128 jobs
+2026-08-18 04:06:38,041 [INFO] sources.ats: Greenhouse EU groww: 8 jobs
+2026-08-18 04:06:40,003 [INFO] sources.ats: Lever meesho: 48 jobs
+2026-08-18 04:06:41,462 [INFO] sources.ats: Lever hevodata: 40 jobs
+2026-08-18 04:06:44,191 [INFO] sources.ats: Lever stable-money1: 22 jobs
+2026-08-18 04:06:44,329 [INFO] sources.ats: Lever linkedin: 23 jobs
+2026-08-18 04:06:45,010 [INFO] sources.ats: Lever paytm: 245 jobs
+2026-08-18 04:06:45,414 [INFO] sources.ats: Lever spotify: 105 jobs
+2026-08-18 04:06:46,378 [INFO] sources.ats: Lever binance: 272 jobs
+2026-08-18 04:06:46,779 [INFO] sources.ats: Lever nium: 40 jobs
+2026-08-18 04:06:46,920 [INFO] sources.ats: Lever 100ms: 10 jobs
+2026-08-18 04:06:47,163 [INFO] sources.ats: Lever GoToGroup: 40 jobs
+2026-08-18 04:06:47,302 [INFO] sources.ats: Lever cred: 5 jobs
+2026-08-18 04:06:47,441 [INFO] sources.ats: Lever fi: 8 jobs
+2026-08-18 04:06:47,776 [INFO] sources.ats: Lever capital: 43 jobs
+2026-08-18 04:06:47,981 [INFO] sources.ats: Lever porter: 28 jobs
+2026-08-18 04:06:48,232 [INFO] sources.ats: Lever mindtickle: 25 jobs
+2026-08-18 04:06:48,313 [WARNING] sources.ats: Lever fetch failed for belong: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/belong
+2026-08-18 04:06:48,314 [INFO] sources.ats: Lever belong: 0 jobs
+2026-08-18 04:06:48,548 [INFO] sources.ats: Lever whereby: 1 jobs
+2026-08-18 04:06:48,792 [INFO] sources.ats: Lever toptal: 21 jobs
+2026-08-18 04:06:49,002 [INFO] sources.ats: Ashby navi: 8 jobs
+2026-08-18 04:06:49,150 [INFO] sources.ats: Ashby ditto: 11 jobs
+2026-08-18 04:06:49,298 [INFO] sources.ats: Ashby bounce: 14 jobs
+2026-08-18 04:06:49,346 [INFO] sources.ats: Ashby clarisights: 2 jobs
+2026-08-18 04:06:49,406 [INFO] sources.ats: Ashby confluent: 30 jobs
+2026-08-18 04:06:49,468 [INFO] sources.ats: Ashby linear: 33 jobs
+2026-08-18 04:06:49,586 [INFO] sources.ats: Ashby notion: 131 jobs
+2026-08-18 04:06:49,728 [INFO] sources.ats: Ashby zapier: 10 jobs
+2026-08-18 04:06:49,784 [INFO] sources.ats: Ashby buffer: 3 jobs
+2026-08-18 04:06:49,913 [INFO] sources.ats: Ashby deel: 0 jobs
+2026-08-18 04:06:49,983 [INFO] sources.ats: Ashby oyster: 21 jobs
+2026-08-18 04:06:50,119 [INFO] sources.ats: Ashby andela: 17 jobs
+2026-08-18 04:06:50,195 [INFO] sources.ats: Ashby supabase: 53 jobs
+2026-08-18 04:06:50,336 [INFO] sources.ats: Ashby railway: 8 jobs
+2026-08-18 04:06:50,416 [INFO] sources.ats: Ashby render: 35 jobs
+2026-08-18 04:06:50,550 [INFO] sources.ats: Ashby infisical: 6 jobs
+2026-08-18 04:06:50,607 [INFO] sources.ats: Ashby triggerdev: 1 jobs
+2026-08-18 04:06:50,746 [INFO] sources.ats: Ashby mintlify: 21 jobs
+2026-08-18 04:06:50,886 [INFO] sources.ats: Ashby resend: 11 jobs
+2026-08-18 04:06:51,040 [INFO] sources.ats: Ashby stytch: 5 jobs
+2026-08-18 04:06:51,225 [INFO] sources.ats: Ashby workos: 26 jobs
+2026-08-18 04:06:51,274 [INFO] sources.ats: Ashby scaler: 0 jobs
+2026-08-18 04:06:51,462 [WARNING] sources.ats: Workable fetch failed for juspay: 429 Client Error: Too Many Requests for url: https://apply.workable.com/api/v3/accounts/juspay/jobs
+2026-08-18 04:06:51,463 [INFO] sources.ats: Workable juspay: 0 jobs
+2026-08-18 04:06:51,556 [WARNING] sources.ats: Workable fetch failed for gridlines: 429 Client Error: Too Many Requests for url: https://apply.workable.com/api/v3/accounts/gridlines/jobs
+2026-08-18 04:06:51,557 [INFO] sources.ats: Workable gridlines: 0 jobs
+2026-08-18 04:06:51,636 [WARNING] sources.ats: Workable fetch failed for apna: 429 Client Error: Too Many Requests for url: https://apply.workable.com/api/v3/accounts/apna/jobs
+2026-08-18 04:06:51,637 [INFO] sources.ats: Workable apna: 0 jobs
+2026-08-18 04:06:52,799 [INFO] sources.ats: SmartRecruiters Upstox: 1 jobs
+2026-08-18 04:06:53,794 [INFO] sources.ats: SmartRecruiters Lendingkart: 1 jobs
+2026-08-18 04:06:54,831 [INFO] sources.ats: SmartRecruiters Turtlemint: 1 jobs
+2026-08-18 04:06:59,774 [INFO] sources.ats: SmartRecruiters Lokal: 8 jobs
+2026-08-18 04:07:00,783 [INFO] sources.ats: SmartRecruiters Cars24: 1 jobs
+2026-08-18 04:07:06,618 [INFO] sources.ats: SmartRecruiters ixigo: 10 jobs
+2026-08-18 04:08:00,601 [INFO] sources.ats: SmartRecruiters Freshworks: 100 jobs
+2026-08-18 04:08:01,614 [INFO] sources.ats: SmartRecruiters Whatfix: 1 jobs
+2026-08-18 04:08:06,437 [INFO] sources.ats: SmartRecruiters MercerMettl: 8 jobs
+2026-08-18 04:08:09,630 [INFO] sources.ats: SmartRecruiters InterviewMocha: 5 jobs
+2026-08-18 04:08:15,746 [INFO] sources.ats: SmartRecruiters Skillate: 10 jobs
+2026-08-18 04:09:08,921 [INFO] sources.ats: SmartRecruiters ServiceNow: 100 jobs
+2026-08-18 04:10:29,478 [INFO] sources.ats: SmartRecruiters Canva: 100 jobs
+2026-08-18 04:10:31,457 [INFO] sources.ats: SmartRecruiters Unacademy: 3 jobs
+2026-08-18 04:10:39,377 [INFO] sources.ats: SmartRecruiters Dailymotion: 14 jobs
+2026-08-18 04:10:40,073 [INFO] sources.ats: Rippling axio: 2 jobs
+2026-08-18 04:10:40,516 [INFO] sources.ats: Rippling multiplier: 1 jobs
+2026-08-18 04:10:41,142 [INFO] sources.ats: Rippling dub: 2 jobs
+2026-08-18 04:10:41,796 [INFO] sources.ats: BambooHR urban: 23 jobs
+2026-08-18 04:10:42,297 [INFO] sources.ats: BambooHR shadowfax: 0 jobs
+2026-08-18 04:10:42,824 [WARNING] sources.ats: BambooHR fetch failed for google: Expecting value: line 1 column 1 (char 0)
+2026-08-18 04:10:42,826 [INFO] sources.ats: BambooHR google: 0 jobs
+2026-08-18 04:10:43,251 [WARNING] sources.ats: BambooHR fetch failed for meta: Expecting value: line 1 column 1 (char 0)
+2026-08-18 04:10:43,253 [INFO] sources.ats: BambooHR meta: 0 jobs
+2026-08-18 04:10:43,707 [INFO] sources.ats: BambooHR flyio: 10 jobs
+2026-08-18 04:10:44,012 [WARNING] sources.ats: Recruitee fetch failed for unstop: 404 Client Error: Not Found for url: https://unstop.recruitee.com/api/offers/
+2026-08-18 04:10:44,013 [INFO] sources.ats: Recruitee unstop: 0 jobs
+2026-08-18 04:10:44,317 [WARNING] sources.ats: Recruitee fetch failed for salesforce: 404 Client Error: Not Found for url: https://salesforce.recruitee.com/api/offers/
+2026-08-18 04:10:44,318 [INFO] sources.ats: Recruitee salesforce: 0 jobs
+2026-08-18 04:10:44,602 [WARNING] sources.ats: Recruitee fetch failed for ibm: 404 Client Error: Not Found for url: https://ibm.recruitee.com/api/offers/
+2026-08-18 04:10:44,603 [INFO] sources.ats: Recruitee ibm: 0 jobs
+2026-08-18 04:10:45,901 [INFO] sources.ats: Personio open: 4 jobs
+2026-08-18 04:10:46,753 [INFO] sources.ats: Personio josh: 3 jobs
+2026-08-18 04:10:47,618 [INFO] sources.ats: Personio amazon: 3 jobs
+2026-08-18 04:10:48,492 [INFO] sources.ats: Personio basecamp: 4 jobs
+2026-08-18 04:10:48,493 [INFO] sources.ats: ATS total: 8036 raw jobs
+2026-08-18 04:10:48,493 [INFO] jobradar: --- Fetching Cutshort ---
+2026-08-18 04:10:52,653 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+intern+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:10:57,535 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=machine+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:11:02,256 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=generative+AI+intern&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:11:33,954 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=LLM+engineer+intern+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:11:38,451 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=computer+vision+intern+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:12:10,157 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=python+backend+intern+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:12:14,623 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=deep+learning+intern+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:12:19,300 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=NLP+intern+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:12:23,447 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=RAG+langchain+intern&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:12:28,771 [INFO] scrapling: Fetched (200) <GET https://cutshort.io/jobs?q=AI+ML+fresher+india&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:12:28,902 [INFO] sources.cutshort: Cutshort: 0 jobs found
+2026-08-18 04:12:28,904 [INFO] jobradar: --- Fetching Instahyre ---
+2026-08-18 04:12:32,548 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=python&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:32,585 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:12:36,154 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=machine-learning&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:36,193 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:12:39,437 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=deep-learning&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:39,477 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:12:47,237 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=artificial-intelligence&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:47,274 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:12:50,479 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=computer-vision&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:50,518 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:12:53,463 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=nlp&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:53,507 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:12:56,775 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=langchain&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:56,816 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:12:59,851 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=django&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:12:59,890 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:13:03,092 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=fastapi&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:13:03,132 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:13:06,627 [INFO] scrapling: Fetched (301) <GET https://www.instahyre.com/jobs/?skills=pytorch&exp=0-1> (referer: https://www.google.com/)
+2026-08-18 04:13:06,667 [INFO] scrapling: Fetched (200) <GET https://www.instahyre.com/search-jobs> (referer: https://www.google.com/)
+2026-08-18 04:13:06,775 [INFO] sources.instahyre: Instahyre: 0 jobs found via Scrapling
+2026-08-18 04:13:06,776 [INFO] jobradar: --- Fetching Wellfound ---
+2026-08-18 04:13:06,777 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=machine+learning+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-18 04:13:06,777 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=AI+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-18 04:13:06,777 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=python+backend+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-18 04:13:06,777 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=generative+AI+intern&remote=true: name 'StealthyFetcher' is not defined
+2026-08-18 04:13:06,777 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=computer+vision+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-08-18 04:13:06,777 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=LLM+engineer+intern&remote=true: name 'StealthyFetcher' is not defined
+2026-08-18 04:13:06,777 [INFO] sources.wellfound: Wellfound: 0 jobs found
+2026-08-18 04:13:06,777 [INFO] jobradar: --- Fetching Internshala ---
+2026-08-18 04:13:09,824 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/backend-development-internship/> (referer: https://www.google.com/)
+2026-08-18 04:13:13,319 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-08-18 04:13:15,830 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-08-18 04:13:17,872 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/web-development-internship/> (referer: https://www.google.com/)
+2026-08-18 04:13:19,715 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-golang/> (referer: https://www.google.com/)
+2026-08-18 04:13:21,946 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-go-developer/> (referer: https://www.google.com/)
+2026-08-18 04:13:24,569 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-nodejs/> (referer: https://www.google.com/)
+2026-08-18 04:13:27,344 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-typescript/> (referer: https://www.google.com/)
+2026-08-18 04:13:29,964 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/> (referer: https://www.google.com/)
+2026-08-18 04:13:31,929 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/software-developer-jobs/> (referer: https://www.google.com/)
+2026-08-18 04:13:31,941 [INFO] sources.internshala: Internshala: 0 jobs found
+2026-08-18 04:13:31,942 [INFO] jobradar: --- Fetching Indian Fresher Blogs (RSS + Cuvette) ---
+2026-08-18 04:13:32,576 [WARNING] sources.freshers_blogs: [offcampusjobs4u] RSS unparseable for https://offcampusjobs4u.com/category/offcampus-jobs/feed/: <unknown>:7:75: not well-formed (invalid token)
+2026-08-18 04:13:32,576 [INFO] sources.freshers_blogs: [offcampusjobs4u] 0 entries from https://offcampusjobs4u.com/category/offcampus-jobs/feed/
+2026-08-18 04:13:33,015 [INFO] sources.freshers_blogs: [freshershunt] 1 entries from https://freshershunt.in/feed/
+2026-08-18 04:13:33,060 [INFO] sources.freshers_blogs: [freshersdunia] 20 entries from https://freshersdunia.in/feed/
+2026-08-18 04:13:33,086 [WARNING] sources.freshers_blogs: [freshersnow] RSS unparseable for https://freshersnow.com/feed/: <unknown>:47:2: mismatched tag
+2026-08-18 04:13:33,087 [INFO] sources.freshers_blogs: [freshersnow] 0 entries from https://freshersnow.com/feed/
+2026-08-18 04:15:47,560 [WARNING] sources.freshers_blogs: [freshers-job] RSS unparseable for https://freshers-job.com/feed/: <urlopen error [Errno 110] Connection timed out>
+2026-08-18 04:15:47,560 [INFO] sources.freshers_blogs: [freshers-job] 0 entries from https://freshers-job.com/feed/
+2026-08-18 04:18:02,728 [WARNING] sources.freshers_blogs: [freshersarea] RSS unparseable for https://freshersarea.in/feed/: <urlopen error [Errno 101] Network is unreachable>
+2026-08-18 04:18:02,728 [INFO] sources.freshers_blogs: [freshersarea] 0 entries from https://freshersarea.in/feed/
+2026-08-18 04:18:02,728 [WARNING] sources.freshers_blogs: [fresheropenings] RSS unparseable for https://fresheropenings.com/feed/: <urlopen error [Errno 101] Network is unreachable>
+2026-08-18 04:18:02,728 [WARNING] sources.freshers_blogs: [tnpofficer] RSS unparseable for https://tnpofficer.com/category/off-campus/feed/: <urlopen error [Errno 101] Network is unreachable>
+2026-08-18 04:18:02,729 [INFO] sources.freshers_blogs: [fresheropenings] 0 entries from https://fresheropenings.com/feed/
+2026-08-18 04:18:02,729 [INFO] sources.freshers_blogs: [tnpofficer] 0 entries from https://tnpofficer.com/category/off-campus/feed/
+2026-08-18 04:18:02,730 [INFO] sources.freshers_blogs: freshers_blogs: 21 total listings from 8 RSS feeds
+2026-08-18 04:18:02,730 [INFO] jobradar: --- Fetching YC Jobs ---
+2026-08-18 04:18:05,040 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&type=fulltime,intern&remote=true> (referer: https://www.google.com/)
+2026-08-18 04:18:05,043 [INFO] sources.yc: YC listing 'q=backend&type=fulltime,intern&remote=tr': 0 candidates
+2026-08-18 04:18:07,291 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=typescript+backend&type=fulltime,intern> (referer: https://www.google.com/)
+2026-08-18 04:18:07,294 [INFO] sources.yc: YC listing 'q=typescript+backend&type=fulltime,inter': 0 candidates
+2026-08-18 04:18:09,582 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=golang&type=fulltime,intern> (referer: https://www.google.com/)
+2026-08-18 04:18:09,585 [INFO] sources.yc: YC listing 'q=golang&type=fulltime,intern': 0 candidates
+2026-08-18 04:18:11,796 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&location=india> (referer: https://www.google.com/)
+2026-08-18 04:18:11,802 [INFO] sources.yc: YC listing 'q=backend&location=india': 0 candidates
+2026-08-18 04:18:11,802 [INFO] sources.yc: YC Phase 1 complete: 0 candidate job pages to fetch
+2026-08-18 04:18:11,802 [INFO] sources.yc: YC Jobs: 0 jobs parsed from 0 fetched pages
+2026-08-18 04:18:11,803 [INFO] jobradar: --- Fetching via Serper discovery ---
+2026-08-18 04:18:11,803 [INFO] sources.serper: Serper pool: 26 tier-1 | 47 tier-2 | 31 tier-3. Running: 10 (unique) + 15 (priority) + 0 (filler) = 25 queries
+2026-08-18 04:18:11,921 [WARNING] sources.serper: Serper query failed '"fintech" OR "payments" "backend" "intern" OR "fresher" indi': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,052 [WARNING] sources.serper: Serper query failed 'site:cutshort.io "backend" "golang" OR "typescript" OR "node': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,240 [WARNING] sources.serper: Serper query failed 'site:instahyre.com "backend" "golang" OR "typescript" "inter': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,354 [WARNING] sources.serper: Serper query failed '"forms.gle" "apply" "software engineer" "intern" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,465 [WARNING] sources.serper: Serper query failed 'site:jobs.freshteam.com "backend" OR "software" "intern" OR ': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,586 [WARNING] sources.serper: Serper query failed '"engineering intern" OR "software intern" "golang" OR "types': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,707 [WARNING] sources.serper: Serper query failed '"google form" "backend intern" OR "software intern" "india" ': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,819 [WARNING] sources.serper: Serper query failed 'site:jobs.freshteam.com "golang" OR "typescript" india 2026': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:12,938 [WARNING] sources.serper: Serper query failed '"airtable.com" "apply" "backend" "intern" OR "fresher" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,067 [WARNING] sources.serper: Serper query failed '"we are hiring" "backend engineer" "fresher" OR "intern" ind': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,191 [WARNING] sources.serper: Serper query failed '"backend developer" "typescript" OR "node" "0-1 years" OR "f': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,319 [WARNING] sources.serper: Serper query failed 'site:lever.co "golang" OR "go developer" "intern" OR "junior': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,438 [WARNING] sources.serper: Serper query failed '"exchange" OR "crypto exchange" "backend" "intern" OR "fresh': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,557 [WARNING] sources.serper: Serper query failed '"global remote" "backend" OR "software" "intern" OR "fresher': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,670 [WARNING] sources.serper: Serper query failed 'intitle:"careers" "backend intern" OR "backend fresher" site': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,771 [WARNING] sources.serper: Serper query failed '"we are hiring" "backend" "intern" OR "fresher" india -site:': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,884 [WARNING] sources.serper: Serper query failed '"work from anywhere" OR "fully remote" "backend" "intern" OR': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:13,999 [WARNING] sources.serper: Serper query failed '"typescript backend" intern OR fresher india -site:linkedin.': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,105 [WARNING] sources.serper: Serper query failed '"hiring" "golang" "backend" "intern" OR "fresher" india -sit': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,217 [WARNING] sources.serper: Serper query failed '"grpc" OR "gRPC" "golang" "intern" OR "fresher" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,346 [WARNING] sources.serper: Serper query failed '"backend intern" OR "backend fresher" "typescript" OR "node.': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,458 [WARNING] sources.serper: Serper query failed '"backend intern" "fintech" OR "payments" OR "crypto" india -': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,568 [WARNING] sources.serper: Serper query failed 'site:jobs.ashbyhq.com "fintech" OR "payments" "backend" "int': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,680 [WARNING] sources.serper: Serper query failed '"backend intern" "remote" "india" -site:linkedin.com -site:n': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,785 [WARNING] sources.serper: Serper query failed 'site:boards.greenhouse.io "remote" "backend" "intern" OR "fr': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-08-18 04:18:14,787 [INFO] sources.serper: Serper discovery: 25 queries → 0 unique URLs → 0 jobs extracted
+2026-08-18 04:18:14,787 [INFO] jobradar: --- Skipping hackernews (disabled in profile) ---
+2026-08-18 04:18:14,787 [INFO] jobradar: --- Skipping reddit (disabled in profile) ---
+2026-08-18 04:18:14,787 [INFO] jobradar: --- Fetching Naukri.com ---
+2026-08-18 04:18:14,787 [INFO] sources.naukri: Naukri: 10 keywords x 3 locations x 2 pages = up to 60 search calls (1200 raw listings max) | exp cap: 1yr | age cap: 45d
+2026-08-18 04:19:07,286 [INFO] sources.naukri: Naukri Stage-1 complete: 0 unique jobs survived (exp <= 1yr, age <= 45d)
+2026-08-18 04:19:07,287 [INFO] sources.naukri: Naukri: 0 jobs entering pipeline
+2026-08-18 04:19:07,287 [INFO] jobradar: --- Skipping hirist (disabled in profile) ---
+2026-08-18 04:19:07,287 [INFO] jobradar: --- Fetching Jobicy (remote jobs API) ---
+2026-08-18 04:19:09,892 [INFO] sources.jobicy: Jobicy: 88 remote jobs found
+2026-08-18 04:19:09,892 [INFO] jobradar: --- Fetching RemoteOK (JSON API) ---
+2026-08-18 04:19:13,088 [INFO] sources.remoteok: RemoteOK: 54 dev/engineering jobs found
+2026-08-18 04:19:13,089 [INFO] jobradar: Total raw jobs from all sources: 8199
+2026-08-18 04:19:14,360 [INFO] pipeline.dedup: Dedup: 8199 raw -> 7487 new
+2026-08-18 04:19:26,735 [INFO] pipeline.prefilter: ATS company cap (25): capped companies — Mongodb, Databricks, Grafanalabs, Gitlab, Canonical
+2026-08-18 04:19:26,735 [INFO] pipeline.prefilter: Pre-filter: 7487 jobs -> 506 passed (sent to AI scorer)
+2026-08-18 04:19:28,769 [INFO] pipeline.ranker: Relevance ranking: 506 jobs ranked. Top scores: [27, 25, 25, 24, 24]
+2026-08-18 04:19:28,770 [WARNING] pipeline.scorer: Hard fallback cap: trimmed 306 lowest-ranked jobs (max_ai_jobs_per_run=200). Increase cap in profile.yaml if needed.
+2026-08-18 04:19:28,770 [INFO] pipeline.scorer: Scoring up to 200 ranked jobs with Groq (llama-3.1-8b-instant) | token budget: 200,000
+2026-08-18 04:19:28,931 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:19:28,931 [ERROR] pipeline.scorer: Groq scoring failed for Junior Software Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:19:33,840 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:19:33,840 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer — Distributed Systems & Agentic AI: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:19:38,832 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:19:38,833 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:19:43,832 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:19:43,833 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:19:48,839 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:19:48,840 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:19:53,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:19:53,837 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:19:58,832 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:19:58,832 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:03,844 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:03,845 [ERROR] pipeline.scorer: Groq scoring failed for Sr. AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:08,831 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:08,831 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer, Robotics: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:13,829 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:13,830 [ERROR] pipeline.scorer: Groq scoring failed for Senior Go-To-Market (GTM) Analytics Engineer (AI & Pipelines): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:18,834 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:18,834 [ERROR] pipeline.scorer: Groq scoring failed for Customer Engineer, India (Based in Mumbai): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:23,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:23,842 [ERROR] pipeline.scorer: Groq scoring failed for Customer Engineer (Pre-Sales), Korea (Based in Seoul): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:28,839 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:28,840 [ERROR] pipeline.scorer: Groq scoring failed for Senior Forward Deployed Engineering - Architect: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:33,832 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:33,833 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer (Ruby), Plan: Portfolio Experience: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:38,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:38,843 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer (Ruby), Plan: Spec-Driven Development: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:43,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:43,838 [ERROR] pipeline.scorer: Groq scoring failed for Presales Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:48,834 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:48,834 [ERROR] pipeline.scorer: Groq scoring failed for Java Backend Engineer (AI/LLM Chatbot, Customer Service): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:53,830 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:53,831 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:20:58,832 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:20:58,832 [ERROR] pipeline.scorer: Groq scoring failed for SDE 2: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:03,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:03,842 [ERROR] pipeline.scorer: Groq scoring failed for Senior Staff Software Engineer in Test: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:08,843 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:08,843 [ERROR] pipeline.scorer: Groq scoring failed for Senior Manager, Customer Engineering, India: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:13,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:13,841 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 3: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:18,832 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:18,833 [ERROR] pipeline.scorer: Groq scoring failed for Talent Pipeline - Product Engineering: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:23,837 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:23,837 [ERROR] pipeline.scorer: Groq scoring failed for Staff ML Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:28,837 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:28,837 [ERROR] pipeline.scorer: Groq scoring failed for Alliances Field Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:33,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:33,839 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Field Engineering Manager: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:38,834 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:38,835 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Professional Services Manager: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:43,835 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:43,836 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Solutions Architect - Alliances: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:48,856 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:48,857 [ERROR] pipeline.scorer: Groq scoring failed for Data Engineer (SQL, PySpark, Snowflake, DBT, Redshift) - Associate: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:53,840 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:53,841 [ERROR] pipeline.scorer: Groq scoring failed for Insurance Data Engineering - Data Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:21:58,839 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:21:58,839 [ERROR] pipeline.scorer: Groq scoring failed for Binance Accelerator Program - DevSecOps Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:03,835 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:03,835 [ERROR] pipeline.scorer: Groq scoring failed for Machine Learning Engineer (Agent Intelligence & Evaluations): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:08,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:08,836 [ERROR] pipeline.scorer: Groq scoring failed for Senior Solution Engineer (CX-NA): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:13,834 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:13,834 [ERROR] pipeline.scorer: Groq scoring failed for Associate Solution Engineer (2027 Graduate): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:18,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:18,836 [ERROR] pipeline.scorer: Groq scoring failed for Technical Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:23,840 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:23,840 [ERROR] pipeline.scorer: Groq scoring failed for Internal Audit Data Analytics Lead: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:28,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:28,842 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer (Developer Tooling) - Python/Java: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:33,839 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:33,839 [ERROR] pipeline.scorer: Groq scoring failed for Go (Golang) Software Engineer, Developer Tooling and Containers: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:38,839 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:38,839 [ERROR] pipeline.scorer: Groq scoring failed for Associate Solutions Consultant (2027 Graduates): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:43,834 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:43,835 [ERROR] pipeline.scorer: Groq scoring failed for Senior Staff Software Engineer (DataLake) : Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:48,837 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:48,838 [ERROR] pipeline.scorer: Groq scoring failed for Security Engineer, Privy: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:53,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:53,839 [ERROR] pipeline.scorer: Groq scoring failed for Associate Technical Services Engineer II: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:22:58,849 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:22:58,849 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer, Atlas API Experience: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:03,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:03,841 [ERROR] pipeline.scorer: Groq scoring failed for Technical Services Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:08,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:08,836 [ERROR] pipeline.scorer: Groq scoring failed for Intermediate Backend Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:13,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:13,837 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer, Analytics Instrumentation (Golang): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:18,834 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:18,835 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer - Monitoring and Anomaly Detection (Monetization): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:23,843 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:23,843 [ERROR] pipeline.scorer: Groq scoring failed for Distributed Systems Testing Software Engineer, Python / Go: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:28,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:28,843 [ERROR] pipeline.scorer: Groq scoring failed for Embedded Linux Field Engineer for Devices/IoT: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:33,849 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:33,849 [ERROR] pipeline.scorer: Groq scoring failed for Embedded Linux Field Engineer (Mandarin speaking): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:38,849 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:38,849 [ERROR] pipeline.scorer: Groq scoring failed for Senior Forward Deployed Engineer (Remote Build): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:43,839 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:43,840 [ERROR] pipeline.scorer: Groq scoring failed for Data Engineer II: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:48,840 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:48,841 [ERROR] pipeline.scorer: Groq scoring failed for PhD Research Scientist Intern - Edge AI: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:53,840 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:53,841 [ERROR] pipeline.scorer: Groq scoring failed for Senior Full-Stack Engineer (TypeScript/AI Automation) - Real Estate - LATAM: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:23:58,837 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:23:58,838 [ERROR] pipeline.scorer: Groq scoring failed for Data/ Java Engineer (AI/LLM Chatbot, Customer Service): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:03,837 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:03,838 [ERROR] pipeline.scorer: Groq scoring failed for Database Engineer II: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:08,848 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:08,848 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Engineering Enablement: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:13,845 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:13,845 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Software Development Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:18,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:18,836 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 2: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:23,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:23,842 [ERROR] pipeline.scorer: Groq scoring failed for PhD GenAI Research Scientist Intern: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:28,837 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:28,838 [ERROR] pipeline.scorer: Groq scoring failed for Senior Staff Software Engineer- Search Quality: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:33,852 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:33,853 [ERROR] pipeline.scorer: Groq scoring failed for Manager I, Engineering - Change Experience Platform: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:38,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:38,841 [ERROR] pipeline.scorer: Groq scoring failed for Backend Engineer (Ruby), AI Engineering: Agent Observability: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:43,847 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:43,848 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer Intern (Winter 2027): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:48,840 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:48,840 [ERROR] pipeline.scorer: Groq scoring failed for Containerization & Virtualisation Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:53,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:53,843 [ERROR] pipeline.scorer: Groq scoring failed for Senior DevOps Consultant (Remote Build): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:24:58,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:24:58,839 [ERROR] pipeline.scorer: Groq scoring failed for Embedded Linux Field Engineer for Devices/IoT: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:03,843 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:03,844 [ERROR] pipeline.scorer: Groq scoring failed for Senior Information Technology Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:08,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:08,839 [ERROR] pipeline.scorer: Groq scoring failed for Test Automation Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:13,845 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:13,845 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer : Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:18,846 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:18,847 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Staff Site Reliability Engineer (Linux/Network troubleshooting/Scripting): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:23,848 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:23,848 [ERROR] pipeline.scorer: Groq scoring failed for Sr. Staff Software Development Engineer - AI Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:28,836 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:28,837 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer Intern (Fall 2026): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:33,848 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:33,849 [ERROR] pipeline.scorer: Groq scoring failed for Backend Engineer, Credit Decisions : Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:38,839 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:38,840 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer : Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:43,848 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:43,848 [ERROR] pipeline.scorer: Groq scoring failed for Lead, Cloud Operations Engineering: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:48,843 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:48,843 [ERROR] pipeline.scorer: Groq scoring failed for Marketplace Sales Specialist - EMEA (Azure, AWS & Google Cloud): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:53,859 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:53,860 [ERROR] pipeline.scorer: Groq scoring failed for Senior Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:25:58,838 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:25:58,839 [ERROR] pipeline.scorer: Groq scoring failed for Senior Solutions Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:03,851 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:03,851 [ERROR] pipeline.scorer: Groq scoring failed for Senior AI Engineer - Grafana AI/ML | USA | Remote: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:08,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:08,843 [ERROR] pipeline.scorer: Groq scoring failed for Senior Backend Engineer - Databases - Loki Query | UK | Remote: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:13,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:13,842 [ERROR] pipeline.scorer: Groq scoring failed for Enterprise Sales Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:18,843 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:18,844 [ERROR] pipeline.scorer: Groq scoring failed for Senior Site Reliability Engineer I : Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:23,846 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:23,846 [ERROR] pipeline.scorer: Groq scoring failed for Staff Security Operations Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:28,857 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:28,857 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Build Platform: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:33,846 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:33,847 [ERROR] pipeline.scorer: Groq scoring failed for Engineering Manager (BE) - Ecosystem Distribution: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:38,840 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:38,840 [ERROR] pipeline.scorer: Groq scoring failed for Embedded Linux Consultant - Japan: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:43,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:43,841 [ERROR] pipeline.scorer: Groq scoring failed for Containerization & Virtualisation Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:48,843 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:48,844 [ERROR] pipeline.scorer: Groq scoring failed for Full Stack Developer - Java & React (f/m/d): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:53,846 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:53,847 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - MAAS: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:26:58,854 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:26:58,854 [ERROR] pipeline.scorer: Groq scoring failed for Workflow Developer & Tester: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:27:03,855 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:27:03,855 [ERROR] pipeline.scorer: Groq scoring failed for Full Stack Developer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:27:08,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:27:08,842 [ERROR] pipeline.scorer: Groq scoring failed for Machine Learning Engineer, Customer Support Engineering: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:27:13,843 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:27:13,844 [ERROR] pipeline.scorer: Groq scoring failed for Federal Security Operations - SkillBridge Intern: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:27:18,841 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:27:18,841 [ERROR] pipeline.scorer: Groq scoring failed for Systems Engineer (Data Intelligence & Analytics Team): Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:27:23,849 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:27:23,850 [ERROR] pipeline.scorer: Groq scoring failed for Machine Learning Engineer: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:27:28,842 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 404 Not Found"
+2026-08-18 04:27:28,843 [ERROR] pipeline.scorer: Groq scoring failed for Manager, Forward Deployed Engineering: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-instant` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+2026-08-18 04:27:28,861 [INFO] pipeline.scorer: Token budget: 198,593/200,000 tokens used. Skipped 103 lower-ranked jobs to stay under limit.
+2026-08-18 04:27:28,861 [INFO] pipeline.scorer: Scoring complete: 0 urgent, 0 digest, 97 low, 0 expired (dropped)
+2026-08-18 04:27:29,711 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 97 to review — 18 Aug 2026
+2026-08-18 04:27:29,712 [INFO] jobradar: Pipeline complete.
+2026-08-18 04:27:29,712 [INFO] jobradar: Summary: 8199 raw -> 7487 new -> 506 eligible -> 0 urgent
