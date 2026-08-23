@@ -15,7 +15,7 @@ from pipeline.ranker import rank_eligible_jobs
 
 logger = logging.getLogger(__name__)
 
-MODEL = "llama-3.1-8b-instant"
+MODEL = "llama-3.3-70b-versatile"
 REQ_INTERVAL = 5.0
 _last_call_ts = 0.0
 
