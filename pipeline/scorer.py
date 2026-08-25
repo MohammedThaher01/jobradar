@@ -273,6 +273,11 @@ def score_job(job: dict, profile: dict) -> dict:
         return job
 
     except Exception as e:
+        error_str = str(e)
+        # Daily token limit hit — stop scoring entirely, no point retrying
+        if "tokens per day" in error_str or "TPD" in error_str:
+            logger.warning(f"Groq daily token limit reached — stopping scorer early.")
+            raise RuntimeError("GROQ_TPD_EXCEEDED") from e
         logger.error(f"Groq scoring failed for {job.get('title', '?')}: {e}")
         job["score"]       = -1
         job["reason"]      = f"Scoring error: {e}"
