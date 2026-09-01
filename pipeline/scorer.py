@@ -19,7 +19,7 @@ MODEL = "openai/gpt-oss-20b"
 REQ_INTERVAL = 5.0
 _last_call_ts = 0.0
 
-TOKEN_BUDGET_PER_RUN  = 200_000
+TOKEN_BUDGET_PER_RUN  = 150_000
 SYSTEM_PROMPT_TOKENS  = 800
 RESPONSE_TOKENS       = 400
 CHARS_PER_TOKEN       = 4
@@ -48,34 +48,34 @@ def load_profile(path="profile.yaml") -> dict:
 _FEW_SHOT_EXAMPLES = """
 ## CALIBRATION EXAMPLES (use these to anchor your scoring scale)
 
-### Example A — Score 9 (near-perfect match)
+### Example A - Score 9 (near-perfect match)
 Job: "AI/ML Intern" at Sarvam AI, Bangalore/Remote
 Description excerpt: "We are building India's sovereign LLM. Looking for a fresher
   to work on RAG pipelines, LangChain agents, and fine-tuning open-source models.
   0-1 years experience. Stipend: Rs.20,000/month."
-→ Correct score: 9
-→ Reasoning: RAG + LangChain + LLM fine-tuning = exact stack match. Indian AI company
+-> Correct score: 9
+-> Reasoning: RAG + LangChain + LLM fine-tuning = exact stack match. Indian AI company
   is high-priority domain. Remote/Bangalore acceptable. Fresher role with good stipend.
-→ apply_urgency: "high"
+-> apply_urgency: "high"
 
-### Example B — Score 3 (looks relevant, actually not)
+### Example B - Score 3 (looks relevant, actually not)
 Job: "Python and Kubernetes Software Engineer - Data, Workflows, AI/ML" at Canonical
 Description excerpt: "3+ years of Python experience required. Must have production
   Kubernetes cluster management experience. Enterprise Linux packaging knowledge needed."
-→ Correct score: 3
-→ Reasoning: Despite Python and AI/ML in title, this requires 3+ years experience
+-> Correct score: 3
+-> Reasoning: Despite Python and AI/ML in title, this requires 3+ years experience
   which is a hard reject. Kubernetes cluster management is not the candidate's stack.
   Enterprise Linux packaging is irrelevant. Not a fresher or intern role.
-→ apply_urgency: "low"
+-> apply_urgency: "low"
 
-### Example C — Score 2 (experience mismatch)
+### Example C - Score 2 (experience mismatch)
 Job: "Applied AI Engineer" at HackerRank, Hybrid Bengaluru
 Description excerpt: "1-4 years of software engineering experience required.
   Must have shipped ML models to production."
-→ Correct score: 2
-→ Reasoning: Requires 1-4 years experience — hard reject for a fresher. 'Applied AI
+-> Correct score: 2
+-> Reasoning: Requires 1-4 years experience, hard reject for a fresher. 'Applied AI
   Engineer' sounds relevant but the experience bar makes it unfit.
-→ apply_urgency: "low"
+-> apply_urgency: "low"
 """
 
 
@@ -134,14 +134,14 @@ Score 1-10 (use the calibration examples in the system prompt as anchors):
 - 4-5 = Weak (tangentially related, experience mismatch, or missing key signals)
 - 1-3 = Not relevant, experience too high, wrong role, or outside India with no remote option
 
-MANDATORY HARD RULES — apply these first, they override all bonuses:
+MANDATORY HARD RULES - apply these first, they override all bonuses:
 1. EXPIRY CHECK: If description contains application closed / hiring closed / position filled /
-   no longer accepting / deadline has passed → score=1, apply_urgency="expired", expired=true
-2. Requires >1 year experience explicitly → score MAX 3, apply_urgency="low"
-3. Requires 1+ years experience → score MAX 4, apply_urgency="low"
-4. Role is DevOps, QA, Test, Android, iOS, .NET, Golang, Java Developer → score=1
-5. Location is outside India AND strictly on-site only → score=1
-6. Post older than 2 months → score MAX 3
+   no longer accepting / deadline has passed -> score=1, apply_urgency="expired", expired=true
+2. Requires >1 year experience explicitly -> score MAX 3, apply_urgency="low"
+3. Requires 1+ years experience -> score MAX 4, apply_urgency="low"
+4. Role is DevOps, QA, Test, Android, iOS, .NET, Golang, Java Developer -> score=1
+5. Location is outside India AND strictly on-site only -> score=1
+6. Post older than 2 months -> score MAX 3
 
 SCORING BONUSES (only apply if hard rules don't cap the score):
 + Python in a relevant AI/ML/backend context: +2
@@ -212,7 +212,7 @@ def score_job(job: dict, profile: dict) -> dict:
     if expiry_signal:
         logger.info(
             f"Pre-Groq expiry detected for '{job.get('title','?')}': "
-            f"'{expiry_signal.group(0).strip()[:60]}' — skipping scorer"
+            f"'{expiry_signal.group(0).strip()[:60]}' - skipping scorer"
         )
         job["score"]       = 1
         job["expired"]     = True
@@ -237,7 +237,7 @@ def score_job(job: dict, profile: dict) -> dict:
                     "content": (
                         "You are a precise job relevance scorer for an AI/ML fresher candidate. "
                         "Always respond with valid JSON only, no markdown. "
-                        "Be strict about experience requirements — if a job requires more than 1 year "
+                        "Be strict about experience requirements - if a job requires more than 1 year "
                         "of experience, it must score 3 or below regardless of tech stack match.\n"
                         + _FEW_SHOT_EXAMPLES
                     ),
@@ -273,11 +273,11 @@ def score_job(job: dict, profile: dict) -> dict:
         return job
 
     except Exception as e:
-        error_str = str(e)
-        # Daily token limit hit — stop scoring entirely, no point retrying
-        if "tokens per day" in error_str or "TPD" in error_str:
-            logger.warning(f"Groq daily token limit reached — stopping scorer early.")
-            raise RuntimeError("GROQ_TPD_EXCEEDED") from e
+        error_str = str(e).lower()
+        if "tokens per day" in error_str or "tpd" in error_str or "model not found" in error_str:
+            logger.warning(f"Groq daily token limit or model error reached - stopping scorer early.")
+            raise RuntimeError("GROQ_STOP") from e
+            
         logger.error(f"Groq scoring failed for {job.get('title', '?')}: {e}")
         job["score"]       = -1
         job["reason"]      = f"Scoring error: {e}"
@@ -341,7 +341,14 @@ def score_all(
             continue
 
         tokens_used += job_tokens
-        scored_job = score_job(job, profile)
+        
+        try:
+            scored_job = score_job(job, profile)
+        except RuntimeError as e:
+            if "GROQ_STOP" in str(e):
+                logger.warning("GROQ_STOP received. Halting scoring loop gracefully.")
+                break
+            raise
 
         scored_job.pop("_heuristic_score", None)
         scored_job.pop("_heuristic_reasons", None)
