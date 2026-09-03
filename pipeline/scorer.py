@@ -15,7 +15,7 @@ from pipeline.ranker import rank_eligible_jobs
 
 logger = logging.getLogger(__name__)
 
-MODEL = "openai/gpt-oss-20b"
+MODEL = "llama-3.1-8b-instant"
 REQ_INTERVAL = 5.0
 _last_call_ts = 0.0
 
@@ -231,6 +231,7 @@ def score_job(job: dict, profile: dict) -> dict:
 
         response = client.chat.completions.create(
             model=MODEL,
+            response_format={"type": "json_object"}, 
             messages=[
                 {
                     "role": "system",
@@ -251,14 +252,33 @@ def score_job(job: dict, profile: dict) -> dict:
             max_tokens=512,
         )
 
-        text = response.choices[0].message.content.strip()
+        text = (response.choices[0].message.content or "").strip()
 
         if text.startswith("```"):
             text = text.split("```")[1]
             if text.startswith("json"):
                 text = text[4:].strip()
 
-        result = json.loads(text)
+        try:
+            result = json.loads(text)
+        except json.JSONDecodeError as json_err:
+            logger.warning(f"Groq returned truncated/bad JSON. Attempting regex salvage...")
+            
+            score_match = re.search(r'"score"\s*:\s*(\d+)', text, re.IGNORECASE)
+            
+            if score_match:
+                urgency_match = re.search(r'"apply_urgency"\s*:\s*"([^"]+)"', text, re.IGNORECASE)
+                result = {
+                    "score": int(score_match.group(1)),
+                    "expired": False,
+                    "reason": "Salvaged via regex due to API response truncation.",
+                    "highlights": [],
+                    "red_flags": ["API Truncated Response"],
+                    "apply_urgency": urgency_match.group(1) if urgency_match else "low"
+                }
+                logger.info(f"Successfully salvaged score {result['score']} from truncated output.")
+            else:
+                raise ValueError(f"Could not extract score from broken output: {json_err}") from json_err
 
         job["score"]       = int(result.get("score", 0))
         job["expired"]     = bool(result.get("expired", False))
