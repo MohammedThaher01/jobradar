@@ -1798,3 +1798,575 @@
 2026-09-16 08:57:57,623 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 73 to review — 16 Sep 2026
 2026-09-16 08:57:57,623 [INFO] jobradar: Pipeline complete.
 2026-09-16 08:57:57,623 [INFO] jobradar: Summary: 8354 raw -> 7604 new -> 572 eligible -> 0 urgent
+2026-09-17 08:49:14,753 [INFO] jobradar: ==================================================
+2026-09-17 08:49:14,753 [INFO] jobradar: JobRadar pipeline starting — profile: profile.yaml
+2026-09-17 08:49:14,754 [INFO] jobradar: ==================================================
+2026-09-17 08:49:14,765 [WARNING] jobradar: telegram_chat_id is not set in profile or TELEGRAM_CHAT_ID env var — Telegram notifications will fail
+2026-09-17 08:49:14,769 [INFO] jobradar: --- Fetching ATS endpoints (Greenhouse US/EU, Lever, Ashby, Workable) ---
+2026-09-17 08:49:14,933 [INFO] sources.ats: Greenhouse US razorpaysoftwareprivatelimited: 19 jobs
+2026-09-17 08:49:15,024 [WARNING] sources.ats: Greenhouse US fetch failed for phonepe: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/phonepe/jobs?content=true
+2026-09-17 08:49:15,025 [INFO] sources.ats: Greenhouse US phonepe: 0 jobs
+2026-09-17 08:49:15,217 [INFO] sources.ats: Greenhouse US twitch: 49 jobs
+2026-09-17 08:49:15,448 [INFO] sources.ats: Greenhouse US airbnb: 163 jobs
+2026-09-17 08:49:15,527 [WARNING] sources.ats: Greenhouse US fetch failed for postman: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/postman/jobs?content=true
+2026-09-17 08:49:15,528 [INFO] sources.ats: Greenhouse US postman: 0 jobs
+2026-09-17 08:49:17,565 [INFO] sources.ats: Greenhouse US faire: 68 jobs
+2026-09-17 08:49:17,710 [INFO] sources.ats: Greenhouse US duolingo: 83 jobs
+2026-09-17 08:49:17,949 [INFO] sources.ats: Greenhouse US scaleai: 221 jobs
+2026-09-17 08:49:18,913 [INFO] sources.ats: Greenhouse US appian: 182 jobs
+2026-09-17 08:49:19,123 [INFO] sources.ats: Greenhouse US blenheimchalcot: 9 jobs
+2026-09-17 08:49:19,256 [INFO] sources.ats: Greenhouse US nasuni: 29 jobs
+2026-09-17 08:49:19,410 [INFO] sources.ats: Greenhouse US crunchyroll: 72 jobs
+2026-09-17 08:49:19,521 [INFO] sources.ats: Greenhouse US slice: 25 jobs
+2026-09-17 08:49:19,753 [INFO] sources.ats: Greenhouse US highradius: 84 jobs
+2026-09-17 08:49:19,838 [INFO] sources.ats: Greenhouse US pine: 2 jobs
+2026-09-17 08:49:19,948 [INFO] sources.ats: Greenhouse US karbon: 15 jobs
+2026-09-17 08:49:20,033 [WARNING] sources.ats: Greenhouse US fetch failed for loop: 404 Client Error: Not Found for url: https://boards.greenhouse.io/v1/boards/loop/jobs?content=true
+2026-09-17 08:49:20,033 [INFO] sources.ats: Greenhouse US loop: 0 jobs
+2026-09-17 08:49:20,194 [INFO] sources.ats: Greenhouse US glance: 43 jobs
+2026-09-17 08:49:20,353 [INFO] sources.ats: Greenhouse US inmobi: 60 jobs
+2026-09-17 08:49:20,454 [INFO] sources.ats: Greenhouse US druva: 39 jobs
+2026-09-17 08:49:20,576 [INFO] sources.ats: Greenhouse US zenoti: 51 jobs
+2026-09-17 08:49:20,669 [INFO] sources.ats: Greenhouse US route: 2 jobs
+2026-09-17 08:49:20,771 [INFO] sources.ats: Greenhouse US hackerrank: 28 jobs
+2026-09-17 08:49:21,133 [INFO] sources.ats: Greenhouse US zscaler: 372 jobs
+2026-09-17 08:49:21,491 [INFO] sources.ats: Greenhouse US cloudflare: 365 jobs
+2026-09-17 08:49:21,950 [INFO] sources.ats: Greenhouse US stripe: 654 jobs
+2026-09-17 08:49:22,138 [INFO] sources.ats: Greenhouse US twilio: 149 jobs
+2026-09-17 08:49:22,475 [INFO] sources.ats: Greenhouse US mongodb: 411 jobs
+2026-09-17 08:49:22,890 [INFO] sources.ats: Greenhouse US elastic: 360 jobs
+2026-09-17 08:49:23,442 [INFO] sources.ats: Greenhouse US databricks: 879 jobs
+2026-09-17 08:49:23,608 [INFO] sources.ats: Greenhouse US grafanalabs: 108 jobs
+2026-09-17 08:49:24,019 [INFO] sources.ats: Greenhouse US datadog: 450 jobs
+2026-09-17 08:49:24,135 [INFO] sources.ats: Greenhouse US newrelic: 49 jobs
+2026-09-17 08:49:24,234 [INFO] sources.ats: Greenhouse US sumologic: 11 jobs
+2026-09-17 08:49:24,370 [INFO] sources.ats: Greenhouse US pagerduty: 48 jobs
+2026-09-17 08:49:24,490 [INFO] sources.ats: Greenhouse US cribl: 57 jobs
+2026-09-17 08:49:24,603 [INFO] sources.ats: Greenhouse US jfrog: 57 jobs
+2026-09-17 08:49:24,705 [INFO] sources.ats: Greenhouse US orcasecurity: 8 jobs
+2026-09-17 08:49:24,959 [INFO] sources.ats: Greenhouse US gitlab: 220 jobs
+2026-09-17 08:49:25,057 [INFO] sources.ats: Greenhouse US circleci: 13 jobs
+2026-09-17 08:49:25,154 [INFO] sources.ats: Greenhouse US buildkite: 9 jobs
+2026-09-17 08:49:25,257 [INFO] sources.ats: Greenhouse US airtable: 16 jobs
+2026-09-17 08:49:25,434 [INFO] sources.ats: Greenhouse US figma: 153 jobs
+2026-09-17 08:49:25,541 [INFO] sources.ats: Greenhouse US coursera: 19 jobs
+2026-09-17 08:49:25,637 [INFO] sources.ats: Greenhouse US udemy: 8 jobs
+2026-09-17 08:49:25,915 [INFO] sources.ats: Greenhouse US canonical: 304 jobs
+2026-09-17 08:49:26,164 [INFO] sources.ats: Greenhouse US remotecom: 180 jobs
+2026-09-17 08:49:26,268 [INFO] sources.ats: Greenhouse US turing: 20 jobs
+2026-09-17 08:49:26,354 [INFO] sources.ats: Greenhouse US upwork: 6 jobs
+2026-09-17 08:49:26,448 [INFO] sources.ats: Greenhouse US planetscale: 13 jobs
+2026-09-17 08:49:26,538 [INFO] sources.ats: Greenhouse US newton: 2 jobs
+2026-09-17 08:49:26,710 [INFO] sources.ats: Greenhouse US stage: 139 jobs
+2026-09-17 08:49:27,302 [INFO] sources.ats: Greenhouse EU groww: 8 jobs
+2026-09-17 08:49:27,828 [INFO] sources.ats: Lever meesho: 49 jobs
+2026-09-17 08:49:28,302 [INFO] sources.ats: Lever hevodata: 46 jobs
+2026-09-17 08:49:29,049 [INFO] sources.ats: Lever stable-money1: 30 jobs
+2026-09-17 08:49:30,037 [INFO] sources.ats: Lever linkedin: 23 jobs
+2026-09-17 08:49:30,938 [INFO] sources.ats: Lever paytm: 218 jobs
+2026-09-17 08:49:31,477 [INFO] sources.ats: Lever spotify: 69 jobs
+2026-09-17 08:49:32,461 [INFO] sources.ats: Lever binance: 296 jobs
+2026-09-17 08:49:32,958 [INFO] sources.ats: Lever nium: 22 jobs
+2026-09-17 08:49:33,215 [INFO] sources.ats: Lever 100ms: 8 jobs
+2026-09-17 08:49:33,587 [INFO] sources.ats: Lever GoToGroup: 34 jobs
+2026-09-17 08:49:33,846 [INFO] sources.ats: Lever cred: 11 jobs
+2026-09-17 08:49:34,181 [INFO] sources.ats: Lever fi: 16 jobs
+2026-09-17 08:49:34,607 [INFO] sources.ats: Lever capital: 41 jobs
+2026-09-17 08:49:35,009 [INFO] sources.ats: Lever porter: 25 jobs
+2026-09-17 08:49:35,425 [INFO] sources.ats: Lever mindtickle: 19 jobs
+2026-09-17 08:49:35,604 [WARNING] sources.ats: Lever fetch failed for belong: 404 Client Error: Not Found for url: https://api.lever.co/v0/postings/belong
+2026-09-17 08:49:35,632 [INFO] sources.ats: Lever belong: 0 jobs
+2026-09-17 08:49:35,822 [INFO] sources.ats: Lever whereby: 0 jobs
+2026-09-17 08:49:36,295 [INFO] sources.ats: Lever toptal: 27 jobs
+2026-09-17 08:49:36,512 [INFO] sources.ats: Ashby navi: 9 jobs
+2026-09-17 08:49:36,638 [INFO] sources.ats: Ashby ditto: 8 jobs
+2026-09-17 08:49:36,839 [INFO] sources.ats: Ashby bounce: 6 jobs
+2026-09-17 08:49:37,419 [WARNING] sources.ats: Ashby fetch failed for clarisights: 404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/clarisights
+2026-09-17 08:49:37,421 [INFO] sources.ats: Ashby clarisights: 0 jobs
+2026-09-17 08:49:37,488 [INFO] sources.ats: Ashby confluent: 21 jobs
+2026-09-17 08:49:37,625 [INFO] sources.ats: Ashby linear: 32 jobs
+2026-09-17 08:49:37,755 [INFO] sources.ats: Ashby notion: 128 jobs
+2026-09-17 08:49:37,824 [INFO] sources.ats: Ashby zapier: 6 jobs
+2026-09-17 08:49:37,952 [INFO] sources.ats: Ashby buffer: 1 jobs
+2026-09-17 08:49:38,092 [INFO] sources.ats: Ashby deel: 0 jobs
+2026-09-17 08:49:38,245 [INFO] sources.ats: Ashby oyster: 24 jobs
+2026-09-17 08:49:38,384 [INFO] sources.ats: Ashby andela: 17 jobs
+2026-09-17 08:49:38,484 [INFO] sources.ats: Ashby supabase: 61 jobs
+2026-09-17 08:49:38,622 [INFO] sources.ats: Ashby railway: 8 jobs
+2026-09-17 08:49:38,704 [INFO] sources.ats: Ashby render: 37 jobs
+2026-09-17 08:49:38,844 [INFO] sources.ats: Ashby infisical: 10 jobs
+2026-09-17 08:49:38,917 [INFO] sources.ats: Ashby triggerdev: 5 jobs
+2026-09-17 08:49:39,043 [INFO] sources.ats: Ashby mintlify: 16 jobs
+2026-09-17 08:49:39,220 [INFO] sources.ats: Ashby resend: 9 jobs
+2026-09-17 08:49:39,309 [INFO] sources.ats: Ashby stytch: 5 jobs
+2026-09-17 08:49:39,460 [INFO] sources.ats: Ashby workos: 27 jobs
+2026-09-17 08:49:39,527 [INFO] sources.ats: Ashby scaler: 0 jobs
+2026-09-17 08:49:39,754 [INFO] sources.ats: Workable juspay: 0 jobs
+2026-09-17 08:49:41,470 [INFO] sources.ats: Workable gridlines: 10 jobs
+2026-09-17 08:49:43,138 [INFO] sources.ats: Workable apna: 10 jobs
+2026-09-17 08:49:44,186 [INFO] sources.ats: SmartRecruiters Upstox: 1 jobs
+2026-09-17 08:49:45,207 [INFO] sources.ats: SmartRecruiters Lendingkart: 1 jobs
+2026-09-17 08:49:46,217 [INFO] sources.ats: SmartRecruiters Turtlemint: 1 jobs
+2026-09-17 08:49:51,336 [INFO] sources.ats: SmartRecruiters Lokal: 9 jobs
+2026-09-17 08:49:52,285 [INFO] sources.ats: SmartRecruiters Cars24: 1 jobs
+2026-09-17 08:49:56,769 [INFO] sources.ats: SmartRecruiters ixigo: 8 jobs
+2026-09-17 08:50:47,937 [INFO] sources.ats: SmartRecruiters Freshworks: 100 jobs
+2026-09-17 08:50:49,065 [INFO] sources.ats: SmartRecruiters Whatfix: 1 jobs
+2026-09-17 08:50:53,830 [INFO] sources.ats: SmartRecruiters MercerMettl: 8 jobs
+2026-09-17 08:50:57,014 [INFO] sources.ats: SmartRecruiters InterviewMocha: 5 jobs
+2026-09-17 08:51:02,852 [INFO] sources.ats: SmartRecruiters Skillate: 10 jobs
+2026-09-17 08:51:53,614 [INFO] sources.ats: SmartRecruiters ServiceNow: 100 jobs
+2026-09-17 08:53:12,266 [INFO] sources.ats: SmartRecruiters Canva: 100 jobs
+2026-09-17 08:53:14,329 [INFO] sources.ats: SmartRecruiters Unacademy: 3 jobs
+2026-09-17 08:53:19,644 [INFO] sources.ats: SmartRecruiters Dailymotion: 9 jobs
+2026-09-17 08:53:20,461 [INFO] sources.ats: Rippling axio: 2 jobs
+2026-09-17 08:53:20,932 [INFO] sources.ats: Rippling multiplier: 1 jobs
+2026-09-17 08:53:21,640 [INFO] sources.ats: Rippling dub: 2 jobs
+2026-09-17 08:53:22,161 [INFO] sources.ats: BambooHR urban: 16 jobs
+2026-09-17 08:53:22,675 [INFO] sources.ats: BambooHR shadowfax: 0 jobs
+2026-09-17 08:53:23,329 [WARNING] sources.ats: BambooHR fetch failed for google: Expecting value: line 1 column 1 (char 0)
+2026-09-17 08:53:23,331 [INFO] sources.ats: BambooHR google: 0 jobs
+2026-09-17 08:53:23,797 [WARNING] sources.ats: BambooHR fetch failed for meta: Expecting value: line 1 column 1 (char 0)
+2026-09-17 08:53:23,798 [INFO] sources.ats: BambooHR meta: 0 jobs
+2026-09-17 08:53:24,316 [INFO] sources.ats: BambooHR flyio: 10 jobs
+2026-09-17 08:53:24,569 [WARNING] sources.ats: Recruitee fetch failed for unstop: 404 Client Error: Not Found for url: https://unstop.recruitee.com/api/offers/
+2026-09-17 08:53:24,570 [INFO] sources.ats: Recruitee unstop: 0 jobs
+2026-09-17 08:53:24,823 [WARNING] sources.ats: Recruitee fetch failed for salesforce: 404 Client Error: Not Found for url: https://salesforce.recruitee.com/api/offers/
+2026-09-17 08:53:24,824 [INFO] sources.ats: Recruitee salesforce: 0 jobs
+2026-09-17 08:53:25,052 [WARNING] sources.ats: Recruitee fetch failed for ibm: 404 Client Error: Not Found for url: https://ibm.recruitee.com/api/offers/
+2026-09-17 08:53:25,052 [INFO] sources.ats: Recruitee ibm: 0 jobs
+2026-09-17 08:53:26,471 [INFO] sources.ats: Personio open: 7 jobs
+2026-09-17 08:53:27,384 [INFO] sources.ats: Personio josh: 3 jobs
+2026-09-17 08:53:28,166 [INFO] sources.ats: Personio amazon: 3 jobs
+2026-09-17 08:53:28,892 [INFO] sources.ats: Personio basecamp: 4 jobs
+2026-09-17 08:53:28,893 [INFO] sources.ats: ATS total: 8121 raw jobs
+2026-09-17 08:53:28,893 [INFO] jobradar: --- Fetching Cutshort ---
+2026-09-17 08:53:29,234 [WARNING] sources.cutshort: Cutshort scrape failed for query 'AI intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:29,511 [WARNING] sources.cutshort: Cutshort scrape failed for query 'machine learning intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:29,780 [WARNING] sources.cutshort: Cutshort scrape failed for query 'generative AI intern': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:30,065 [WARNING] sources.cutshort: Cutshort scrape failed for query 'LLM engineer intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:30,338 [WARNING] sources.cutshort: Cutshort scrape failed for query 'computer vision intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:30,610 [WARNING] sources.cutshort: Cutshort scrape failed for query 'python backend intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:30,885 [WARNING] sources.cutshort: Cutshort scrape failed for query 'deep learning intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:31,166 [WARNING] sources.cutshort: Cutshort scrape failed for query 'NLP intern india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:31,444 [WARNING] sources.cutshort: Cutshort scrape failed for query 'RAG langchain intern': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:31,717 [WARNING] sources.cutshort: Cutshort scrape failed for query 'AI ML fresher india': BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:31,717 [INFO] sources.cutshort: Cutshort: 0 jobs found
+2026-09-17 08:53:31,717 [INFO] jobradar: --- Fetching Instahyre ---
+2026-09-17 08:53:32,015 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=python&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:32,294 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=machine-learning&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:32,566 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=deep-learning&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:32,859 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=artificial-intelligence&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:33,150 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=computer-vision&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:33,419 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=nlp&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:33,701 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=langchain&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:33,989 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=django&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:34,272 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=fastapi&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:34,562 [WARNING] sources.instahyre: Instahyre Scrapling failed for https://www.instahyre.com/jobs/?skills=pytorch&exp=0-1: BrowserType.launch_persistent_context: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     patchright install                                     ║
+║                                                            ║
+║ <3 Patchright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+2026-09-17 08:53:34,562 [INFO] sources.instahyre: Instahyre: 0 jobs found via Scrapling
+2026-09-17 08:53:34,562 [INFO] jobradar: --- Fetching Wellfound ---
+2026-09-17 08:53:34,562 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=machine+learning+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-09-17 08:53:34,562 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=AI+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-09-17 08:53:34,562 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=python+backend+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-09-17 08:53:34,562 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=generative+AI+intern&remote=true: name 'StealthyFetcher' is not defined
+2026-09-17 08:53:34,562 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=computer+vision+intern&l=India&remote=true: name 'StealthyFetcher' is not defined
+2026-09-17 08:53:34,562 [WARNING] sources.wellfound: Wellfound scrape failed for https://wellfound.com/jobs?q=LLM+engineer+intern&remote=true: name 'StealthyFetcher' is not defined
+2026-09-17 08:53:34,562 [INFO] sources.wellfound: Wellfound: 0 jobs found
+2026-09-17 08:53:34,562 [INFO] jobradar: --- Fetching Internshala ---
+2026-09-17 08:53:37,671 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/backend-development-internship/> (referer: https://www.google.com/)
+2026-09-17 08:53:40,292 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-09-17 08:53:42,861 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/work-from-home-internships/> (referer: https://www.google.com/)
+2026-09-17 08:53:44,897 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/web-development-internship/> (referer: https://www.google.com/)
+2026-09-17 08:53:46,662 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-golang/> (referer: https://www.google.com/)
+2026-09-17 08:53:48,691 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-go-developer/> (referer: https://www.google.com/)
+2026-09-17 08:53:50,753 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-nodejs/> (referer: https://www.google.com/)
+2026-09-17 08:53:52,708 [INFO] scrapling: Fetched (200) <GET https://internshala.com/internships/keywords-typescript/> (referer: https://www.google.com/)
+2026-09-17 08:53:55,113 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/> (referer: https://www.google.com/)
+2026-09-17 08:53:57,992 [INFO] scrapling: Fetched (200) <GET https://internshala.com/jobs/software-developer-jobs/> (referer: https://www.google.com/)
+2026-09-17 08:53:58,003 [INFO] sources.internshala: Internshala: 0 jobs found
+2026-09-17 08:53:58,004 [INFO] jobradar: --- Fetching Indian Fresher Blogs (RSS + Cuvette) ---
+2026-09-17 08:53:58,190 [WARNING] sources.freshers_blogs: [fresheropenings] RSS unparseable for https://fresheropenings.com/feed/: <unknown>:2:380: not well-formed (invalid token)
+2026-09-17 08:53:58,190 [INFO] sources.freshers_blogs: [fresheropenings] 0 entries from https://fresheropenings.com/feed/
+2026-09-17 08:53:58,223 [WARNING] sources.freshers_blogs: [freshersarea] RSS unparseable for https://freshersarea.in/feed/: <unknown>:2:380: not well-formed (invalid token)
+2026-09-17 08:53:58,223 [INFO] sources.freshers_blogs: [freshersarea] 0 entries from https://freshersarea.in/feed/
+2026-09-17 08:53:58,387 [WARNING] sources.freshers_blogs: [tnpofficer] RSS unparseable for https://tnpofficer.com/category/off-campus/feed/: <unknown>:2:380: not well-formed (invalid token)
+2026-09-17 08:53:58,387 [INFO] sources.freshers_blogs: [tnpofficer] 0 entries from https://tnpofficer.com/category/off-campus/feed/
+2026-09-17 08:53:58,636 [WARNING] sources.freshers_blogs: [offcampusjobs4u] RSS unparseable for https://offcampusjobs4u.com/category/offcampus-jobs/feed/: <unknown>:7:475: mismatched tag
+2026-09-17 08:53:58,637 [INFO] sources.freshers_blogs: [offcampusjobs4u] 0 entries from https://offcampusjobs4u.com/category/offcampus-jobs/feed/
+2026-09-17 08:53:59,209 [INFO] sources.freshers_blogs: [freshershunt] 1 entries from https://freshershunt.in/feed/
+2026-09-17 08:53:59,246 [WARNING] sources.freshers_blogs: [freshersnow] RSS unparseable for https://freshersnow.com/feed/: <unknown>:47:2: mismatched tag
+2026-09-17 08:53:59,247 [INFO] sources.freshers_blogs: [freshersnow] 0 entries from https://freshersnow.com/feed/
+2026-09-17 08:54:00,392 [INFO] sources.freshers_blogs: [freshersdunia] 20 entries from https://freshersdunia.in/feed/
+2026-09-17 08:56:12,858 [WARNING] sources.freshers_blogs: [freshers-job] RSS unparseable for https://freshers-job.com/feed/: <urlopen error [Errno 110] Connection timed out>
+2026-09-17 08:56:12,858 [INFO] sources.freshers_blogs: [freshers-job] 0 entries from https://freshers-job.com/feed/
+2026-09-17 08:56:12,859 [INFO] sources.freshers_blogs: freshers_blogs: 21 total listings from 8 RSS feeds
+2026-09-17 08:56:12,859 [INFO] jobradar: --- Fetching YC Jobs ---
+2026-09-17 08:56:15,185 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&type=fulltime,intern&remote=true> (referer: https://www.google.com/)
+2026-09-17 08:56:15,189 [INFO] sources.yc: YC listing 'q=backend&type=fulltime,intern&remote=tr': 2 candidates
+2026-09-17 08:56:17,416 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=typescript+backend&type=fulltime,intern> (referer: https://www.google.com/)
+2026-09-17 08:56:17,420 [INFO] sources.yc: YC listing 'q=typescript+backend&type=fulltime,inter': 0 candidates
+2026-09-17 08:56:19,669 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=golang&type=fulltime,intern> (referer: https://www.google.com/)
+2026-09-17 08:56:19,672 [INFO] sources.yc: YC listing 'q=golang&type=fulltime,intern': 0 candidates
+2026-09-17 08:56:22,092 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/jobs?q=backend&location=india> (referer: https://www.google.com/)
+2026-09-17 08:56:22,096 [INFO] sources.yc: YC listing 'q=backend&location=india': 0 candidates
+2026-09-17 08:56:22,096 [INFO] sources.yc: YC Phase 1 complete: 2 candidate job pages to fetch
+2026-09-17 08:56:23,986 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/salarybox/jobs/9zMly7h-mobile-app-developer> (referer: https://www.google.com/)
+2026-09-17 08:56:25,848 [INFO] scrapling: Fetched (200) <GET https://www.ycombinator.com/companies/draftwise/jobs/0kxugND-forward-deployed-ai-engineer-backend-west-palm-beach> (referer: https://www.google.com/)
+2026-09-17 08:56:25,852 [INFO] sources.yc: YC Jobs: 2 jobs parsed from 2 fetched pages
+2026-09-17 08:56:25,853 [INFO] jobradar: --- Fetching via Serper discovery ---
+2026-09-17 08:56:25,853 [INFO] sources.serper: Serper pool: 26 tier-1 | 47 tier-2 | 31 tier-3. Running: 10 (unique) + 15 (priority) + 0 (filler) = 25 queries
+2026-09-17 08:56:25,968 [WARNING] sources.serper: Serper query failed '"airtable.com" "apply" "backend" "intern" OR "fresher" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,054 [WARNING] sources.serper: Serper query failed 'intitle:careers "backend" "golang" OR "typescript" "india" O': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,207 [WARNING] sources.serper: Serper query failed 'site:cutshort.io "backend" "golang" OR "typescript" OR "node': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,371 [WARNING] sources.serper: Serper query failed '"notion.so" "apply" OR "hiring" "backend" "intern" OR "fresh': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,525 [WARNING] sources.serper: Serper query failed '"golang developer" OR "go developer" "intern" OR "fresher" i': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,614 [WARNING] sources.serper: Serper query failed '"forms.gle" "apply" "software engineer" "intern" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,769 [WARNING] sources.serper: Serper query failed 'site:careers.zoho.com "backend" OR "software engineer" "inte': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,855 [WARNING] sources.serper: Serper query failed 'site:jobs.keka.com "golang" OR "typescript" OR "node" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:26,964 [WARNING] sources.serper: Serper query failed '"fintech" OR "payments" "backend" "intern" OR "fresher" indi': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,052 [WARNING] sources.serper: Serper query failed '"open to applications" OR "accepting applications" "backend"': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,139 [WARNING] sources.serper: Serper query failed '"currently hiring" "backend" OR "software" "intern" OR "fres': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,235 [WARNING] sources.serper: Serper query failed 'site:lever.co "fintech" OR "payments" "backend" "intern" OR ': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,335 [WARNING] sources.serper: Serper query failed 'site:boards.greenhouse.io "remote" "backend" "intern" OR "fr': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,448 [WARNING] sources.serper: Serper query failed '"express" OR "nestjs" OR "nest.js" "intern" OR "fresher" ind': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,628 [WARNING] sources.serper: Serper query failed '"backend engineer" "fresher" "payments" OR "fintech" india -': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,831 [WARNING] sources.serper: Serper query failed '"microservices" "golang" "intern" OR "fresher" india OR bang': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:27,943 [WARNING] sources.serper: Serper query failed '"job openings" "backend engineer" "fresher" OR "intern" "ind': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,028 [WARNING] sources.serper: Serper query failed '"golang intern" OR "golang fresher" india 2025 OR 2026': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,124 [WARNING] sources.serper: Serper query failed 'site:jobs.ashbyhq.com "fintech" OR "payments" "backend" "int': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,272 [WARNING] sources.serper: Serper query failed 'site:lever.co "golang" OR "go developer" "intern" OR "junior': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,363 [WARNING] sources.serper: Serper query failed '"grpc" OR "gRPC" "golang" "intern" OR "fresher" india': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,455 [WARNING] sources.serper: Serper query failed '"distributed systems" "golang" "fresher" OR "entry level" in': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,551 [WARNING] sources.serper: Serper query failed '"exchange" OR "crypto exchange" "backend" "intern" OR "fresh': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,644 [WARNING] sources.serper: Serper query failed 'site:boards.greenhouse.io "typescript" "backend" "intern" OR': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,743 [WARNING] sources.serper: Serper query failed '"we are hiring" "backend" "intern" OR "fresher" india -site:': 400 Client Error: Bad Request for url: https://google.serper.dev/search
+2026-09-17 08:56:28,744 [INFO] sources.serper: Serper discovery: 25 queries → 0 unique URLs → 0 jobs extracted
+2026-09-17 08:56:28,744 [INFO] jobradar: --- Skipping hackernews (disabled in profile) ---
+2026-09-17 08:56:28,744 [INFO] jobradar: --- Skipping reddit (disabled in profile) ---
+2026-09-17 08:56:28,744 [INFO] jobradar: --- Fetching Naukri.com ---
+2026-09-17 08:56:28,744 [INFO] sources.naukri: Naukri: 10 keywords x 3 locations x 2 pages = up to 60 search calls (1200 raw listings max) | exp cap: 1yr | age cap: 45d
+2026-09-17 08:57:20,545 [INFO] sources.naukri: Naukri Stage-1 complete: 0 unique jobs survived (exp <= 1yr, age <= 45d)
+2026-09-17 08:57:20,546 [INFO] sources.naukri: Naukri: 0 jobs entering pipeline
+2026-09-17 08:57:20,546 [INFO] jobradar: --- Skipping hirist (disabled in profile) ---
+2026-09-17 08:57:20,546 [INFO] jobradar: --- Fetching Jobicy (remote jobs API) ---
+2026-09-17 08:57:23,869 [INFO] sources.jobicy: Jobicy: 116 remote jobs found
+2026-09-17 08:57:23,869 [INFO] jobradar: --- Fetching RemoteOK (JSON API) ---
+2026-09-17 08:57:27,152 [INFO] sources.remoteok: RemoteOK: 59 dev/engineering jobs found
+2026-09-17 08:57:27,153 [INFO] jobradar: Total raw jobs from all sources: 8319
+2026-09-17 08:57:27,713 [INFO] pipeline.dedup: Dedup: 8319 raw -> 7567 new
+2026-09-17 08:57:37,295 [INFO] pipeline.prefilter: ATS company cap (25): capped companies — Zscaler, Cloudflare, Stripe, Mongodb, Elastic, Databricks, Grafanalabs, Datadog, Gitlab, Canonical
+2026-09-17 08:57:37,295 [INFO] pipeline.prefilter: Pre-filter: 7567 jobs -> 565 passed (sent to AI scorer)
+2026-09-17 08:57:39,253 [INFO] pipeline.ranker: Relevance ranking: 565 jobs ranked. Top scores: [27, 26, 25, 25, 24]
+2026-09-17 08:57:39,253 [WARNING] pipeline.scorer: Hard fallback cap: trimmed 365 lowest-ranked jobs (max_ai_jobs_per_run=200). Increase cap in profile.yaml if needed.
+2026-09-17 08:57:39,253 [INFO] pipeline.scorer: Scoring up to 200 ranked jobs with Groq (openai/gpt-oss-20b) | token budget: 150,000
+2026-09-17 08:57:39,447 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:57:39,448 [ERROR] pipeline.scorer: Groq scoring failed for Junior Software Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:57:44,362 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:57:44,362 [ERROR] pipeline.scorer: Groq scoring failed for Intermediate Backend Engineer, Platform Readiness: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:57:49,365 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:57:49,365 [ERROR] pipeline.scorer: Groq scoring failed for Forward Deployed Engineer, India: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:57:54,376 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:57:54,376 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:57:59,361 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:57:59,362 [ERROR] pipeline.scorer: Groq scoring failed for Principal Customer Engineer, Digital Natives: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:04,357 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:04,357 [ERROR] pipeline.scorer: Groq scoring failed for Principal Customer Engineer, Majors: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:09,358 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:09,358 [ERROR] pipeline.scorer: Groq scoring failed for Principal Customer Engineer, Majors: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:14,356 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:14,357 [ERROR] pipeline.scorer: Groq scoring failed for Senior Customer Engineer, South China: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:19,357 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:19,357 [ERROR] pipeline.scorer: Groq scoring failed for Senior Customer Engineer, Sweden: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:24,402 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:24,402 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:29,426 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:29,427 [ERROR] pipeline.scorer: Groq scoring failed for AI Forward Deployed Engineer - France: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:34,359 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:34,359 [ERROR] pipeline.scorer: Groq scoring failed for  AI Forward Deployed Engineer - Germany: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:39,363 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:39,363 [ERROR] pipeline.scorer: Groq scoring failed for AI Forward Deployed Engineer - London: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:44,362 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:44,363 [ERROR] pipeline.scorer: Groq scoring failed for AI Forward Deployed Engineer - Netherlands: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:49,371 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:49,371 [ERROR] pipeline.scorer: Groq scoring failed for AI Forward Deployed Engineer - Sweden: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:54,360 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:54,361 [ERROR] pipeline.scorer: Groq scoring failed for Junior Software Engineer（AI&LLM): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:58:59,358 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:58:59,358 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Developer Experience (Golang, Python): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:04,368 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:04,368 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Developer Experience (Golang, Python): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:09,371 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:09,371 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer Intern (January 12th start, 23 weeks) : Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:14,357 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:14,357 [ERROR] pipeline.scorer: Groq scoring failed for Staff AI Engineer - AI Platform: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:19,368 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:19,369 [ERROR] pipeline.scorer: Groq scoring failed for Senior AI Engineer - AI Platform: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:24,361 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:24,361 [ERROR] pipeline.scorer: Groq scoring failed for Customer Engineer, Korea (Based in Seoul): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:29,361 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:29,361 [ERROR] pipeline.scorer: Groq scoring failed for Presales Customer Engineer, Enterprise (based in Melbourne): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:34,364 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:34,364 [ERROR] pipeline.scorer: Groq scoring failed for Principal Presales Customer Engineer (based in Canberra): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:39,359 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:39,359 [ERROR] pipeline.scorer: Groq scoring failed for Senior Customer Engineer, East China: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:44,359 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:44,359 [ERROR] pipeline.scorer: Groq scoring failed for Senior Customer Engineer, Japan: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:49,356 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:49,356 [ERROR] pipeline.scorer: Groq scoring failed for Senior Customer Engineer, LATAM - MCR (Santiago, Chile).: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:54,359 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:54,359 [ERROR] pipeline.scorer: Groq scoring failed for Senior Customer Engineer - Madrid based: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 08:59:59,359 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 08:59:59,359 [ERROR] pipeline.scorer: Groq scoring failed for Senior Customer Engineer, Majors - Bentoville, AR: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:04,357 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:04,357 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:09,356 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:09,356 [ERROR] pipeline.scorer: Groq scoring failed for AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:14,357 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:14,358 [ERROR] pipeline.scorer: Groq scoring failed for Senior AI Engineer - FDE (Forward Deployed Engineer): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:19,369 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:19,370 [ERROR] pipeline.scorer: Groq scoring failed for Senior Forward Deployed Engineer (Technical Data Architect): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:24,387 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:24,387 [ERROR] pipeline.scorer: Groq scoring failed for Senior Legal AI Platform Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:29,374 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:29,374 [ERROR] pipeline.scorer: Groq scoring failed for Full-Stack Intern - B2B: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:34,370 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:34,371 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer, Robotics: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:39,361 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:39,361 [ERROR] pipeline.scorer: Groq scoring failed for Senior AI Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:44,364 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:44,365 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer - Go, AWS, Python: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:49,366 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:49,366 [ERROR] pipeline.scorer: Groq scoring failed for SDE 2: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:54,358 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:54,358 [ERROR] pipeline.scorer: Groq scoring failed for SDE IV (ML Engineering): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:00:59,362 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:00:59,363 [ERROR] pipeline.scorer: Groq scoring failed for Principal Software Engineer Development in Test: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:04,379 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:04,379 [ERROR] pipeline.scorer: Groq scoring failed for Senior Detection Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:09,365 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:09,365 [ERROR] pipeline.scorer: Groq scoring failed for Senior Manager, Customer Engineering, India: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:14,360 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:14,361 [ERROR] pipeline.scorer: Groq scoring failed for Internal Audit Data Analytics Lead: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:19,382 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:19,383 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer, Product Velocity: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:24,361 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:24,361 [ERROR] pipeline.scorer: Groq scoring failed for Principal Software Engineer - Builder Experience - Platform Engineering Productivity: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:29,364 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:29,364 [ERROR] pipeline.scorer: Groq scoring failed for Senior Go-To-Market (GTM) Analytics Engineer (AI & Pipelines): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:34,356 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:34,357 [ERROR] pipeline.scorer: Groq scoring failed for Data Engineer (SQL, PySpark, Snowflake, DBT, Redshift) - Associate: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:39,375 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:39,376 [ERROR] pipeline.scorer: Groq scoring failed for Insurance Data Engineering - Data Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:44,366 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:44,366 [ERROR] pipeline.scorer: Groq scoring failed for Senior Evaluation Algorithm Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:49,360 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:49,361 [ERROR] pipeline.scorer: Groq scoring failed for Principal Software Engineer / AI Solution Consultant (Armis): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:54,361 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:54,361 [ERROR] pipeline.scorer: Groq scoring failed for Principal Systems Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:01:59,366 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:01:59,366 [ERROR] pipeline.scorer: Groq scoring failed for Go (Golang) Software Engineer, Developer Tooling and Containers: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:04,362 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:04,362 [ERROR] pipeline.scorer: Groq scoring failed for Security Engineer, Privy: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:09,363 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:09,363 [ERROR] pipeline.scorer: Groq scoring failed for Senior Forward Deployed Engineering - Architect: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:14,366 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:14,367 [ERROR] pipeline.scorer: Groq scoring failed for Quantitative Trading Strategy Algorithm Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:19,364 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:19,364 [ERROR] pipeline.scorer: Groq scoring failed for GTM Engineer, Revenue Operations : Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:24,366 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:24,367 [ERROR] pipeline.scorer: Groq scoring failed for Senior Gen AI Software Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:29,363 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:29,363 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer, Backend, Monetization: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:34,358 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:34,359 [ERROR] pipeline.scorer: Groq scoring failed for Data Science Intern (2027): Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:39,363 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:39,363 [ERROR] pipeline.scorer: Groq scoring failed for Alliances Field Engineer: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:44,424 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:44,424 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Field Engineering Manager: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:49,378 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:49,378 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Professional Services Manager: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:54,361 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:54,361 [ERROR] pipeline.scorer: Groq scoring failed for Cloud Solutions Architect - Alliances: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:02:59,371 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:02:59,371 [ERROR] pipeline.scorer: Groq scoring failed for Engineering Manager, SRE: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:04,363 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:04,364 [ERROR] pipeline.scorer: Groq scoring failed for FinOps Engineer : Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:09,432 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:09,432 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer II (Mobile Developer - Android/Kotlin) - Mobile App Growth: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:14,371 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:14,372 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineering Intern (Summer 2027) : Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:19,370 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:19,371 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer - New Grad: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:24,373 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:24,373 [ERROR] pipeline.scorer: Groq scoring failed for Associate Technical Services Engineer II: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:29,380 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:29,380 [ERROR] pipeline.scorer: Groq scoring failed for Associate Technical Services Engineer II: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:34,364 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:34,365 [ERROR] pipeline.scorer: Groq scoring failed for Senior Software Engineer, Atlas API Experience: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:39,372 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-09-17 09:03:39,373 [ERROR] pipeline.scorer: Groq scoring failed for Software Engineer 2: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'expired_api_key'}}
+2026-09-17 09:03:39,382 [INFO] pipeline.scorer: Token budget: 149,529/150,000 tokens used. Skipped 127 lower-ranked jobs to stay under limit.
+2026-09-17 09:03:39,382 [INFO] pipeline.scorer: Scoring complete: 0 urgent, 0 digest, 73 low, 0 expired (dropped)
+2026-09-17 09:03:40,790 [INFO] notify.telegram_bot: Email sent: 📊 JobRadar: 0 urgent · 73 to review — 17 Sep 2026
+2026-09-17 09:03:40,790 [INFO] jobradar: Pipeline complete.
+2026-09-17 09:03:40,790 [INFO] jobradar: Summary: 8319 raw -> 7567 new -> 565 eligible -> 0 urgent
