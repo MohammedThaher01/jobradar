@@ -16,7 +16,7 @@ from pipeline.ranker import rank_eligible_jobs
 logger = logging.getLogger(__name__)
 
 MODEL = "openai/gpt-oss-20b"
-REQ_INTERVAL = 5.0
+REQ_INTERVAL = 8.0
 _last_call_ts = 0.0
 
 TOKEN_BUDGET_PER_RUN  = 150_000
@@ -249,7 +249,7 @@ def score_job(job: dict, profile: dict) -> dict:
                 },
             ],
             temperature=0.1,
-            max_tokens=512,
+            max_tokens=1024,
         )
 
         text = (response.choices[0].message.content or "").strip()
