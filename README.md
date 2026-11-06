@@ -1,5 +1,5 @@
 # 🎯 JobRadar
-Status: paused. The scrapers broke whenever target sites changed their pages, and keeping them working took more time than the tool saved. Next version idea: use job board feeds or APIs where they exist, and send an alert when a source returns zero results.
+Status: paused. The scrapers broke whenever target sites changed their pages, and keeping them working took more time than the tool saved. Next version:  https://github.com/MohammedThaher01/cold-outreach
 > An automated, AI-powered job discovery pipeline — aggregates **14 sources**, eliminates noise with zero-cost heuristics, deduplicates across runs, ranks by relevance, scores with AI, and delivers priority alerts via **Email**. Runs daily, entirely on free-tier APIs.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=flat&logo=python&logoColor=white)](https://python.org)
